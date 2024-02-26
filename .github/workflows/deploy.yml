@@ -5,8 +5,6 @@ on:
   # Using a different branch name? Replace `main` with your branch’s name
   push:
     branches: [main, stage]
-  pull_request:
-    branches: [stage]
   # Allows you to run this workflow manually from the Actions tab on GitHub.
   workflow_dispatch:
 
@@ -47,8 +45,7 @@ jobs:
   deploy-staging:
     needs: build
     runs-on: ubuntu-latest
-    # if: ${{ github.ref_name == 'stage' }}
-    if: ${{ github.ref_name != 'main' }}
+    if: ${{ github.ref_name == 'stage' }}
     env:
       SURGE_DOMAIN: ${{ secrets.SURGE_DOMAIN }}
       SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
@@ -62,7 +59,5 @@ jobs:
           name: github-pages
       - name: Extract tar and delete the tar and display structure of downloaded files
         run: tar -xvf artifact.tar && rm artifact.tar && ls -R
-      #   - name: Display structure of downloaded files
-      #     run: ls -R
       - name: Deploy to surge.sh
         run: surge . ${{ env.SURGE_DOMAIN }} --token ${{ env.SURGE_TOKEN }}
