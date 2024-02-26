@@ -49,6 +49,9 @@ jobs:
     runs-on: ubuntu-latest
     # if: ${{ github.ref_name == 'stage' }}
     if: ${{ github.ref_name != 'main' }}
+    env:
+      SURGE_DOMAIN: ${{ secrets.SURGE_DOMAIN }}
+      SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
     steps:
       - uses: actions/setup-node@v3
         with:
@@ -59,5 +62,5 @@ jobs:
           name: github-pages
           path: github-pages
       - name: Echo a secret
-        run: echo "your secret token is ${{ secrets.SURGE_DOMAIN }}"
-      - run: surge github-pages ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
+        run: echo "your secret token is ${{ env.SURGE_DOMAIN }}"
+      - run: surge /home/runner/work/pycon-my.github.io/pycon-my.github.io/github-pages ${{ env.SURGE_DOMAIN }} --token ${{ env.SURGE_TOKEN }}
