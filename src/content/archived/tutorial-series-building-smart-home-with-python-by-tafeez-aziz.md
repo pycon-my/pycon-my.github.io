@@ -1,7 +1,7 @@
 ---
-title: "Tutorial Series: Building \"Smart Home\" With Python by Afeez Aziz"
+title: 'Tutorial Series: Building "Smart Home" With Python by Afeez Aziz'
 date: "2020-09-07"
-categories: 
+categories:
   - "pycon-apac-2020"
   - "tutorials"
 ---
@@ -12,4 +12,4 @@ In this tutorial, Afeez Aziz will demonstrate how to build your own Smart Home u
 
 Afeez Aziz is a Managing Director and Founder of Pipeline Network Sdn. Bhd. This company helps GLCs, Government Sectors and City Council develop and implement software, Internet of Things Solution and Cloud Computing Service in their organizations. His main goals are to lead the innovation and technological transformation in Malaysia and help Malaysia to achieve Industrial Revolution 4.0.
 
-![](https://pyconmy.files.wordpress.com/2020/09/13th-1630-1730-afeez-aziz.png?w=1024)
+![](/archived-images/13th-1630-1730-afeez-aziz.png?w=1024)

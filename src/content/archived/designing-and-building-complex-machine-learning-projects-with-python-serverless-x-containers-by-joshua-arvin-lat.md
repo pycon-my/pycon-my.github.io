@@ -1,7 +1,7 @@
 ---
 title: "Designing and Building Complex Machine Learning Projects with Python: Serverless x Containers by Joshua Arvin Lat"
 date: "2020-08-20"
-categories: 
+categories:
   - "pycon-apac-2020"
   - "speakers"
 ---
@@ -12,4 +12,4 @@ In this session, Arvs will share the different strategies on how to design, buil
 
 Joshua Arvin Lat is the Chief Technology Officer (CTO) of Combinate, Insites, and Jepto. For the past couple of years, he has been sharing his knowledge in several international conferences and events to discuss practical strategies for companies and professionals. In addition to this, he is an AWS Machine Learning Hero and serves as a Subject Matter Expert (SME) in machine learning and machine learning engineering.
 
-![](https://pyconmy.files.wordpress.com/2020/09/12th-1730-1830-joshua-arvin-lat-1.png?w=1024)
+![](/archived-images/12th-1730-1830-joshua-arvin-lat-1.png?w=1024)

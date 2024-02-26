@@ -1,7 +1,7 @@
 ---
 title: "Demystifying Web Map Servers: the invisible side of Geographic Information Systems by Shivashis Padhi"
 date: "2020-08-31"
-categories: 
+categories:
   - "pycon-apac-2020"
   - "tutorials"
 ---
@@ -12,4 +12,4 @@ During this workshop, Shivashis Padhi take some custom geospatial data, and buil
 
 Shivashis is a student of Computer Science at NIT Trichy, India and about to graduate later this year. During the day, he work at Grofers in the data engineering team. He spend his leisure time dabbling with geospatial data with Python, plants, or looking at old maps and photographs.
 
-![](https://pyconmy.files.wordpress.com/2020/09/13th-1500-1600-shivashis-padhi.png?w=1024)
+![](/archived-images/13th-1500-1600-shivashis-padhi.png?w=1024)

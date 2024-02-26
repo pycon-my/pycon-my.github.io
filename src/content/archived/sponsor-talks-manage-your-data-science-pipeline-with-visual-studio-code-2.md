@@ -1,14 +1,14 @@
 ---
 title: "SPONSOR TALKS: Manage your Data Science pipeline with Visual Studio Code"
 date: "2020-09-13"
-categories: 
+categories:
   - "pycon-apac-2020"
   - "talks"
 ---
 
 Catch up with Joao Goncalo Bilhim from Microsoft in his talks, Manage your Data Science pipeline with Visual Studio Code.
 
-![](https://pyconmy.files.wordpress.com/2020/09/118750271_629122581130077_218443926977835061_o.jpg?w=1024)
+![](/archived-images/118750271_629122581130077_218443926977835061_o.jpg?w=1024)
 
 You can still get your ticket now at https://pycon-apac-2020-online.peatix.com/
 

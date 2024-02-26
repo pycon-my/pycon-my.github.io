@@ -1,7 +1,7 @@
 ---
 title: "PANELIST LINE UP: How to Score in a Hackathon"
 date: "2020-08-20"
-categories: 
+categories:
   - "pycon-apac-2020"
   - "speakers"
 ---
@@ -14,4 +14,4 @@ Faezrah Rizalman is a software engineer and the founder of [Rambutan Code Acade
 
 Get your ticket now at [https://pycon-apac-2020-online.peatix.com/](https://pycon-apac-2020-online.peatix.com/?fbclid=IwAR0_vZHtoeTq7Vc1Ax2hDUXxXAJjj-LsX9G1G-fvbDlfe27wLOPDqj5AKdw)
 
-![](https://pyconmy.files.wordpress.com/2020/08/117727435_616288845746784_311763337031798889_o-1.jpg?w=1024)
+![](/archived-images/117727435_616288845746784_311763337031798889_o-1.jpg?w=1024)

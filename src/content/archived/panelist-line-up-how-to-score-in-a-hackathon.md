@@ -1,7 +1,7 @@
 ---
 title: "PANELIST LINE UP: How to Score in a Hackathon"
 date: "2020-08-20"
-categories: 
+categories:
   - "pycon-apac-2020"
   - "speakers"
 ---
@@ -18,4 +18,4 @@ He is currently working as a Senior Full Stack Developer in MaGIC working on too
 
 Get your ticket now at [https://pycon-apac-2020-online.peatix.com/](https://pycon-apac-2020-online.peatix.com/?fbclid=IwAR2Cm1XQHhKKcyxeQ1bI6buacVCL2rSWlHv38HA226i4W9m3Wbt7E32N30I)
 
-![](https://pyconmy.files.wordpress.com/2020/09/pt1.-daren-tan-bio.png?w=1024)
+![](/archived-images/pt1.-daren-tan-bio.png?w=1024)

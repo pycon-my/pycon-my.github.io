@@ -1,11 +1,11 @@
 ---
 title: "Announcing PyCon APAC 2017 Keynote Speaker Wes McKinney"
 date: "2017-02-16"
-categories: 
+categories:
   - "announcements"
   - "keynote-speakers"
   - "pycon-apac-2017"
-tags: 
+tags:
   - "apac2017"
   - "program"
   - "wesmckinney"
@@ -13,13 +13,13 @@ tags:
 
 **Note from organizers 2017-06-22: Wes has withdrawn from keynoting for PyCon APAC 2017, and in his place we have [invited Luis Miguel Sanchez to keynote for us.](http://pycon.my/2017/06/22/announcing-pycon-apac-2017-keynote-speaker-luis-miguel-sanchez/)**
 
-* * *
+---
 
- 
+
 
 We are excited to announce our first keynote speaker for PyCon APAC 2017, Wes McKinney, well known as the author of [Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython](http://shop.oreilly.com/product/0636920023784.do)
 
-\[caption id="attachment\_975" align="aligncenter" width="296"\]![2017-01-12](https://pyconmy.files.wordpress.com/2017/02/2017-01-12.jpg?w=296) Wes McKinney\[/caption\]
+\[caption id="attachment_975" align="aligncenter" width="296"\]![2017-01-12](/archived-images/2017-01-12.jpg?w=296) Wes McKinney\[/caption\]
 
 > Wes is a software architect at Two Sigma Investments in New York City.He is the creator of the pandas project and wrote the book "Python for Data Analysis". He is a PMC member for the Apache Arrow and ApacheParquet projects. Wes was previously a software engineer at Clouderaand, before that, the co-founder and CEO of DataPad.
 

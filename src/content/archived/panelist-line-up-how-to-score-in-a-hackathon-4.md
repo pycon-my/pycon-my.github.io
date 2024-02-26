@@ -1,7 +1,7 @@
 ---
 title: "PANELIST LINE UP: How to Score in a Hackathon"
 date: "2020-08-20"
-categories: 
+categories:
   - "pycon-apac-2020"
   - "speakers"
 ---
@@ -14,4 +14,4 @@ Jean F. Queralt is the Founder and CEO of The IO Foundation, a nonprofit advocat
 
 Get your ticket now at [https://pycon-apac-2020-online.peatix.com/](https://pycon-apac-2020-online.peatix.com/?fbclid=IwAR2a7BTEUHcjCqXqCl_QHHzMrSSlYf09JaUFFWtSqAZjjqp4qRbNtfnRuA8)
 
-![](https://pyconmy.files.wordpress.com/2020/08/117808551_616290479079954_6692251947055307682_o.jpg?w=1024)
+![](/archived-images/117808551_616290479079954_6692251947055307682_o.jpg?w=1024)

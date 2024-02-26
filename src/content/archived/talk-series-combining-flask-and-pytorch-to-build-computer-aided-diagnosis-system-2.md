@@ -1,14 +1,14 @@
 ---
 title: "TALK SERIES: Combining Flask and PyTorch to Build Computer Aided Diagnosis System"
 date: "2020-09-19"
-categories: 
+categories:
   - "pycon-apac-2020"
   - "talks"
 ---
 
 Catch up with Radical Rakhman Wahid in his talk, Combining Flask and PyTorch to Build Computer Aided Diagnosis System.
 
-![](https://pyconmy.files.wordpress.com/2020/09/19th-1050-1120-radical-rakhman-wahid.png?w=1024)
+![](/archived-images/19th-1050-1120-radical-rakhman-wahid.png?w=1024)
 
 You can still get your ticket now at https://pycon-apac-2020-online.peatix.com/
 

@@ -1,14 +1,14 @@
 ---
-title: "TUTORIAL SERIES: Building \"Smart Home\" With Python"
+title: 'TUTORIAL SERIES: Building "Smart Home" With Python'
 date: "2020-09-13"
-categories: 
+categories:
   - "pycon-apac-2020"
   - "tutorials"
 ---
 
 Catch up with Afeez Aziz in his tutorial, Building "Smart Home" With Python.
 
-![](https://pyconmy.files.wordpress.com/2020/09/13th-1630-1730-afeez-aziz-1.png?w=1024)
+![](/archived-images/13th-1630-1730-afeez-aziz-1.png?w=1024)
 
 You can still get your ticket now at https://pycon-apac-2020-online.peatix.com/
 

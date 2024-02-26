@@ -1,7 +1,7 @@
 ---
 title: "TUTORIAL SERIES: Polyglot Data with Python: Introducing Pandas and Apache Arrow by Robson Junior"
 date: "2020-09-04"
-categories: 
+categories:
   - "pycon-apac-2020"
   - "tutorials"
 ---
@@ -12,4 +12,4 @@ In this talk, Robson Junior aims to show you how to work in a heterogeneous envi
 
 Robson is a developer deeply involved with software communities, especially the Python community. He has been organizing conferences and meetups since 2011 and effectively speaking in conferences since 2012 about python and cloud technologies and since 2016 about data-related technologies. Also as an Independent consultant, he conducts on-demand architecture consultancy and training sessions about data-related technologies.
 
-![](https://pyconmy.files.wordpress.com/2020/09/118713073_629394071102928_293829782100330320_o.jpg?w=1024)
+![](/archived-images/118713073_629394071102928_293829782100330320_o.jpg?w=1024)

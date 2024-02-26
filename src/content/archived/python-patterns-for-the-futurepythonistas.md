@@ -7,7 +7,7 @@ Pythonistas!
 Rejoice and mark your calendar!  
 Don't miss out the Main Panel of the PyCon APAC 2020!
 
-![](https://pyconmy.files.wordpress.com/2020/09/20th-1000-1100-main-panel.png?w=1024)
+![](/archived-images/20th-1000-1100-main-panel.png?w=1024)
 
 Get your ticket now at [https://pycon-apac-2020-online.peatix.com/](https://pycon-apac-2020-online.peatix.com/?fbclid=IwAR0mMoexwixH1sST9BZjFCWDr7pAfiNCjMa7rgN_fQmML0e5vE4Uifs9lyY)
 

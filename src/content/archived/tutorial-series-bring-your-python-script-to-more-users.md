@@ -1,14 +1,14 @@
 ---
 title: "TUTORIAL SERIES: Bring your Python script to more users!"
 date: "2020-09-13"
-categories: 
+categories:
   - "pycon-apac-2020"
   - "tutorials"
 ---
 
 Catch up with Takuya Futatsugi a.k.a Nikkie in his tutorial, Bring your Python script to more users!
 
-![](https://pyconmy.files.wordpress.com/2020/08/118360757_623126638396338_6879677060386818640_o.jpg?w=1024)
+![](/archived-images/118360757_623126638396338_6879677060386818640_o.jpg?w=1024)
 
 You can still get your ticket now at https://pycon-apac-2020-online.peatix.com/
 

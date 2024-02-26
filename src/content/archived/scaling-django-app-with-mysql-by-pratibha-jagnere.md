@@ -1,7 +1,7 @@
 ---
 title: "TUTORIAL SERIES: Scaling Django App with MySQL by Pratibha Jagnere"
 date: "2020-08-20"
-categories: 
+categories:
   - "pycon-apac-2020"
   - "speakers"
 ---
@@ -14,4 +14,4 @@ Pratibha is a Senior Python Engineer of her company looking over the development
 
 [#PyConAPAC2020](https://www.facebook.com/hashtag/pyconapac2020?__eep__=6&__tn__=*NK*F)[#PyCon](https://www.facebook.com/hashtag/pycon?__eep__=6&__tn__=*NK*F)[#PyConTutorial](https://www.facebook.com/hashtag/pycontutorial?__eep__=6&__tn__=*NK*F)[#PyConWorkshop](https://www.facebook.com/hashtag/pyconworkshop?__eep__=6&__tn__=*NK*F)[#Python](https://www.facebook.com/hashtag/python?__eep__=6&__tn__=*NK*F)[#PythonProgrammingLanguage](https://www.facebook.com/hashtag/pythonprogramminglanguage?__eep__=6&__tn__=*NK*F)
 
-![](https://pyconmy.files.wordpress.com/2020/09/13th-1330-1430-pratibha-jagnere.png?w=1024)
+![](/archived-images/13th-1330-1430-pratibha-jagnere.png?w=1024)

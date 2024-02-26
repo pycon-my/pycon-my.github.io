@@ -1,12 +1,12 @@
 ---
 title: "Announcing Acronis as the Partner Sponsor"
 date: "2016-08-17"
-categories: 
+categories:
   - "announcements"
   - "sponsors"
 ---
 
-[![Acronis logo](images/acronis-logo.png)](https://pyconmy.files.wordpress.com/2016/06/acronis-logo.png)
+[![Acronis logo](images/acronis-logo.png)](/archived-images/acronis-logo.png)
 
 The Organising Committee of PyCon MY 2016 is delighted to announce that Acronis will be the partner sponsor for PyCon MY 2016.
 

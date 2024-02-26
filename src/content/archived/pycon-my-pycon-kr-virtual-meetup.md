@@ -44,4 +44,4 @@ Datumaro는 Computer Vision 데이터 셋을 분석하고 관리하는 데 사�
 
 Registration: [https://www.meetup.com/ko-KR/my-kr-virtual-meetup/events/290940053/](https://www.meetup.com/ko-KR/my-kr-virtual-meetup/events/290940053/)40053/
 
-[![](https://pyconmy.files.wordpress.com/2023/01/pycon-my-kr.png?w=811)](https://pyconmy.files.wordpress.com/2023/01/pycon-my-kr.png)
+[![](/archived-images/pycon-my-kr.png?w=811)](/archived-images/pycon-my-kr.png)

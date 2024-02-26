@@ -16,9 +16,9 @@ const posts = (await getCollection("archived")).sort(
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
     <style>
-      main {
+      /* main {
         width: 960px;
-      }
+      } */
       ul {
         display: flex;
         flex-wrap: wrap;
@@ -34,7 +34,7 @@ const posts = (await getCollection("archived")).sort(
         text-decoration: none;
         transition: 0.2s ease;
       }
-      ul li:first-child {
+      /* ul li:first-child {
         width: 100%;
         margin-bottom: 1rem;
         text-align: center;
@@ -44,7 +44,7 @@ const posts = (await getCollection("archived")).sort(
       }
       ul li:first-child .title {
         font-size: 2.369rem;
-      }
+      } */
       ul li img {
         margin-bottom: 0.5rem;
         border-radius: 12px;
@@ -76,30 +76,27 @@ const posts = (await getCollection("archived")).sort(
           width: 100%;
           text-align: center;
         }
-        ul li:first-child {
+        /* ul li:first-child {
           margin-bottom: 0;
         }
         ul li:first-child .title {
           font-size: 1.563em;
-        }
+        } */
       }
     </style>
   </head>
   <body>
     <Header />
     <main>
+      <div class="py-2">
+        <h1>Archived blog posts</h1>
+      </div>
       <section>
         <ul>
           {
             posts.map((post) => (
               <li>
                 <a href={`/archived/${post.slug}/`}>
-                  <img
-                    width={720}
-                    height={360}
-                    src={post.data.heroImage}
-                    alt=""
-                  />
                   <h4 class="title">{post.data.title}</h4>
                   <p class="date">
                     <FormattedDate date={post.data.date} />

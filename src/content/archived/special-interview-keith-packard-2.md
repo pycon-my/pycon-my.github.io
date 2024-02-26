@@ -1,7 +1,7 @@
 ---
 title: "SPECIAL INTERVIEW: Keith Packard"
 date: "2020-09-10"
-categories: 
+categories:
   - "pycon-apac-2020"
   - "special-interview"
 ---
@@ -12,4 +12,4 @@ Catch up with Ing Wei Tang interviewing Keith Packard on PyCon APAC 2020 Day 4. 
 
 [#PyCon](https://www.facebook.com/hashtag/pycon?source=feed_text&epa=HASHTAG&__xts__%5B0%5D=68.ARDI0qgw3e5Kb4X9QGkrE5_jlkxQW52g82uJ_A-AC3DLxv-GnybV3YQSEdnnUd58-NhAVkyovfyLcXTOQ2OrxZlQo48_PCTw_fhYXPjqhemX4c65VK6qc3mh586cax1cLlZDq9kgUroE2etDL4e7xtQbYePf-L0BU7sFaTco9YzxrXp72G1SpxixBpyTEQneW9zTyFzQ1ZB3TllfEPaeKJaBSlBYoYCAbw7yqymFx8Cr511edLFyNc8m5pXDYB63ZtDttr6uS1oRCzhApIxxYgYRvfBuahLl40kSIbEq325Snme1la2AzRI2iDyI0zVWutmvPMcpANsi0PxG1l2hjJ0&__tn__=%2ANK-R) [#PyConAPAC2020](https://www.facebook.com/hashtag/pyconapac2020?source=feed_text&epa=HASHTAG&__xts__%5B0%5D=68.ARDI0qgw3e5Kb4X9QGkrE5_jlkxQW52g82uJ_A-AC3DLxv-GnybV3YQSEdnnUd58-NhAVkyovfyLcXTOQ2OrxZlQo48_PCTw_fhYXPjqhemX4c65VK6qc3mh586cax1cLlZDq9kgUroE2etDL4e7xtQbYePf-L0BU7sFaTco9YzxrXp72G1SpxixBpyTEQneW9zTyFzQ1ZB3TllfEPaeKJaBSlBYoYCAbw7yqymFx8Cr511edLFyNc8m5pXDYB63ZtDttr6uS1oRCzhApIxxYgYRvfBuahLl40kSIbEq325Snme1la2AzRI2iDyI0zVWutmvPMcpANsi0PxG1l2hjJ0&__tn__=%2ANK-R) [#PythonProgrammingLanguage](https://www.facebook.com/hashtag/pythonprogramminglanguage?source=feed_text&epa=HASHTAG&__xts__%5B0%5D=68.ARDI0qgw3e5Kb4X9QGkrE5_jlkxQW52g82uJ_A-AC3DLxv-GnybV3YQSEdnnUd58-NhAVkyovfyLcXTOQ2OrxZlQo48_PCTw_fhYXPjqhemX4c65VK6qc3mh586cax1cLlZDq9kgUroE2etDL4e7xtQbYePf-L0BU7sFaTco9YzxrXp72G1SpxixBpyTEQneW9zTyFzQ1ZB3TllfEPaeKJaBSlBYoYCAbw7yqymFx8Cr511edLFyNc8m5pXDYB63ZtDttr6uS1oRCzhApIxxYgYRvfBuahLl40kSIbEq325Snme1la2AzRI2iDyI0zVWutmvPMcpANsi0PxG1l2hjJ0&__tn__=%2ANK-R)
 
-![](https://pyconmy.files.wordpress.com/2020/09/20th-1115-1200-interview-with-keith.png?w=1024)
+![](/archived-images/20th-1115-1200-interview-with-keith.png?w=1024)

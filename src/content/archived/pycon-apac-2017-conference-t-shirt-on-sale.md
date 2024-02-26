@@ -1,11 +1,11 @@
 ---
 title: "PyCon APAC 2017 Conference T-Shirt on sale"
 date: "2017-06-13"
-categories: 
+categories:
   - "announcements"
   - "pycon-apac-2017"
   - "swag"
-tags: 
+tags:
   - "tshirt"
 ---
 
@@ -17,4 +17,4 @@ We have prepared S, M, L, XL and XXL sizes for you. You can find the size guide
 
 This is what the t-shirt will look like:
 
-![pycon-apac-tshirt](https://pyconmy.files.wordpress.com/2017/06/pycon-apac-tshirt.png?w=279)
+![pycon-apac-tshirt](/archived-images/pycon-apac-tshirt.png?w=279)

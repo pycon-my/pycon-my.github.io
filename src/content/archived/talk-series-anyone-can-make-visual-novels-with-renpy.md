@@ -1,7 +1,7 @@
 ---
 title: "TALK SERIES: Anyone can make visual novels with Ren'py!"
 date: "2020-09-08"
-categories: 
+categories:
   - "pycon-apac-2020"
   - "talks"
 ---
@@ -16,4 +16,4 @@ This talk's target audience are non-programmers starting from young high schoole
 
 Dr Sony Valdez is a professor with 30+ years of programming experience. He was introduced to Python from an early version in Blender. In 2014, he co-founded Python Philippines after the country's first PyCon.
 
-![](https://pyconmy.files.wordpress.com/2020/09/118790970_629168707792131_2146186915704661010_o.jpg?w=1024)
+![](/archived-images/118790970_629168707792131_2146186915704661010_o.jpg?w=1024)

@@ -1,7 +1,7 @@
 ---
 title: "SPONSOR TALKS: Manage your Data Science pipeline with Visual Studio Code"
 date: "2020-09-08"
-categories: 
+categories:
   - "pycon-apac-2020"
   - "talks"
 ---
@@ -12,4 +12,4 @@ Joao is a self-appointed Data Maniac and has been working on applying data to so
 
 Joao hails from Portugal, joined Microsoft in 2006 and has worked in the Middle-East, Africa and Asia for the past 10 years.
 
-![](https://pyconmy.files.wordpress.com/2020/09/118750271_629122581130077_218443926977835061_o.jpg?w=1024)
+![](/archived-images/118750271_629122581130077_218443926977835061_o.jpg?w=1024)

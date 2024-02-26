@@ -1,7 +1,7 @@
 ---
 title: "PANELIST LINE UP: How to Score in a Hackathon"
 date: "2020-08-20"
-categories: 
+categories:
   - "pycon-apac-2020"
   - "speakers"
 ---
@@ -14,4 +14,4 @@ Anmol is an International Tech Speaker, a Distinguished Guest Lecturer, and has 
 
 Get your ticket now at [https://pycon-apac-2020-online.peatix.com/](https://pycon-apac-2020-online.peatix.com/?fbclid=IwAR3w7nzCJqAgv3YtFAr4qyOGcQIA-Q4yRyItgYPfj8Yr9NfwH3QWHqHVTLM)
 
-![](https://pyconmy.files.wordpress.com/2020/08/117871496_616283782413957_1691373824551645297_o-1.jpg?w=1024)
+![](/archived-images/117871496_616283782413957_1691373824551645297_o-1.jpg?w=1024)

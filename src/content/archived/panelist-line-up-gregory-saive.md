@@ -1,7 +1,7 @@
 ---
 title: "PANELIST LINE UP: Gregory Saive"
 date: "2020-09-04"
-categories: 
+categories:
   - "pycon-apac-2020"
   - "speakers"
 ---
@@ -12,4 +12,4 @@ He started researching distributed ledger technology in 2014 and has since contr
 
 Gregory loves football and cycling.
 
-![](https://pyconmy.files.wordpress.com/2020/09/118616644_627080544667614_5599177055058009570_o.jpg?w=1024)
+![](/archived-images/118616644_627080544667614_5599177055058009570_o.jpg?w=1024)
