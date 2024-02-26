@@ -1,0 +1,20 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+import ArchivedPost from "../../layouts/ArchivedPost.astro";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("archived");
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: post,
+  }));
+}
+type Props = CollectionEntry<"archived">;
+
+const post = Astro.props;
+const { Content } = await post.render();
+---
+
+<ArchivedPost {...post.data}>
+  <Content />
+</ArchivedPost>
