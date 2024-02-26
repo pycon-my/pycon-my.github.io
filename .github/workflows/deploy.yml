@@ -57,10 +57,10 @@ jobs:
         with:
           node-version: 20
       - run: npm install -g surge
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4
         with:
           name: github-pages
-          path: github-pages
-      - name: Echo a secret
-        run: echo "your secret token is ${{ env.SURGE_DOMAIN }}"
-      - run: surge /home/runner/work/pycon-my.github.io/pycon-my.github.io/github-pages ${{ env.SURGE_DOMAIN }} --token ${{ env.SURGE_TOKEN }}
+      - name: Display structure of downloaded files
+        run: ls -R
+      - name: Deploy to surge.sh
+        run: surge . ${{ env.SURGE_DOMAIN }} --token ${{ env.SURGE_TOKEN }}
