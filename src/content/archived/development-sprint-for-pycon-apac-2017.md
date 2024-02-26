@@ -1,7 +1,7 @@
 ---
 title: "Development Sprint for PyCon APAC 2017"
 date: "2017-08-01"
-categories: 
+categories:
   - "announcements"
   - "pycon-apac-2017"
   - "sprints"
@@ -24,14 +24,14 @@ If you're interested to participate in the sprints, please get your free tickets
 
 The development sprint will be lead by [Bhavani Shankar](https://wiki.ubuntu.com/BhavaniShankar) from Ubuntu:
 
-![bhavani_ubuntu](https://pyconmy.files.wordpress.com/2017/08/bhavani_ubuntu.jpg?w=225)
+![bhavani_ubuntu](/archived-images/bhavani_ubuntu.jpg?w=225)
 
 > Bhavani Shankar is a cerebral palsy affected guy who has around 8 years of experience in the IT industry, presently working as a senior consultant in Accion Labs Pvt limited in an automation specialist role.
-> 
+>
 > Apart from his work at Accion Labs he is an active ubuntu community contributor from the past 10 years in various roles from being an active contributing member to a developer to being on the governance councils in the ubuntu community.
-> 
+>
 > More info about his ubuntu work
-> 
+>
 > Launchpad Profile: [https://launchpad.net/~bhavi](https://launchpad.net/~bhavi) Wiki page: [https://wiki.ubuntu.com/BhavaniShankar](https://wiki.ubuntu.com/BhavaniShankar)
 
 We will announce more leads for the sprint as they become available.

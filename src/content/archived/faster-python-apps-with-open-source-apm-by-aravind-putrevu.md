@@ -1,7 +1,7 @@
 ---
 title: "Faster Python apps with open source APM by Aravind Putrevu"
 date: "2020-08-31"
-categories: 
+categories:
   - "pycon-apac-2020"
   - "tutorials"
 ---
@@ -27,4 +27,4 @@ Aravind is passionate about evangelizing technology, meeting developers, and hel
 
 Currently, he works at Elastic as a Developer Advocate and looks after the Developer Relation function of India, South East Asia. Previously, He worked at McAfee Antivirus as a Senior Software Engineer in Cloud Security Domain. He has a deep interest in Search, Machine Learning, Security Incident Analysis, and IoT tech. In his free time, he plays around with RPi or Arduino.
 
-![](https://pyconmy.files.wordpress.com/2020/09/12th-1430-1530-aravind-putrevu.png?w=1024)
+![](/archived-images/12th-1430-1530-aravind-putrevu.png?w=1024)

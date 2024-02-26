@@ -1,7 +1,7 @@
 ---
 title: "GOLD SPONSOR: Vonage"
 date: "2020-09-07"
-tags: 
+tags:
   - "gold"
   - "pyconapac2020"
   - "sponsor"
@@ -9,7 +9,7 @@ tags:
 
 When it comes to building connected applications, [Vonage](https://www.vonage.com.my/) has everything you need with their APIs for Voice, Video and Messaging. We are excited to announce Vonage as the Gold Sponsor for PyCon APAC 2020 (Online).
 
-![](https://pyconmy.files.wordpress.com/2020/09/pycon-sponsorship-vonage-1.jpg?w=1024)
+![](/archived-images/pycon-sponsorship-vonage-1.jpg?w=1024)
 
 [Vonage](https://www.vonage.com.my/) has everything you need to build connected applications with their APIs for Voice, Video & Messaging. Whether you want to make and receive phone calls with code, reach users across multiple platforms, they’ve got you covered. You can also easily integrate with social chat apps such as Facebook Messenger, WhatsApp and Viber, or build in-app voice and messaging experience on mobile and web. Their [Python SDK](https://developer.nexmo.com/) enables you to build scalable communications features such as two-factor authentication, notifications, group messaging and calls. Check out [Vonage](https://www.vonage.com.my/) video on [Python: Flask: How “Micro” of a Microframework?](https://www.youtube.com/watch?v=i934t_J26TE&list=PLWYngsniPr_krhbnFXj584rm3zA4DbiQl&index=9)
 

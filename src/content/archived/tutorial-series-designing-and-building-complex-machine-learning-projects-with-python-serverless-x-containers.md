@@ -1,14 +1,14 @@
 ---
 title: "TUTORIAL SERIES: Designing and Building Complex Machine Learning Projects with Python: Serverless x Containers"
 date: "2020-09-12"
-categories: 
+categories:
   - "pycon-apac-2020"
   - "tutorials"
 ---
 
 Catch up with Joshua Arvin Lat in his tutorial, Designing and Building Complex Machine Learning Projects with Python: Serverless x Containers.
 
-![](https://pyconmy.files.wordpress.com/2020/09/12th-1730-1830-joshua-arvin-lat.png?w=1024)
+![](/archived-images/12th-1730-1830-joshua-arvin-lat.png?w=1024)
 
 You can still get your ticket now at https://pycon-apac-2020-online.peatix.com/
 

@@ -1,7 +1,7 @@
 ---
 title: "TUTORIAL'S SPECIAL: Introduction to Python by Ing Wei Tang"
 date: "2020-09-04"
-categories: 
+categories:
   - "pycon-apac-2020"
   - "tutorials"
 ---
@@ -18,4 +18,4 @@ He uses Python a lot in his daily work, especially coding the automation process
 
 Apart from programming languages, he can also speak 5 different types of languages concurrently in one sentence. Please ask for a demo if time permits.
 
-![](https://pyconmy.files.wordpress.com/2020/09/118586912_627305507978451_4954898574308600901_o.jpg?w=1024)
+![](/archived-images/118586912_627305507978451_4954898574308600901_o.jpg?w=1024)

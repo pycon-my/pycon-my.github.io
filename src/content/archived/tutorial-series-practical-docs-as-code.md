@@ -1,14 +1,14 @@
 ---
 title: "TUTORIAL SERIES: Practical Docs-As-Code"
 date: "2020-09-12"
-categories: 
+categories:
   - "pycon-apac-2020"
   - "tutorials"
 ---
 
 Catch up with David Garcia in his tutorial, Practical Docs-As-Code.
 
-![](https://pyconmy.files.wordpress.com/2020/09/12th-1600-1700-david-garcia.png?w=1024)
+![](/archived-images/12th-1600-1700-david-garcia.png?w=1024)
 
 You can still get your ticket now at https://pycon-apac-2020-online.peatix.com/
 

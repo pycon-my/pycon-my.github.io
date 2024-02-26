@@ -1,13 +1,13 @@
 ---
 title: "PyCon APAC 2017 interviews on BFM 89.9"
 date: "2017-07-28"
-categories: 
+categories:
   - "announcements"
   - "pycon-apac-2017"
   - "social-media"
   - "sponsorships"
   - "tie-ups"
-tags: 
+tags:
   - "bfm"
 ---
 
@@ -29,4 +29,4 @@ We would also like to thank BFM 89.9 for the opportunity and their help. They ha
 
 _[BFM](https://www.bfm.my/) is Malaysia's only independent radio station, focused on business news and current affairs._ _BFM's purpose is to build a better Malaysia by championing rational, evidence-based discourse as a key element of good policy decisions._
 
-[![BFM-White](https://pyconmy.files.wordpress.com/2017/07/bfm-white.png?w=300)](https://www.bfm.my/)
+[![BFM-White](/archived-images/bfm-white.png?w=300)](https://www.bfm.my/)

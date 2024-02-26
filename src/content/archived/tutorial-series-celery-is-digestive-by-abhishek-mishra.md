@@ -1,7 +1,7 @@
 ---
 title: "TUTORIAL SERIES: Celery is Digestive! by Abhishek Mishra"
 date: "2020-09-04"
-categories: 
+categories:
   - "pycon-apac-2020"
   - "tutorials"
 ---
@@ -19,4 +19,4 @@ The hands-on demo with all steps and showing task queue results will cover the f
 
 Abhishek Mishra is a Software engineer at Essentia SoftSer in India and primarily works on Python. He is also an active community contributor in developer community like GDG's, Python User Groups across India, and one of the organizers of PyCon India. His goal is to make the developer community especially the Python community more diverse & inclusive across the globe.
 
-![](https://pyconmy.files.wordpress.com/2020/09/118661476_625914634784205_1969891956918750720_o.jpg?w=1024)
+![](/archived-images/118661476_625914634784205_1969891956918750720_o.jpg?w=1024)

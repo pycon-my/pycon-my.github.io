@@ -1,7 +1,7 @@
 ---
 title: "Closing Sponsorship Programme for PyCon MY 2015"
 date: "2015-07-24"
-categories: 
+categories:
   - "happy"
   - "pyconmy2015"
   - "sponsors"
@@ -23,4 +23,4 @@ In no apparent order, these are our sponsors for PyCon MY 2015:
 
 We started from scratch to find funding for our first major PyCon in Malaysia at the start of 2015, and are now overwhelmed by the amount of support and interest we received from local and international companies,  organization or persons wanting to contribute. The generous contribution will help lower the costs of PyCon MY for the participants, makes the conference more interesting and also will also gives us the option to further organize it in the years to come.
 
-[![Thank You](images/4759535950_7bca6684c8_z.jpg)](https://pyconmy.files.wordpress.com/2015/07/4759535950_7bca6684c8_z.jpg)On behalf of the PyCon MY organizing committee and also our participants, we would like to Thank You!
+[![Thank You](images/4759535950_7bca6684c8_z.jpg)](/archived-images/4759535950_7bca6684c8_z.jpg)On behalf of the PyCon MY organizing committee and also our participants, we would like to Thank You!

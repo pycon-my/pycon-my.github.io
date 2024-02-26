@@ -1,14 +1,14 @@
 ---
 title: "PANEL TOPIC: Python on Raspberry Pi and other Single Board Computers"
 date: "2020-09-19"
-categories: 
+categories:
   - "panel-topic"
   - "pycon-apac-2020"
 ---
 
 Catch up with this Panel Topic: Python on Raspberry Pi and other Single Board Computers, with the panelist line-up; Diogenes Armando Pascua, Ing Wei Tang, and Ahmad Hafeezi Ali Amat, together with Daphne Choong as the Moderator.
 
-![](https://pyconmy.files.wordpress.com/2020/09/19th-1200-1300-panel-topic-4.png?w=1024)
+![](/archived-images/19th-1200-1300-panel-topic-4.png?w=1024)
 
 You can still get your ticket now at [https://pycon-apac-2020-online.peatix.com/](https://pycon-apac-2020-online.peatix.com/?fbclid=IwAR0_BU6cJaG0HH8ugXBS0g1_dS-SDrMPTDq-Ajf-UQWAFlATu2mJgoEWBno)
 

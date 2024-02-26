@@ -1,14 +1,14 @@
 ---
 title: "TUTORIAL SERIES: Scaling Django App with MySQL"
 date: "2020-09-13"
-categories: 
+categories:
   - "pycon-apac-2020"
   - "tutorials"
 ---
 
 Catch up with Pratibha Jagnere in her tutorial, Scaling Django App with MySQL.
 
-![](https://pyconmy.files.wordpress.com/2020/09/13th-1330-1430-pratibha-jagnere-1.png?w=1024)
+![](/archived-images/13th-1330-1430-pratibha-jagnere-1.png?w=1024)
 
 You can still get your ticket now at https://pycon-apac-2020-online.peatix.com/
 

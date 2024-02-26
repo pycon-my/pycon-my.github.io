@@ -1,7 +1,7 @@
 ---
 title: "SPONSOR TALKS: Roadmap to an Open Source Artificial Pancreas &amp; Diabetes Monitoring with Flask: SMS/Voice APIs"
 date: "2020-09-20"
-categories: 
+categories:
   - "pycon-apac-2020"
   - "sponsors"
   - "talks"
@@ -9,7 +9,7 @@ categories:
 
 Catch up with Diana Rodriguez from Vonage in her talks, Roadmap to an Open Source Artificial Pancreas & Diabetes Monitoring with Flask: SMS/Voice APIs.
 
-![](https://pyconmy.files.wordpress.com/2020/09/118801863_629152407793761_1939781586911526773_o.jpg?w=1024)
+![](/archived-images/118801863_629152407793761_1939781586911526773_o.jpg?w=1024)
 
 You can still get your ticket now at https://pycon-apac-2020-online.peatix.com/
 

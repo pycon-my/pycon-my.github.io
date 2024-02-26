@@ -1,14 +1,14 @@
 ---
 title: "MAIN PANEL: Python - Patterns for the Future"
 date: "2020-09-20"
-categories: 
+categories:
   - "main-panel"
   - "pycon-apac-2020"
 ---
 
 Catch up with this Main Panel: Python - Patterns for the Future, with the special panelist line-up; Audrey Feldroy, Carol Willing, and Keith Packard, together with Arthur Kent Raymond, as the Moderator.
 
-![](https://pyconmy.files.wordpress.com/2020/09/20th-1000-1100-main-panel.png?w=1024)
+![](/archived-images/20th-1000-1100-main-panel.png?w=1024)
 
 Get your ticket now at [https://pycon-apac-2020-online.peatix.com/](https://pycon-apac-2020-online.peatix.com/?fbclid=IwAR0mMoexwixH1sST9BZjFCWDr7pAfiNCjMa7rgN_fQmML0e5vE4Uifs9lyY)
 

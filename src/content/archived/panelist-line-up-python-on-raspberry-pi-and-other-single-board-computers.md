@@ -1,7 +1,7 @@
 ---
 title: "PANELIST LINE UP: Python on Raspberry Pi and Other Single Board Computers"
 date: "2020-08-23"
-categories: 
+categories:
   - "pycon-apac-2020"
   - "speakers"
 ---
@@ -10,6 +10,6 @@ Ahmad Hafeezi is a Full Stack Software Developer on Angular, NodeJS, Python Flas
 
 He started branching out to Python, Frontend Web Frameworks and NodeJS in 2015 and now doing it full time after leaving his job in 2018. Now he is working at Kinabalu Makers Sdn Bhd as Managing Director, Software Lead and Software Architect. He was also one of the original Founders of [Kinabalu Coders](https://www.facebook.com/KinabaluCoders/?__tn__=kK*F) in 2014 and served as Vice President until late 2019. Now he is serving as Treasurer for Kinabalu Coders.
 
-[#PyConAPAC2020](https://www.facebook.com/hashtag/pyconapac2020?__eep__=6&__tn__=*NK*F)[#PyCon](https://www.facebook.com/hashtag/pycon?__eep__=6&__tn__=*NK*F)[#PyConPanelTopic](https://www.facebook.com/hashtag/pyconpaneltopic?__eep__=6&__tn__=*NK*F)[#PyConPanelist](https://www.facebook.com/hashtag/pyconpanelist?__eep__=6&__tn__=*NK*F)[#Python](https://www.facebook.com/hashtag/python?__eep__=6&__tn__=*NK*F)[#PythonProgrammingLanguage](https://www.facebook.com/hashtag/pythonprogramminglanguage?__eep__=6&__tn__=*NK*F)  
+[#PyConAPAC2020](https://www.facebook.com/hashtag/pyconapac2020?__eep__=6&__tn__=*NK*F)[#PyCon](https://www.facebook.com/hashtag/pycon?__eep__=6&__tn__=*NK*F)[#PyConPanelTopic](https://www.facebook.com/hashtag/pyconpaneltopic?__eep__=6&__tn__=*NK*F)[#PyConPanelist](https://www.facebook.com/hashtag/pyconpanelist?__eep__=6&__tn__=*NK*F)[#Python](https://www.facebook.com/hashtag/python?__eep__=6&__tn__=*NK*F)[#PythonProgrammingLanguage](https://www.facebook.com/hashtag/pythonprogramminglanguage?__eep__=6&__tn__=*NK*F)
 
-![](https://pyconmy.files.wordpress.com/2020/08/117642020_617564382285897_1700003923652034362_o.jpg?w=1024)
+![](/archived-images/117642020_617564382285897_1700003923652034362_o.jpg?w=1024)

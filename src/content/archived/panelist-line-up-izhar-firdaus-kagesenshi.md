@@ -1,7 +1,7 @@
 ---
 title: "PANELIST LINE UP: Izhar Firdaus (Kagesenshi)"
 date: "2020-09-04"
-categories: 
+categories:
   - "panel"
   - "pycon-apac-2020"
   - "speakers"
@@ -23,4 +23,4 @@ His background includes:
 
 \* Years of experience in Bujinkan Budo Taijutsu, a Japanese martial art and self defense system.
 
-![](https://pyconmy.files.wordpress.com/2020/09/118616633_627160057992996_6289557256563313188_o.jpg?w=1024)
+![](/archived-images/118616633_627160057992996_6289557256563313188_o.jpg?w=1024)

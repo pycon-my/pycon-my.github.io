@@ -1,14 +1,14 @@
 ---
 title: "TALK SERIES: Anyone can make visual novels with Ren'py!"
 date: "2020-09-19"
-categories: 
+categories:
   - "pycon-apac-2020"
   - "talks"
 ---
 
 Catch up with Dr. Sony Valdez in his talk, Anyone can make visual novels with Ren'py!
 
-![](https://pyconmy.files.wordpress.com/2020/09/19th-1330-1400-sony-valdez-1.png?w=1024)
+![](/archived-images/19th-1330-1400-sony-valdez-1.png?w=1024)
 
 You can still get your ticket now at https://pycon-apac-2020-online.peatix.com/
 

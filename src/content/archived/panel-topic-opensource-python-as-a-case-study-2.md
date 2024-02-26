@@ -1,14 +1,14 @@
 ---
 title: "PANEL TOPIC: Opensource, Python as a Case Study"
 date: "2020-09-19"
-categories: 
+categories:
   - "panel-topic"
   - "pycon-apac-2020"
 ---
 
 Catch up with this Panel Topic: Opensource, Python as a Case Study, with the panelist line-up; Gregory Saive, Izhar Firdaus, and Sammy Fung, together with Swee-Meng Ng as the Moderator.
 
-![](https://pyconmy.files.wordpress.com/2020/09/118516363_627232284652440_1440889033403385995_o.jpg?w=1024)
+![](/archived-images/118516363_627232284652440_1440889033403385995_o.jpg?w=1024)
 
 You can still get your ticket now at https://pycon-apac-2020-online.peatix.com/
 

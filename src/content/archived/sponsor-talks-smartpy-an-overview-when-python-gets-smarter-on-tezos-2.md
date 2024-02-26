@@ -1,7 +1,7 @@
 ---
 title: "SPONSOR TALKS: Smartpy, An Overview: When Python Gets Smarter On Tezos"
 date: "2020-09-19"
-categories: 
+categories:
   - "pycon-apac-2020"
   - "sponsors"
   - "talks"
@@ -9,7 +9,7 @@ categories:
 
 Catch up with Om from Tezos in his talks, Smartpy, An Overview: When python gets smarter on Tezos.
 
-![](https://pyconmy.files.wordpress.com/2020/09/19th-1515-1600-om-tezos.png?w=1024)
+![](/archived-images/19th-1515-1600-om-tezos.png?w=1024)
 
 You can still get your ticket now at https://pycon-apac-2020-online.peatix.com/
 

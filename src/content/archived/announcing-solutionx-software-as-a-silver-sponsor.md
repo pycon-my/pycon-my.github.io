@@ -1,14 +1,14 @@
 ---
 title: "Announcing SolutionX Software as a Silver Sponsor"
 date: "2016-05-13"
-categories: 
+categories:
   - "pycon-my-2016"
   - "sponsors"
-tags: 
+tags:
   - "sponsorship"
 ---
 
-![Solution X logo](https://pyconmy.files.wordpress.com/2016/05/solutionx.jpg?w=300)
+![Solution X logo](/archived-images/solutionx.jpg?w=300)
 
 We're pleased to announce [SolutionX Software](http://www.solutionx.com.my/) as a Silver Sponsor for PyCon MY 2016. SolutionX Software has also sponsored [Mini PyCon MY 2014](https://sites.google.com/a/pycon.my/pycon-malaysia/mini-pycon-my-2014) and [PyCon MY 2015](https://pycon.my/2015/06/25/announcing-our-gold-sponsor-for-pycon-my-2015-solutionx/).  We are grateful for the commitment and continual support by SolutionX Software for the past two years until now.
 

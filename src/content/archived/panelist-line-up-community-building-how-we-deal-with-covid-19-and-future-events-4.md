@@ -1,7 +1,7 @@
 ---
 title: "PANELIST LINE UP: Community Building - How We Deal With Covid-19 And Future Events."
 date: "2020-08-22"
-categories: 
+categories:
   - "pycon-apac-2020"
   - "speakers"
 ---
@@ -16,4 +16,4 @@ Ivy joined Python community in order to rejuvenate her coding skills and ended u
 
 Get your ticket now at [https://pycon-apac-2020-online.peatix.com/](https://pycon-apac-2020-online.peatix.com/?fbclid=IwAR2tliAZVMxKK_zuE8CnJDpz3qMD6ZrXh05uhOvgQyiGZ0lKMgDMXENL6gc)
 
-![](https://pyconmy.files.wordpress.com/2020/08/117792814_616318969077105_1460465912394351097_o.jpg?w=1024)
+![](/archived-images/117792814_616318969077105_1460465912394351097_o.jpg?w=1024)

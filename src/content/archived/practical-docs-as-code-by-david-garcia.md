@@ -1,7 +1,7 @@
 ---
 title: "Practical Docs-as-Code by David Garcia"
 date: "2020-08-20"
-categories: 
+categories:
   - "pycon-apac-2020"
   - "speakers"
 ---
@@ -14,4 +14,4 @@ He enjoys contributing to open-source projects and shares his learning journey o
 
 [#PyConAPAC2020](https://www.facebook.com/hashtag/pyconapac2020?__eep__=6&__cft__[0]=AZWOwbTmrhhUebFLp6iQtDwsL0x-8iFe9C_rDzP6k29G5b9mz2ULDEmODdu7WiSNzOJ5y-viMBbGMzGUGqNILgjb8tYS9qUgxNGZHuGHwATtMg9-SzV_Eby8nDfM4Za9WQTaU1co1bfGkW4JjC8KcvDigoYUIlL3-CYQUc2hZ_2FBQ&__tn__=*NK-R)[#PyCon](https://www.facebook.com/hashtag/pycon?__eep__=6&__cft__[0]=AZWOwbTmrhhUebFLp6iQtDwsL0x-8iFe9C_rDzP6k29G5b9mz2ULDEmODdu7WiSNzOJ5y-viMBbGMzGUGqNILgjb8tYS9qUgxNGZHuGHwATtMg9-SzV_Eby8nDfM4Za9WQTaU1co1bfGkW4JjC8KcvDigoYUIlL3-CYQUc2hZ_2FBQ&__tn__=*NK-R)[#PyConTutorial](https://www.facebook.com/hashtag/pycontutorial?__eep__=6&__cft__[0]=AZWOwbTmrhhUebFLp6iQtDwsL0x-8iFe9C_rDzP6k29G5b9mz2ULDEmODdu7WiSNzOJ5y-viMBbGMzGUGqNILgjb8tYS9qUgxNGZHuGHwATtMg9-SzV_Eby8nDfM4Za9WQTaU1co1bfGkW4JjC8KcvDigoYUIlL3-CYQUc2hZ_2FBQ&__tn__=*NK-R)[#PyConWorkshop](https://www.facebook.com/hashtag/pyconworkshop?__eep__=6&__cft__[0]=AZWOwbTmrhhUebFLp6iQtDwsL0x-8iFe9C_rDzP6k29G5b9mz2ULDEmODdu7WiSNzOJ5y-viMBbGMzGUGqNILgjb8tYS9qUgxNGZHuGHwATtMg9-SzV_Eby8nDfM4Za9WQTaU1co1bfGkW4JjC8KcvDigoYUIlL3-CYQUc2hZ_2FBQ&__tn__=*NK-R)[#Python](https://www.facebook.com/hashtag/python?__eep__=6&__cft__[0]=AZWOwbTmrhhUebFLp6iQtDwsL0x-8iFe9C_rDzP6k29G5b9mz2ULDEmODdu7WiSNzOJ5y-viMBbGMzGUGqNILgjb8tYS9qUgxNGZHuGHwATtMg9-SzV_Eby8nDfM4Za9WQTaU1co1bfGkW4JjC8KcvDigoYUIlL3-CYQUc2hZ_2FBQ&__tn__=*NK-R)[#PythonProgrammingLanguage](https://www.facebook.com/hashtag/pythonprogramminglanguage?__eep__=6&__cft__[0]=AZWOwbTmrhhUebFLp6iQtDwsL0x-8iFe9C_rDzP6k29G5b9mz2ULDEmODdu7WiSNzOJ5y-viMBbGMzGUGqNILgjb8tYS9qUgxNGZHuGHwATtMg9-SzV_Eby8nDfM4Za9WQTaU1co1bfGkW4JjC8KcvDigoYUIlL3-CYQUc2hZ_2FBQ&__tn__=*NK-R)
 
-![](https://pyconmy.files.wordpress.com/2020/09/12th-1600-1700-david-garcia-1.png?w=1024)
+![](/archived-images/12th-1600-1700-david-garcia-1.png?w=1024)

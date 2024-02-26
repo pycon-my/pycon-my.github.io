@@ -1,13 +1,13 @@
 ---
 title: "Announcing Python Software Foundation as our Platinum Sponsor"
 date: "2018-08-05"
-categories: 
+categories:
   - "announcements"
   - "pycon-my-2018"
   - "sponsorships"
 ---
 
-[![](https://pyconmy.files.wordpress.com/2018/08/psf.jpg?w=300)](https://pyconmy.files.wordpress.com/2018/08/psf.jpg)
+[![](/archived-images/psf.jpg?w=300)](/archived-images/psf.jpg)
 
 We are happy to announce [Python Software Foundation](https://www.python.org/psf/) (PSF) as our Platinum sponsor for PyCon MY 2018!
 

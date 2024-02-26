@@ -1,14 +1,14 @@
 ---
 title: "TUTORIAL SERIES: Demystifying Web Map Servers: the invisible side of Geographic Information Systems"
 date: "2020-09-13"
-categories: 
+categories:
   - "pycon-apac-2020"
   - "tutorials"
 ---
 
 Catch up with Shivashis Padhi in his tutorial, Demystifying Web Map Servers: the invisible side of Geographic Information Systems.
 
-![](https://pyconmy.files.wordpress.com/2020/09/13th-1500-1600-shivashis-padhi-1.png?w=1024)
+![](/archived-images/13th-1500-1600-shivashis-padhi-1.png?w=1024)
 
 You can still get your ticket now at https://pycon-apac-2020-online.peatix.com/
 

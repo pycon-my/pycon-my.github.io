@@ -1,7 +1,7 @@
 ---
 title: "PANELIST LINE UP: Community Building - How We Deal With Covid-19 And Future Events."
 date: "2020-08-22"
-categories: 
+categories:
   - "pycon-apac-2020"
   - "speakers"
 ---
@@ -16,4 +16,4 @@ He also runs the sabah.io domain (“io” stands for input/output) - and he wil
 
 [#PyConAPAC2020](https://www.facebook.com/hashtag/pyconapac2020?__eep__=6&__cft__[0]=AZW7G2nn43UvMS83wm-YBaejiUdZY5RG5XUok01MK8X2cuHmemuqHDU9dosScLrlujOVQICwlZwUhvv8r7TryCmjKB_1ahjTm2mRS67Zw5sOVcs_hazOtDoXBBKqMKwkLsjl6NyX0Q3acz_lDNUbO4k2iCtH-9HYagTiU2EldDpRDA&__tn__=*NK-R)[#PyCon](https://www.facebook.com/hashtag/pycon?__eep__=6&__cft__[0]=AZW7G2nn43UvMS83wm-YBaejiUdZY5RG5XUok01MK8X2cuHmemuqHDU9dosScLrlujOVQICwlZwUhvv8r7TryCmjKB_1ahjTm2mRS67Zw5sOVcs_hazOtDoXBBKqMKwkLsjl6NyX0Q3acz_lDNUbO4k2iCtH-9HYagTiU2EldDpRDA&__tn__=*NK-R)[#PyConPanelTopic](https://www.facebook.com/hashtag/pyconpaneltopic?__eep__=6&__cft__[0]=AZW7G2nn43UvMS83wm-YBaejiUdZY5RG5XUok01MK8X2cuHmemuqHDU9dosScLrlujOVQICwlZwUhvv8r7TryCmjKB_1ahjTm2mRS67Zw5sOVcs_hazOtDoXBBKqMKwkLsjl6NyX0Q3acz_lDNUbO4k2iCtH-9HYagTiU2EldDpRDA&__tn__=*NK-R)[#PyConPanelist](https://www.facebook.com/hashtag/pyconpanelist?__eep__=6&__cft__[0]=AZW7G2nn43UvMS83wm-YBaejiUdZY5RG5XUok01MK8X2cuHmemuqHDU9dosScLrlujOVQICwlZwUhvv8r7TryCmjKB_1ahjTm2mRS67Zw5sOVcs_hazOtDoXBBKqMKwkLsjl6NyX0Q3acz_lDNUbO4k2iCtH-9HYagTiU2EldDpRDA&__tn__=*NK-R)[#Python](https://www.facebook.com/hashtag/python?__eep__=6&__cft__[0]=AZW7G2nn43UvMS83wm-YBaejiUdZY5RG5XUok01MK8X2cuHmemuqHDU9dosScLrlujOVQICwlZwUhvv8r7TryCmjKB_1ahjTm2mRS67Zw5sOVcs_hazOtDoXBBKqMKwkLsjl6NyX0Q3acz_lDNUbO4k2iCtH-9HYagTiU2EldDpRDA&__tn__=*NK-R)[#PythonProgrammingLanguage](https://www.facebook.com/hashtag/pythonprogramminglanguage?__eep__=6&__cft__[0]=AZW7G2nn43UvMS83wm-YBaejiUdZY5RG5XUok01MK8X2cuHmemuqHDU9dosScLrlujOVQICwlZwUhvv8r7TryCmjKB_1ahjTm2mRS67Zw5sOVcs_hazOtDoXBBKqMKwkLsjl6NyX0Q3acz_lDNUbO4k2iCtH-9HYagTiU2EldDpRDA&__tn__=*NK-R)Get your ticket now at [https://pycon-apac-2020-online.peatix.com/](https://pycon-apac-2020-online.peatix.com/?fbclid=IwAR3V0Yo2Er4zMyaOSNA62PUvjqyV5Q815EsTveoFfdx_CDRiJISnh9Y-lkI)
 
-![](https://pyconmy.files.wordpress.com/2020/08/117906974_616315815744087_7969285900243588118_o.jpg?w=526)
+![](/archived-images/117906974_616315815744087_7969285900243588118_o.jpg?w=526)

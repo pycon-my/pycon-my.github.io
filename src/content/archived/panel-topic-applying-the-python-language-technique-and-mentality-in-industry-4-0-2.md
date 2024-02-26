@@ -1,14 +1,14 @@
 ---
 title: "PANEL TOPIC: Applying the Python Language, Technique and Mentality in Industry 4.0"
 date: "2020-09-20"
-categories: 
+categories:
   - "panel-topic"
   - "pycon-apac-2020"
 ---
 
 Catch up with this Panel Topic: Applying the Python Language, Technique and Mentality in Industry 4.0, with the panelist line-up; Dr. Ivan Ling, Dr. Kyle Kotowick, and Grisel Jimenez, together with Christopher Choong as the Moderator.
 
-![](https://pyconmy.files.wordpress.com/2020/09/118518460_624930358215966_3042057309172075852_o.jpg?w=1024)
+![](/archived-images/118518460_624930358215966_3042057309172075852_o.jpg?w=1024)
 
 You can still get your ticket now at https://pycon-apac-2020-online.peatix.com/
 

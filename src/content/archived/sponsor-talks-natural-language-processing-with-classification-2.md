@@ -1,7 +1,7 @@
 ---
 title: "SPONSOR TALKS: Natural Language Processing with Classification"
 date: "2020-09-19"
-categories: 
+categories:
   - "pycon-apac-2020"
   - "sponsors"
   - "talks"
@@ -9,7 +9,7 @@ categories:
 
 Catch up with Tan Pei Seng from Jetbrains in his talks, Natural Language Processing with Classification.
 
-![](https://pyconmy.files.wordpress.com/2020/09/19th-1430-1515-tan-pei-seng-jetbrains.png?w=1024)
+![](/archived-images/19th-1430-1515-tan-pei-seng-jetbrains.png?w=1024)
 
 You can still get your ticket now at https://pycon-apac-2020-online.peatix.com/
 

@@ -1,7 +1,7 @@
 ---
 title: "PANELIST LINE UP: Python - Patterns for the Future"
 date: "2020-08-22"
-categories: 
+categories:
   - "pycon-apac-2020"
   - "speakers"
 ---
@@ -14,4 +14,4 @@ She wrote Cookiecutter in 2013, which has 12.6k GitHub stars. As co-author of Tw
 
 Audrey uses Python and JavaScript to laser-cut objects as art. She also paints, sculpts, and writes fiction novels and children's books. Her creative experiments can be found at https://audrey.feldroy.com.
 
-![](https://pyconmy.files.wordpress.com/2020/08/audrey-feldroy-bio.png?w=1024)
+![](/archived-images/audrey-feldroy-bio.png?w=1024)
