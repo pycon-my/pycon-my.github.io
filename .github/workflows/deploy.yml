@@ -5,6 +5,8 @@ on:
   # Using a different branch name? Replace `main` with your branch’s name
   push:
     branches: [main, stage]
+  pull_request:
+    branches: [stage]
   # Allows you to run this workflow manually from the Actions tab on GitHub.
   workflow_dispatch:
 
@@ -15,7 +17,7 @@ permissions:
   id-token: write
 
 env:
-  PAGE_ENV: ${{ github.ref_name == 'stage' && 'staging' || 'production' }}
+  PAGE_ENV: ${{ github.ref_name == 'main' && 'production' || 'staging'}}
 
 jobs:
   build:
@@ -45,10 +47,17 @@ jobs:
   deploy-staging:
     needs: build
     runs-on: ubuntu-latest
-    if: ${{ github.ref_name == 'stage' }}
+    # if: ${{ github.ref_name == 'stage' }}
+    if: ${{ github.ref_name != 'main' }}
     steps:
       - uses: actions/setup-node@v3
         with:
           node-version: 20
       - run: npm install -g surge
-      - run: surge ${{ inputs.path }}/dist/" ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
+      - uses: actions/download-artifact@v3
+        with:
+          name: Build
+          path: build
+      - name: Echo a secret
+        run: echo "your secret token is ${{ secrets.SURGE_DOMAIN }}"
+      - run: surge build ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
