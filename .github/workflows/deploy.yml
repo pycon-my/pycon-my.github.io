@@ -56,8 +56,8 @@ jobs:
       - run: npm install -g surge
       - uses: actions/download-artifact@v3
         with:
-          name: Build
-          path: build
+          name: github-pages
+          path: github-pages
       - name: Echo a secret
         run: echo "your secret token is ${{ secrets.SURGE_DOMAIN }}"
-      - run: surge build ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
+      - run: surge github-pages ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
