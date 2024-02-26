@@ -1,15 +1,15 @@
 ---
 title: "Speaker Series - Chan Ai Sin"
 date: "2019-07-09"
-categories: 
+categories:
   - "pycon2019"
   - "speakers"
-tags: 
+tags:
   - "pyconmy2019"
   - "speaker"
 ---
 
-![Photo_Aisin - Ai Sin Chan](images/photo_aisin-ai-sin-chan.jpg) Ai Sin had trained hundreds of telecommunication engineers in 16 countries spanned over 4 continents and written more than 10 training manuals used in worldwide offices. She had also helped build the first 3G mobile communication network in Beijing in 2009. Later she had co-founded a technical training service in Malaysia which saw its profit tripling year on year. One of her latest adventure was co-authoring and publishing a book Money Stories from Malaysians which is an anthology of short stories on personal finance. Currently she is a digital nomad with Xoxzo and contributes regularly to the Xoxzo blog.
+![Photo_Aisin - Ai Sin Chan](/archived-images/photo_aisin-ai-sin-chan.jpg) Ai Sin had trained hundreds of telecommunication engineers in 16 countries spanned over 4 continents and written more than 10 training manuals used in worldwide offices. She had also helped build the first 3G mobile communication network in Beijing in 2009. Later she had co-founded a technical training service in Malaysia which saw its profit tripling year on year. One of her latest adventure was co-authoring and publishing a book Money Stories from Malaysians which is an anthology of short stories on personal finance. Currently she is a digital nomad with Xoxzo and contributes regularly to the Xoxzo blog.
 
 **Topic:** Studi.MY : A case study of a Python outreach program.
 

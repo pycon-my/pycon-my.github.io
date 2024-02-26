@@ -1,15 +1,15 @@
 ---
 title: "Speaker Series - Pratibha Jagnere"
 date: "2019-07-07"
-categories: 
+categories:
   - "pycon2019"
   - "speakers"
-tags: 
+tags:
   - "pyconmy2019"
   - "speaker"
 ---
 
-![p11 - pratibha sharma Jagnere](images/p11-pratibha-sharma-jagnere.jpg)Pratibha is a Senior Python developer over looking the development and maintenance of the backend including APIs and application oriented DevOps work.
+![p11 - pratibha sharma Jagnere](/archived-images/p11-pratibha-sharma-jagnere.jpg)Pratibha is a Senior Python developer over looking the development and maintenance of the backend including APIs and application oriented DevOps work.
 
 **Topic:** Asynchronous Django tasks with Celery: The case of Memory Leak.
 

@@ -1,16 +1,16 @@
 ---
 title: "Python Software Foundation is a Special Sponsor"
 date: "2016-05-12"
-categories: 
+categories:
   - "psf"
   - "pycon-my-2016"
   - "sponsors"
-tags: 
+tags:
   - "pyconmy2016"
   - "sponsorship"
 ---
 
-![257d6-psf-logo-narrow-256x84](images/257d6-psf-logo-narrow-256x84.png)
+![257d6-psf-logo-narrow-256x84](/archived-images/257d6-psf-logo-narrow-256x84.png)
 
 The PyCon MY 2016 organizing team is proud and excited to announce that we have received confirmation the [Python Software Foundation (PSF)](https://www.python.org/psf-landing/) has agreed to send us a grant equivalent to a Gold Sponsor amount.
 

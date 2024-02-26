@@ -1,10 +1,10 @@
 ---
 title: "Sponsor Series - Jublia as Tech Sponsor"
 date: "2019-07-25"
-categories: 
+categories:
   - "pycon2019"
   - "sponsors"
-tags: 
+tags:
   - "jublia"
   - "pycon"
   - "pyconmy2019"
@@ -12,7 +12,7 @@ tags:
   - "sponsor"
 ---
 
-- ![](images/jublia-1.png)
+- ![](/archived-images/jublia-1.png)
 
 PyCon My 2019 is proud to announce Jublia as our Tech Sponsor.
 

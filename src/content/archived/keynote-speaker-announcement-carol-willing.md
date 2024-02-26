@@ -1,15 +1,15 @@
 ---
 title: "Keynote Speaker Announcement - Carol Willing"
 date: "2019-06-13"
-categories: 
+categories:
   - "keynote-speakers"
-tags: 
+tags:
   - "carol-willing"
   - "keynote-speaker"
   - "pyconmy2019"
 ---
 
-![](images/carol-willing.jpg)
+![](/archived-images/carol-willing.jpg)
 
 Carol earned a BSE in Electrical Engineering from Duke University and an MS in Management from MIT. Her education and work experience in small and large companies taught her to respect the value of “using what you have learned to make something better and sharing what you know with others”.
 

@@ -23,7 +23,7 @@ In August 2015, we had our [second yearly PyCon MY](https://pycon.my/2015/08/31/
 
 In the Asia Pacific (APAC) region, PyCons are being held in many countries. The APAC community is a group of PyCon organizers and they meet up annually to discuss how to better reach out to their respective locals in particular and the APAC region in general. Once a year, one country will host the PyCon APAC version of the conference.
 
-\[caption id="attachment_700" align="alignnone" width="2048"\]![IMG_20160815_180845](images/img_20160815_180845.jpg) The APAC community meeting in Seoul during PyCon APAC 2016. Present are PH, TW, SG, JP, KR, VN and HK with the PSF.\[/caption\]
+\[caption id="attachment_700" align="alignnone" width="2048"\]![IMG_20160815_180845](/archived-images/img_20160815_180845.jpg) The APAC community meeting in Seoul during PyCon APAC 2016. Present are PH, TW, SG, JP, KR, VN and HK with the PSF.\[/caption\]
 
 If you've never been to a PyCon before, here are some comments from those who were at our 2015 PyCon MY last year:
 

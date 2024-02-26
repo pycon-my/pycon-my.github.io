@@ -7,7 +7,7 @@ categories:
   - "sponsorships"
 ---
 
-[![](images/onapp-logo.png)](/archived-images/onapp-logo.png)
+[![](/archived-images/onapp-logo.png)](/archived-images/onapp-logo.png)
 
 We are happy to announce [OnApp](https://onapp.com/company/) as our Silver sponsor for PyCon MY 2018!
 

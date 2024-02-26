@@ -1,11 +1,11 @@
 ---
 title: "Friday Workshop: Building with Python"
 date: "2016-05-28"
-categories: 
+categories:
   - "program"
   - "pycon-my-2016"
   - "workshop"
-tags: 
+tags:
   - "announcement"
   - "pyconmy2016"
 ---
@@ -67,7 +67,7 @@ First we gain some understanding of the language by playing with some
 
 ### Trainer Profile
 
-\[caption id="attachment\_405" align="aligncenter" width="161"\]![my_profile](images/my_profile.jpg) Boey Pak Cheong\[/caption\]
+\[caption id="attachment_405" align="aligncenter" width="161"\]![my_profile](/archived-images/my_profile.jpg) Boey Pak Cheong\[/caption\]
 
 Boey Pak Cheong has more than 20 years experience using Python and has been teaching it since 2006. His clients include Intel, F-Secure, CSGI, Experian, MIMOS, Censof and many others.
 

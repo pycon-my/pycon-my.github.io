@@ -1,10 +1,10 @@
 ---
 title: "PyCon APAC 2017 Financial Aid Analysis"
 date: "2017-08-16"
-categories: 
+categories:
   - "financial-aid"
   - "pycon-apac-2017"
-tags: 
+tags:
   - "awareness"
   - "financialaid"
 ---
@@ -17,17 +17,17 @@ PyCon APAC 2017 is the third PyCon event to be held in Malaysia. As we have a bi
 
 Of the total, 71% are male. We found slightly more than half of them to be from the 21 to 29 year old group. A quarter are below the age of 21, the youngest of which is 19. Another 24% are above 30 years old.
 
-![Screenshot from 2017-08-16 12-40-53](images/screenshot-from-2017-08-16-12-40-53.png)
+![Screenshot from 2017-08-16 12-40-53](/archived-images/screenshot-from-2017-08-16-12-40-53.png)
 
 **Surprisingly, only 38% of the applicants are Malaysians.** The majority of non-Malaysian applicants came from India. More than 60% are working while the remainder are studying or pursuing postgraduate degrees.
 
-![Screenshot from 2017-08-16 12-41-13](images/screenshot-from-2017-08-16-12-41-13.png)
+![Screenshot from 2017-08-16 12-41-13](/archived-images/screenshot-from-2017-08-16-12-41-13.png)
 
 Around 38% of the applicants have attended a previous PyCon event; for one candidate this will be his 4th PyCon event. For the remainder, this will be their first PyCon.
 
 Nearly two-thirds of them have advanced knowledge of Python, having produced products to do with Python or with Python. Two of the candidates are speakers for PyCon APAC 2017.
 
-![Screenshot from 2017-08-16 12-43-51](images/screenshot-from-2017-08-16-12-43-51.png)
+![Screenshot from 2017-08-16 12-43-51](/archived-images/screenshot-from-2017-08-16-12-43-51.png)
 
 And that’s it. We thought it would be interesting to provide a breakdown of the candidates who applied for this Financial Aid program. Of the batch, 15 were selected. Our committee also made sure that all 15 attendees receive coupon codes that allow them to purchase PyCon APAC 2017 tickets at a discount.
 

@@ -1,16 +1,16 @@
 ---
 title: "PyCon My 2019 App"
 date: "2019-08-16"
-categories: 
+categories:
   - "pycon-my-2019"
-tags: 
+tags:
   - "app"
   - "jublia"
   - "programme"
   - "pyconmy2019"
 ---
 
-![Screen Shot 2019-08-16 at 11.30.17 AM](images/screen-shot-2019-08-16-at-11.30.17-am.png)
+![Screen Shot 2019-08-16 at 11.30.17 AM](/archived-images/screen-shot-2019-08-16-at-11.30.17-am.png)
 
 Please download PyCon My 2019 app to keep update with the programme.
 

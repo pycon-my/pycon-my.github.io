@@ -1,15 +1,15 @@
 ---
 title: "Speaker Series - Dr Norhasliza Yusof"
 date: "2019-08-16"
-categories: 
+categories:
   - "pycon-my-2019"
   - "speakers"
-tags: 
+tags:
   - "pyconmy2019"
   - "speaker"
 ---
 
-![IMG_8201 - NORHASLIZA YUSOF](images/img_8201-norhasliza-yusof.jpg) Dr Norhasliza Yusof is a senior lecturer at Department of Physics, University of Malaya. She obtained her PhD in Theoretical Astrophysics under Split-Site PhD programme under University of Malaya and Keele University, UK. Her expertise is in stellar structure and evolution where it involves massive numerical and computing techniques in simulating the real-life stars.
+![IMG_8201 - NORHASLIZA YUSOF](/archived-images/img_8201-norhasliza-yusof.jpg) Dr Norhasliza Yusof is a senior lecturer at Department of Physics, University of Malaya. She obtained her PhD in Theoretical Astrophysics under Split-Site PhD programme under University of Malaya and Keele University, UK. Her expertise is in stellar structure and evolution where it involves massive numerical and computing techniques in simulating the real-life stars.
 
 **Topic:** Computational Physics with Python.
 

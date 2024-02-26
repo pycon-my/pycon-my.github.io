@@ -1,15 +1,15 @@
 ---
 title: "Speaker Series - Aniruddha Adhikary"
 date: "2019-07-03"
-categories: 
+categories:
   - "pycon2019"
   - "speakers"
-tags: 
+tags:
   - "pyconmy2019"
   - "speaker"
 ---
 
-![19424212_1345556305493575_5376800575250837975_n - Aniruddha Adhikary](images/19424212_1345556305493575_5376800575250837975_n-aniruddha-adhikary.jpg) Aniruddha is a Software Engineer at Telenor Health, working on spreading healthcare to the grassroots of Bangladesh. He has experience working on Web Applications, Data Mining, Data Engineering, and Data Analysis. He has been programming and hacking on open source projects for eight years. Anything about Healthcare and Natural Language Processing gets him excited. His major contributions include Firefox OS and spaCy.
+![19424212_1345556305493575_5376800575250837975_n - Aniruddha Adhikary](/archived-images/19424212_1345556305493575_5376800575250837975_n-aniruddha-adhikary.jpg) Aniruddha is a Software Engineer at Telenor Health, working on spreading healthcare to the grassroots of Bangladesh. He has experience working on Web Applications, Data Mining, Data Engineering, and Data Analysis. He has been programming and hacking on open source projects for eight years. Anything about Healthcare and Natural Language Processing gets him excited. His major contributions include Firefox OS and spaCy.
 
 **Topic:** 6 Steps to Your First Commit to Open Source.
 

@@ -1,15 +1,15 @@
 ---
 title: "Speaker Series - Farah Clarashinta Rachmady"
 date: "2019-07-04"
-categories: 
+categories:
   - "pycon2019"
   - "speakers"
-tags: 
+tags:
   - "pyconmy2019"
   - "speaker"
 ---
 
-![](images/LRM_EXPORT_9703942870516_20190511_182008278 - Farah Clarashinta.jpeg) Farah is an Organizer in Python Indonesia. Sh involved herself in PyCon Indonesia 2018 and will take part again in 2019 PyCon ID. She’s interested with Python, Data, and her cat. She’s using Python as her hobby and learning. Oh yes, she loves Milo.
+![](/archived-images/LRM_EXPORT_9703942870516_20190511_182008278 - Farah Clarashinta.jpeg) Farah is an Organizer in Python Indonesia. Sh involved herself in PyCon Indonesia 2018 and will take part again in 2019 PyCon ID. She’s interested with Python, Data, and her cat. She’s using Python as her hobby and learning. Oh yes, she loves Milo.
 
 **Topic:** PythonID's Story; A Diversity Failure.
 

@@ -1,15 +1,15 @@
 ---
 title: "Speaker Series - Neo Zora"
 date: "2019-08-01"
-categories: 
+categories:
   - "pycon-my-2019"
   - "speakers"
-tags: 
+tags:
   - "pyconmy2019"
   - "speaker"
 ---
 
-![](images/Screen Shot 2019-07-30 at 3.04.38 PM.png)
+![](/archived-images/Screen Shot 2019-07-30 at 3.04.38 PM.png)
 
 Neo is daytime programmer, RPA evangelist and comic artist.
 
