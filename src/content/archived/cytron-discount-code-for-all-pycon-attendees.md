@@ -1,12 +1,12 @@
 ---
 title: "Cytron Discount Code for all PyCon Attendees!"
 date: "2018-07-12"
-categories: 
+categories:
   - "pycon-my-2018"
   - "swag"
 ---
 
-![Cytron-Logo-LIGHT_BLUE](images/cytron-logo-light_blue1.png)
+![Cytron-Logo-LIGHT_BLUE](/archived-images/cytron-logo-light_blue1.png)
 
 We are so thrilled to announce [Cytron](https://www.cytron.io/) will giveaway RM 20 discount codes to [Rapsberry Pi 3 / Rapsberry Pi 3 B+ Model](https://www.cytron.io/p-raspberry-pi-3) for all PyCon MY 2018 attendees!
 

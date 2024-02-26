@@ -1,16 +1,16 @@
 ---
 title: "Sponsor Series - Microsoft as Silver Sponsor"
 date: "2019-08-22"
-categories: 
+categories:
   - "pycon-my-2019"
   - "sponsors"
-tags: 
+tags:
   - "microsoft"
   - "pyconmy2019"
   - "sponsor"
 ---
 
-![Microsoft.png](images/microsoft.png)
+![Microsoft.png](/archived-images/microsoft.png)
 
 PyCon My 2019 is proud to announce Microsoft as our Silver Sponsor.
 

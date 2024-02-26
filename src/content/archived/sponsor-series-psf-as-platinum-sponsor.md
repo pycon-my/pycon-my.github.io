@@ -1,16 +1,16 @@
 ---
 title: "Sponsor Series - PSF as Platinum Sponsor"
 date: "2019-07-27"
-categories: 
+categories:
   - "pycon-my-2019"
   - "sponsors"
-tags: 
+tags:
   - "psf"
   - "pyconmy2019"
   - "sponsor"
 ---
 
-![Python Software Foundation.png](images/python-software-foundation.png)
+![Python Software Foundation.png](/archived-images/python-software-foundation.png)
 
 PyCon My 2019 is proud to announce Python Software Foundation as our Platinum Sponsor.
 

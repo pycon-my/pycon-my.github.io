@@ -1,18 +1,15 @@
 ---
 title: "Announcing our F&amp;B Sponsor for PyCon MY 2015: Amazon Web Services (AWS)"
 date: "2015-06-23"
-categories: 
+categories:
   - "happy"
   - "pyconmy2015"
   - "sponsors"
 ---
 
-We're thrilled to announce today that [Amazon Web Services (AWS)](http://aws.amazon.com/) has agreed to be our F&B sponsor for PyCon MY 2015. 
-  
+We're thrilled to announce today that [Amazon Web Services (AWS)](http://aws.amazon.com/) has agreed to be our F&B sponsor for PyCon MY 2015.
 
-[![http://aws.amazon.com](images/dd895-aws_logo_c.png)](http://aws.amazon.com/)
-
-  
+[![http://aws.amazon.com](/archived-images/dd895-aws_logo_c.png)](http://aws.amazon.com/)
 
 **About Amazon Web Services**
 

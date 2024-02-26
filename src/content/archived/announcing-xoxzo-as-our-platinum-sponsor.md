@@ -5,7 +5,7 @@ date: "2017-07-17"
 
 We are happy to announce XOXZO as the latest sponsor for PyCon APAC 2017. They are our Platinum Sponsor.
 
-![xoxzo.jpg](images/xoxzo.jpg)
+![xoxzo.jpg](/archived-images/xoxzo.jpg)
 
 Xoxzo (https://www.xoxzo.com) is a cloud telephony platform for web developers, created by a diverse 100% remote team from Russia to Japan. Simple APIs and documentation that show you how you can leverage the phone with a single line of code: Make calls, receive calls, subscribe phone numbers, and send SMS, all with just POST and GET.
 

@@ -5,9 +5,9 @@ date: "2017-06-20"
 
 We are pleased to announce our latest sponsor Jewel Paymentech. They are our Silver Sponsor for PyCon APAC 2017.
 
-![jp with crown](images/jp-with-crown.png)
+![jp with crown](/archived-images/jp-with-crown.png)
 
- 
+
 
 From Azim of Jewel Paymentech:
 

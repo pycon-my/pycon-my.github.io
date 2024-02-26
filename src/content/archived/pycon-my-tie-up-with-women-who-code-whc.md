@@ -1,18 +1,18 @@
 ---
 title: "PyCon MY tie-up with Women Who Code (WHC)"
 date: "2017-02-20"
-categories: 
+categories:
   - "announcements"
   - "pycon-apac-2017"
   - "tie-ups"
-tags: 
+tags:
   - "diversity"
   - "kl"
   - "whc"
   - "women"
 ---
 
-[![whc-screenshot](images/whc-screenshot.png)](https://www.facebook.com/womenwhocodekl/)
+[![whc-screenshot](/archived-images/whc-screenshot.png)](https://www.facebook.com/womenwhocodekl/)
 
 One of the new things we wanted to do for PyCon APAC 2017 is to increase women participation in the conference, with the greater aim to reach out and increase participation of women folk into the technology sector. Up until now we the PyCon MY conferences only had 10% of women participation with no women speakers, and this is also to the fact that we do not have any connections to women-centric technology groups.
 

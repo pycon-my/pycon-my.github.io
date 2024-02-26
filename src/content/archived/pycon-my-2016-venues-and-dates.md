@@ -1,14 +1,14 @@
 ---
 title: "PyCon MY 2016: Venues and dates"
 date: "2016-02-06"
-categories: 
+categories:
   - "pycon-my-2016"
-tags: 
+tags:
   - "announcement"
   - "venue"
 ---
 
-![Square_300x300](images/square_300x300.png)We're thrilled and excited to announce the venue and the dates for PyCon MY 2016. Yes, following the wonderful experience we had in 2015, we'll be organizing another PyCon MY in 2016.
+![Square_300x300](/archived-images/square_300x300.png)We're thrilled and excited to announce the venue and the dates for PyCon MY 2016. Yes, following the wonderful experience we had in 2015, we'll be organizing another PyCon MY in 2016.
 
 ## When?
 

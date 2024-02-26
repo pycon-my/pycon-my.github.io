@@ -1,7 +1,7 @@
 ---
 title: "Development Sprint for PyCon MY 2018"
 date: "2018-07-28"
-categories: 
+categories:
   - "announcements"
   - "pycon-my-2018"
   - "sprints"
@@ -23,8 +23,8 @@ If you're interested to participate in the sprints, please get your free tickets
 
 The development sprint will be lead by [Steve Clarke](https://www.linkedin.com/in/steven-clarke-61a3778/), Group Chief Technical Consultant Ezy Mobile Sdn Bhd.
 
-![steve-clarke](images/steve-clarke.jpeg)
+![steve-clarke](/archived-images/steve-clarke.jpeg)
 
 > Steve is an entrepreneurial and result driven Chief Technology Officer, with 25 years of experience providing expertise in developing competitive business strategies, providing technology solutions and management for start-ups, multinational companies and government departments in Australia and Asian region. He co-founded a few companies and is currently working on his fintech startup.
-> 
+>
 > He has been programming in Python since Python 1.5 and he is a big advocate of the Open Source Community.

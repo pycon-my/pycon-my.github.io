@@ -15,7 +15,7 @@ The one day workshop, which targeted non-programmers was conducted by Victor Yap
 
 [![1](/archived-images/1.png?w=300)](/archived-images/1.png)The conference commenced with a short opening speech by the chairperson, followed by an ice-breaking session among the attendees. Our keynote speakers Marcus Low and Mark Rees spoke about how Python has changed their lives for good. Marcus indicated how widely Python is being used in popular applications like _Instagram_ and _PinInterest_. Mark Rees on the other hand, provided insights of how programming has evolved since older days, and yet how Python still remained his favorite.
 
-[![](images/img_7658.jpg)![IMG_7658](/archived-images/img_7658.jpg?w=300)](/archived-images/img_7573.jpg)
+[![](/archived-images/img_7658.jpg)![IMG_7658](/archived-images/img_7658.jpg?w=300)](/archived-images/img_7573.jpg)
 
 Speakers present for the two-day conference include Chew Kok Hoor, Boey Pak Cheong, Takayuki Shimizukawa, Alan Wong, Jeremy Johnson, Ian Lewis and many others covering topics such as concurrent programming, text processing in Python, exposure on Django, graph analysis, introduction to SQLAlchemy, writing documentation with Sphinx and rapid prototyping with Python.
 

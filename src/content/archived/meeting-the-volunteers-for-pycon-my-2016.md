@@ -1,7 +1,7 @@
 ---
 title: "Meeting the volunteers for PyCon MY 2016"
 date: "2016-08-20"
-tags: 
+tags:
   - "iumw"
   - "pyconmy2016"
   - "volunteers"
@@ -9,7 +9,7 @@ tags:
 
 Today we met with the 15 volunteers that will help us as part of the staff for PyCon MY 2016.
 
-\[caption id="attachment\_793" align="alignnone" width="2688"\]![IMAG0013](images/imag0013.jpg) Students of IUMW volunteering for PyCon MY 2016\[/caption\]
+\[caption id="attachment_793" align="alignnone" width="2688"\]![IMAG0013](/archived-images/imag0013.jpg) Students of IUMW volunteering for PyCon MY 2016\[/caption\]
 
 We spent 2 hours going through the Code Of Conduct, Issues Handling, and conference day Playbook documents before walking around campus making final checks for registration tables, lunch arrangements and other logistics issues.
 

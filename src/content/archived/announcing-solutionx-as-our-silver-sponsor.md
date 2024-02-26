@@ -1,13 +1,13 @@
 ---
 title: "Announcing SolutionX as our Silver Sponsor"
 date: "2018-07-26"
-categories: 
+categories:
   - "announcements"
   - "pycon-my-2018"
   - "sponsorships"
 ---
 
-![Logo-01](images/logo-01.png)
+![Logo-01](/archived-images/logo-01.png)
 
 We are happy to announce [SolutionX](https://www.solutionx.com.my/about-us/) as our Silver sponsor for PyCon MY 2018!
 

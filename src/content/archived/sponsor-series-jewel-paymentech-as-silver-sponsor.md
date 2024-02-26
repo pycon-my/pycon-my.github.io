@@ -1,16 +1,16 @@
 ---
 title: "Sponsor Series - Jewel Paymentech as Silver Sponsor"
 date: "2019-07-30"
-categories: 
+categories:
   - "pycon-my-2019"
   - "sponsors"
-tags: 
+tags:
   - "jewelpaymentech"
   - "pyconmy2019"
   - "sponsor"
 ---
 
-![Jewel Paymentech.png](images/jewel-paymentech.png)
+![Jewel Paymentech.png](/archived-images/jewel-paymentech.png)
 
 PyCon My 2019 is proud to announce Jewel Paymentech as our Silver Sponsor.
 

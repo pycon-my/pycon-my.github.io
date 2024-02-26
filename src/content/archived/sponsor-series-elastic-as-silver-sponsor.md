@@ -1,16 +1,16 @@
 ---
 title: "Sponsor Series - Elastic as Silver Sponsor"
 date: "2019-08-08"
-categories: 
+categories:
   - "pycon-my-2019"
   - "sponsors"
-tags: 
+tags:
   - "elastic"
   - "pyconmy2019"
   - "sponsor"
 ---
 
-![Elastic](images/elastic-1.png)
+![Elastic](/archived-images/elastic-1.png)
 
 PyCon My 2019 is proud to announce Elastic as our Silver Sponsor.
 

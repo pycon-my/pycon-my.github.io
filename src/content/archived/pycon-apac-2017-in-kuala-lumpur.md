@@ -1,10 +1,10 @@
 ---
 title: "PyCon APAC 2017 in Kuala Lumpur"
 date: "2016-08-17"
-categories: 
+categories:
   - "announcements"
   - "pycon-apac-2017"
-tags: 
+tags:
   - "announcement"
   - "apac"
 coverImage: "apac-2017-in-kl-invitation.png"
@@ -16,6 +16,6 @@ After Singapore in 2010 to 2012, PyCon APAC moved to Tokyo in 2013, and was host
 
 On the second day of #pyconapac2016 in Seoul, we have made the announcement that the regional **PyCon APAC for 2017 will return to South East Asia and be hosted in Kuala Lumpur.**
 
-\[caption id="attachment\_700" align="aligncenter" width="2048"\]![IMG_20160815_180845](images/img_20160815_180845.jpg) Our friends in APAC. KR, HK, PH, TW, VN, JP, SG and MY. With Ewa Jodlowska (3rd from left)  from the PSF.\[/caption\]
+\[caption id="attachment_700" align="aligncenter" width="2048"\]![IMG_20160815_180845](/archived-images/img_20160815_180845.jpg) Our friends in APAC. KR, HK, PH, TW, VN, JP, SG and MY. With Ewa Jodlowska (3rd from left)  from the PSF.\[/caption\]
 
 We are excited for this opportunity and believe it will much benefit the young but growing python community in this part of the world. Looking forward to seeing you in Kuala Lumpur in 2017!

@@ -1,7 +1,7 @@
 ---
 title: "Keynote Speaker Announcement -Dr.  Poo Kuan Hoong"
 date: "2019-05-28"
-tags: 
+tags:
   - "artificial-intelligence"
   - "data-science"
   - "machine-learning"
@@ -9,7 +9,7 @@ tags:
   - "pycon-my-2019"
 ---
 
-- ![](images/screen-shot-2019-05-27-at-11.50.01-pm.png)
+- ![](/archived-images/screen-shot-2019-05-27-at-11.50.01-pm.png)
 
 **Dr. Poo Kuan Hoong**
 

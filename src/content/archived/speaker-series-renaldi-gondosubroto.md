@@ -1,15 +1,15 @@
 ---
 title: "Speaker Series - Renaldi Gondosubroto"
 date: "2019-08-07"
-categories: 
+categories:
   - "pycon-my-2019"
   - "speakers"
-tags: 
+tags:
   - "pyconmy2019"
   - "speaker"
 ---
 
-![Renaldi Gondosubroto - Renaldi Gondosubroto.png](images/renaldi-gondosubroto-renaldi-gondosubroto.png) Renaldi is the Founder and CEO of GReS Studio. He leads the organisation with a vision of having an interconnected world where businesses and individuals can share big data with each other. His personal vision is to be able to get more young minds into taking leadership positions in the companies that will come. Through his passion of developing software and contributing to the opensource community, Renaldi wants to encourage the innovation of new solutions to usher forward and promote a new era of innovations that can be used by everyone. He enjoys sharing his knowledge regarding his experiences within the tech industry with many other people in order to also inspire and put them in the right track for success, both in conferences and in regular everyday situations.
+![Renaldi Gondosubroto - Renaldi Gondosubroto.png](/archived-images/renaldi-gondosubroto-renaldi-gondosubroto.png) Renaldi is the Founder and CEO of GReS Studio. He leads the organisation with a vision of having an interconnected world where businesses and individuals can share big data with each other. His personal vision is to be able to get more young minds into taking leadership positions in the companies that will come. Through his passion of developing software and contributing to the opensource community, Renaldi wants to encourage the innovation of new solutions to usher forward and promote a new era of innovations that can be used by everyone. He enjoys sharing his knowledge regarding his experiences within the tech industry with many other people in order to also inspire and put them in the right track for success, both in conferences and in regular everyday situations.
 
 **Topic:** The Rise of the Motion Controlled Robotic Arms.
 

@@ -1,15 +1,15 @@
 ---
 title: "Speaker Series - Manuel Riel"
 date: "2019-07-01"
-categories: 
+categories:
   - "pycon2019"
   - "speakers"
-tags: 
+tags:
   - "keynote-speaker"
   - "pyconmy2019"
 ---
 
-![DSC_0134-M copy - Manu Madaris](images/dsc_0134-m-copy-manu-madaris.jpg)Manuel started out by selling tailor-made shirts from China to Europe using a badly-coded PHP site. He then continued to run a web design and consulting agency before getting involved with open source projects, like Debian and Borg Backup.
+![DSC_0134-M copy - Manu Madaris](/archived-images/dsc_0134-m-copy-manu-madaris.jpg)Manuel started out by selling tailor-made shirts from China to Europe using a badly-coded PHP site. He then continued to run a web design and consulting agency before getting involved with open source projects, like Debian and Borg Backup.
 
 Currently, he lives in Kuala Lumpur and runs BorgBase.com, a backup hosting based on Borg Backup, Django and Vue.js.
 

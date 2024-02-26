@@ -1,15 +1,15 @@
 ---
 title: "Sponsor Series - AirAsia as Gold Sponsor"
 date: "2019-08-16"
-categories: 
+categories:
   - "pycon-my-2019"
   - "sponsors"
-tags: 
+tags:
   - "pyconmy2019"
   - "sponsor"
 ---
 
-![AirAsia](images/airasia.png)
+![AirAsia](/archived-images/airasia.png)
 
 PyCon My 2019 is proud to announce AirAsia as our Gold Sponsor.
 
