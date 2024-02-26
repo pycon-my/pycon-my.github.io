@@ -60,7 +60,9 @@ jobs:
       - uses: actions/download-artifact@v3
         with:
           name: github-pages
-      - name: Display structure of downloaded files
-        run: ls -R
+      - name: Extract tar and delete the tar and display structure of downloaded files
+        run: tar -xvf artifact.tar && rm artifact.tar && ls -R
+      #   - name: Display structure of downloaded files
+      #     run: ls -R
       - name: Deploy to surge.sh
         run: surge . ${{ env.SURGE_DOMAIN }} --token ${{ env.SURGE_TOKEN }}
