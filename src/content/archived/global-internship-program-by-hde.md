@@ -1,10 +1,10 @@
 ---
 title: "Global Internship Program by HDE"
 date: "2016-07-04"
-categories: 
+categories:
   - "pycon-my-2016"
   - "sponsors"
-tags: 
+tags:
   - "gip"
   - "hde"
   - "internship"
@@ -19,7 +19,7 @@ The GIP is a program that (from their website)
 
 To find out more what it's like joining the GIP, you can visit it's [Facebook Page](http://facebook.com/hde.global.)
 
-\[caption id="attachment\_588" align="alignnone" width="840"\][![hde-gip](images/hde-gip.png)](https://www.facebook.com/hde.global) [HDE's Global Internship Program page on Facebook.  
+\[caption id="attachment_588" align="alignnone" width="840"\][![hde-gip](/archived-images/hde-gip.png)](https://www.facebook.com/hde.global) [HDE's Global Internship Program page on Facebook.  
 ](https://www.facebook.com/hde.global)\[/caption\]
 
 Up until now, HDE has welcomed interns from Ukraine, The USA, Indonesia, Hong Kong and Thailand to name a few. We also know there are Malaysians who are playing important roles in the company.

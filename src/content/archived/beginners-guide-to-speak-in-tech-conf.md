@@ -1,7 +1,7 @@
 ---
 title: "Beginner's Guide to Speak in Tech Conf"
 date: "2018-07-05"
-categories: 
+categories:
   - "cfp"
   - "pycon-my-2018"
 ---
@@ -32,7 +32,7 @@ What can you talk about?
 - New trend or technology you care about
 - Propose a solution to a common problem
 
-![pycon_design_cy](images/pycon_design_cy.jpg)
+![pycon_design_cy](/archived-images/pycon_design_cy.jpg)
 
 [PyCon MY](http://pycon-my-2018.peatix.com) is happening from 25 August to 26 August 2018 at University of Malaya, Kuala Lumpur, Malaysia (**our venue partner**).
 

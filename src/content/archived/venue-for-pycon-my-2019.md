@@ -1,12 +1,12 @@
 ---
 title: "Venue for PyCon MY 2019"
 date: "2019-06-11"
-tags: 
+tags:
   - "ispace"
   - "pyconmy2019"
 ---
 
-![](images/pyconmy.png)
+![](/archived-images/pyconmy.png)
 
 It is official! PyCon MY 2019 will be held at iSpace at level 9-1 of Plaza VADS in TTDI.
 

@@ -3,7 +3,7 @@ title: "Announcing SQUEEZE as our Silver Sponsor"
 date: "2017-07-19"
 ---
 
-![logo (1).png](images/logo-1.png)
+![logo (1).png](/archived-images/logo-1.png)
 
 We are happy to announce SQUEEZE Inc as the latest sponsor for PyCon APAC 2017. They are our Silver Sponsor.
 

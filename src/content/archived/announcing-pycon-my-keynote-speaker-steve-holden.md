@@ -1,17 +1,17 @@
 ---
 title: "Announcing PyCon MY Keynote Speaker Steve Holden"
 date: "2016-04-21"
-categories: 
+categories:
   - "program"
   - "pycon-my-2016"
-tags: 
+tags:
   - "keynote"
   - "pyconmy2016"
 ---
 
 We're excited to announce our second keynote speaker at PyCon MY 2016.
 
-#### ![steveholden](images/steveholden.jpg)
+#### ![steveholden](/archived-images/steveholden.jpg)
 
 #### Steve Holden
 

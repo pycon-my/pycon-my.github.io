@@ -1,16 +1,16 @@
 ---
 title: "Sponsor Series – Mindvalley as Gold Sponsor"
 date: "2019-08-08"
-categories: 
+categories:
   - "pycon-my-2019"
   - "sponsors"
-tags: 
+tags:
   - "mindvalley"
   - "pyconmy2019"
   - "sponsor"
 ---
 
-![Mindvalley](images/mindvalley.png)
+![Mindvalley](/archived-images/mindvalley.png)
 
 PyCon My 2019 is proud to announce Mindvalley as our Gold Sponsor.
 

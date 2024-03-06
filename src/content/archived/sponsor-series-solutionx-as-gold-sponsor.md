@@ -1,17 +1,17 @@
 ---
 title: "Sponsor Series - SolutionX as Gold Sponsor"
 date: "2019-07-28"
-categories: 
+categories:
   - "pycon-my-2019"
   - "sponsors"
-tags: 
+tags:
   - "pyconmy2019"
   - "python"
   - "solutionx"
   - "sponsor"
 ---
 
-![SolutionX](images/solutionx.png)
+![SolutionX](/archived-images/solutionx.png)
 
 PyCon My 2019 is proud to announce SolutionX as our Gold Sponsor.
 

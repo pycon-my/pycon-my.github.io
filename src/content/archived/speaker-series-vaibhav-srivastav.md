@@ -1,15 +1,15 @@
 ---
 title: "Speaker Series - Vaibhav Srivastav"
 date: "2019-08-05"
-categories: 
+categories:
   - "pycon-my-2019"
   - "speakers"
-tags: 
+tags:
   - "pyconmy2019"
   - "speaker"
 ---
 
-![vaibhav_img - Vaibhav Srivastava.jpg](images/vaibhav_img-vaibhav-srivastava.jpg) Vaibhav is a Data Scientist working with Deloitte Consulting LLP. He works with Fortune Technology 10 clients to help them make data-driven (read profitable) decisions. Prior to this, he has worked with startups across India to build Social Media Analytics Dashboards, Chatbots, Recommendation Engines and Forecasting Models.
+![vaibhav_img - Vaibhav Srivastava.jpg](/archived-images/vaibhav_img-vaibhav-srivastava.jpg) Vaibhav is a Data Scientist working with Deloitte Consulting LLP. He works with Fortune Technology 10 clients to help them make data-driven (read profitable) decisions. Prior to this, he has worked with startups across India to build Social Media Analytics Dashboards, Chatbots, Recommendation Engines and Forecasting Models.
 
 His core interest lies in Natural Language Processing, Machine Learning/ Statistics and Product development.
 

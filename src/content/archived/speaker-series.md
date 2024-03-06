@@ -1,15 +1,15 @@
 ---
 title: "Speaker Series - Takanori Suzuki"
 date: "2019-06-30"
-categories: 
+categories:
   - "pycon2019"
   - "speakers"
-tags: 
+tags:
   - "keynote-speaker"
   - "pyconmy2019"
 ---
 
-![](images/sokidan_waifu2x_square - Takanori Suzuki.png) Takanori is a Vice Chairperson of PyCon JP Committee(www.pycon.jp). He is also a director of BeProud Inc.(www.beproud.jp), and his title is "Python Climber". Takanori held PyCon JP 2014 to 2016 as the chairperson. Currently, he teaches Python to beginners as a lecturer at Python Boot Camp(pycamp.pycon.jp) all over Japan. In addition, he published several Python books.
+![](/archived-images/sokidan_waifu2x_square - Takanori Suzuki.png) Takanori is a Vice Chairperson of PyCon JP Committee(www.pycon.jp). He is also a director of BeProud Inc.(www.beproud.jp), and his title is "Python Climber". Takanori held PyCon JP 2014 to 2016 as the chairperson. Currently, he teaches Python to beginners as a lecturer at Python Boot Camp(pycamp.pycon.jp) all over Japan. In addition, he published several Python books.
 
 Tananori plays trumpet, climbs boulder, loves Lego, ferrets and beer.
 

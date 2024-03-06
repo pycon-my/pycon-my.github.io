@@ -1,15 +1,15 @@
 ---
 title: "Speaker Series - Renyi Khor"
 date: "2019-07-02"
-categories: 
+categories:
   - "pycon2019"
   - "speakers"
-tags: 
+tags:
   - "pyconmy2019"
   - "speaker"
 ---
 
-![](images/Screen Shot 2019-06-29 at 10.37.46 PM.png)Renyi is a self-thought coder from Malaysia. He has been coding professionally for more than 15 years. Today, he runs his own software development company and co-founded several startups.
+![](/archived-images/Screen Shot 2019-06-29 at 10.37.46 PM.png)Renyi is a self-thought coder from Malaysia. He has been coding professionally for more than 15 years. Today, he runs his own software development company and co-founded several startups.
 
 **Topic:** Supercharge Django for modern web development.
 

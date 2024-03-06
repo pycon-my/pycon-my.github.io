@@ -1,12 +1,12 @@
 ---
 title: "Speaker Series - Lau Sian Lerk"
 date: "2019-07-20"
-tags: 
+tags:
   - "pyconmy2019"
   - "speaker"
 ---
 
-![](images/964517f0-a939-11e7-998c-f3e88bc3bf00-marked-sian-lerk-lau.jpg)
+![](/archived-images/964517f0-a939-11e7-998c-f3e88bc3bf00-marked-sian-lerk-lau.jpg)
 
 Shian Lerk is privileged to journey with a boutique software engineering team to bring new ideas and accelerate the banking and finance industry. Besides crafting solutions using Django, Celery, and Postgresql, he delights in guiding and journeying with a team of UX/BE developers to deliver innovation and satisfaction to the users.
 

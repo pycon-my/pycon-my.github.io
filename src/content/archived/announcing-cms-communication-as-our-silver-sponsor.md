@@ -1,16 +1,16 @@
 ---
 title: "Announcing CMS Communication as our Silver Sponsor"
 date: "2017-08-04"
-categories: 
+categories:
   - "announcements"
   - "pycon-apac-2017"
   - "sponsorships"
-tags: 
+tags:
   - "pyconapac2017"
   - "silversponsor"
 ---
 
-[![cmscom.png](images/cmscom.png)](https://www.cmscom.jp/company)
+[![cmscom.png](/archived-images/cmscom.png)](https://www.cmscom.jp/company)
 
 We are happy to announce [CMS Communication](https://www.cmscom.jp/company) as our latest Silver sponsor for PyCon APAC 2017!
 

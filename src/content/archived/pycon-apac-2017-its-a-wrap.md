@@ -1,10 +1,10 @@
 ---
 title: "PyCon APAC 2017: It's a wrap!"
 date: "2017-09-01"
-categories: 
+categories:
   - "announcements"
   - "pycon-apac-2017"
-tags: 
+tags:
   - "pyconapac2017"
   - "whc"
 coverImage: "imag0322.jpg"
@@ -16,7 +16,7 @@ It's a wrap! We've ended our annual PyCon APAC 2017 which was hosted in Nexus, B
 
 All our sponsors and community partners that helped made PyCon APAC 2017 affordable and a success!
 
-![Day 2 - PyCon APAC 2017 Closing](images/day-2-pycon-apac-2017-closing.png)
+![Day 2 - PyCon APAC 2017 Closing](/archived-images/day-2-pycon-apac-2017-closing.png)
 
 A big special thanks to [Women Who Code Kuala Lumpur](https://www.womenwhocode.com/kl), who helped us to get connected with the women tech community and ramping up interest for the conference.
 
@@ -28,8 +28,8 @@ A big special thanks to [Women Who Code Kuala Lumpur](https://www.womenwhocode.
 - 27 speakers
 - 2 keynote speakers
 - MYR12,700 given back to the community via
-    - 15 financial aid recipients
-    - 40 subsidized tickets
+  - 15 financial aid recipients
+  - 40 subsidized tickets
 - 201 tickets sold
 - 188 attended
 - 12 sponsors

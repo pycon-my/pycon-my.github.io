@@ -1,15 +1,15 @@
 ---
 title: "Speaker Series - John Lim Ji Xiong"
 date: "2019-07-06"
-categories: 
+categories:
   - "pycon2019"
   - "speakers"
-tags: 
+tags:
   - "pyconmy2019"
   - "speaker"
 ---
 
-![John Lim Ji Xiong - John Lim.jpg](images/john-lim-ji-xiong-john-lim.jpg) John is an R&D Engineer at MMC-Gamuda KVMRT (T) Sdn Bhd. He is currently working on the Klang Valley Mass Rapid Transit (KVMRT) Sungai Buloh-Serdang-Putrajaya Line 2 megaproject in the heart of Kuala Lumpur. He leads the research effort into autonomous TBMs together with a fantastic team.
+![John Lim Ji Xiong - John Lim.jpg](/archived-images/john-lim-ji-xiong-john-lim.jpg) John is an R&D Engineer at MMC-Gamuda KVMRT (T) Sdn Bhd. He is currently working on the Klang Valley Mass Rapid Transit (KVMRT) Sungai Buloh-Serdang-Putrajaya Line 2 megaproject in the heart of Kuala Lumpur. He leads the research effort into autonomous TBMs together with a fantastic team.
 
 John graduated from the University of Bristol with an MEng in Mechanical Engineering with a strong research focus on machine learning. He is fluent in MATLAB and Python with an intermediate knowledge in C. Through the years, he has worked on various projects including developing AI algorithms for a chess engine, localisation and path planning algorithms for robots, applied machine learning to cancer microscopes and manifold-learning algorithms to drone landings.
 
