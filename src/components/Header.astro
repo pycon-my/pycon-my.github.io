@@ -29,7 +29,7 @@ import { SITE_TITLE } from "../consts";
 
     <div>
       <ul
-        class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+         class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
       >
         <!-- 
           REMARKS :
@@ -67,65 +67,65 @@ import { SITE_TITLE } from "../consts";
               <details>
                 <summary>About</summary>
                 <ul class="p-2">
+                  <li><a href="/about">About PyCon</a></li>
                   <li><a>PyCon PSF</a></li>
                   <li><a>Code of Conduct</a></li>
+                  <li><a href="/blog">Blog</a></li>
                 </ul>
               </details>
             </li>
-            <li><a>Sponsors</a></li>
-            <li><a>Speakers</a></li>
-            <li><a>Events</a></li>
-            <li><a>Membership</a></li>
-            <li><a>Contact</a></li>
+            <li><a href="/partners">Partners</a></li>
+            <li><a href="/sponsors">Sponsors</a></li>
+            <li><a href="/speakers">Speakers</a></li>
+            <li><a href="/events">Events</a></li>
+            <li>
+              <details>
+                <summary>Members</summary>
+                <ul class="p-2">
+                  <li><a href="/core-members">Core Members</a></li>
+                  <li><a href="/volunteers">Volunteers</a></li>
+                  <li><a href="/membership-signup">Membership</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a href="/contact">Contact</a></li>
             </ul>
           </div>
         </div>
 
         <!-- Web view -->
-        <div class="navbar-center hidden lg:flex">
+        <div 
+          id="top-nav" 
+          class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
             <li>
               <details>
                 <summary>About</summary>
                 <ul class="p-2">
-                  <li><a>PyCon PSF</a></li>
-                  <li><a>Code of Conduct</a></li>
+                  <li><a href="/about">About PyCon</a></li>
+                  <li><a href="/psf">PyCon PSF</a></li>
+                  <li><a href="/coc">Code of Conduct</a></li>
+                  <li><a href="/blog">Blog</a></li>
                 </ul>
               </details>
             </li>
-            <li><a>Sponsors</a></li>
-            <li><a>Speakers</a></li>
-            <li><a>Events</a></li>
-            <li><a>Membership</a></li>
-            <li><a>Contact</a></li>
+            <li><a href="/partners">Partners</a></li>
+            <li><a href="/sponsors">Sponsors</a></li>
+            <li><a href="/speakers">Speakers</a></li>
+            <li><a href="/events">Events</a></li>
+            <li>
+              <details>
+                <summary>Members</summary>
+                <ul class="p-2">
+                  <li><a href="/core-members">Core Members</a></li>
+                  <li><a href="/volunteers">Volunteers</a></li>
+                  <li><a href="/membership-signup">Membership</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a href="/contact">Contact</a></li>
           </ul>
         </div>
-
-        <!-- 
-        <div class="dropdown dropdown-hover">
-          <div tabindex="0" role="button" class="text-white">About</div>
-          <ul
-            tabindex="0"
-            class="dropdown-content z-[1] menu p-2 shadow bg-indigo-900 flex flex-col text-center rounded-box w-52"
-          >
-            <li><HeaderLink href="/psf">PyCon PSF</HeaderLink></li>
-            <li><HeaderLink href="/coc">Code of Conduct</HeaderLink></li>
-          </ul>
-        </div>
-        <HeaderLink href="/sponsors">Sponsors</HeaderLink>
-        <HeaderLink href="/speakers">Speakers</HeaderLink>
-        <HeaderLink href="/events">Events</HeaderLink>
-        <HeaderLink href="/membership-signup">Membership</HeaderLink>
-        <HeaderLink href="/contact">Contact</HeaderLink>
-        -->
-        <!-- 
-        <HeaderLink href="/">Home</HeaderLink>
-        <HeaderLink href="/about">About</HeaderLink>
-        <HeaderLink href="/volunteers">Volunteers</HeaderLink>
-        <HeaderLink href="/partners">Partners</HeaderLink>
-        <HeaderLink href="/core-members">Core Members</HeaderLink>
-        <HeaderLink href="/blog">Blog</HeaderLink>
-        -->
       </ul>
     </div>
   </div>
