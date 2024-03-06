@@ -1,0 +1,44 @@
+---
+import Countdown from "./Countdown.astro";
+---
+
+<div class="bg-white">
+  <div
+    class="relative overflow-hidden isolate bg-gradient-to-b from-indigo-100/20"
+  >
+    <div
+      class="pt-10 pb-24 mx-auto max-w-7xl sm:pb-32 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:px-8 lg:py-40"
+    >
+      <div class="px-6 lg:px-0 lg:pt-4">
+        <div class="max-w-2xl mx-auto">
+          <div class="max-w-lg">
+            <h1
+              class="mt-24 text-4xl font-bold tracking-tight text-gray-900 sm:mt-32 lg:mt-16 sm:text-6xl"
+            >
+              PyCon Malaysia
+            </h1>
+            <p class="mt-6 text-lg leading-8 text-gray-600">
+              24 - 25 August 2024 <br />Sunway University
+            </p>
+            <div class="flex items-center mt-10 gap-x-6">
+              <a href="#" class="px-10 text-white btn btn-primary">
+                Register Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="mt-20 sm:mt-24 md:mx-auto md:max-w-2xl lg:mx-0 lg:mt-0 lg:w-screen"
+      >
+        <img
+          src="https://placehold.co/600x400"
+          alt="pycon malaysia index image"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="flex justify-center py-10">
+    <Countdown />
+  </div>
+</div>
