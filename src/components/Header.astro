@@ -3,27 +3,21 @@ import HeaderLink from "./HeaderLink.astro";
 import { SITE_TITLE } from "../consts";
 ---
 
-<nav
-	class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600 mb-10">
-	<div
-		class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-		<!-- REMARKS : Logo is the Home button -->
-		<a
-			class="flex items-center space-x-3 rtl:space-x-reverse"
-			href="/">
-			<img
-				src="/pyconmy.svg"
-				class="h-8"
-				alt="PyCon MY Logo"
-			/>
-			<span
-				class="self-center text-2xl font-semibold whitespace-nowrap text-white"
-				>{SITE_TITLE}
-			</span>
-		</a>
+<nav class="bg-info fixed w-full z-20 top-0 start-0 border-b border-gray-200">
+  <div
+    class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+  >
+    <!-- REMARKS : Logo is the Home button -->
+    <a class="flex items-center space-x-3 rtl:space-x-reverse" href="/">
+      <img src="/pyconmy.svg" class="h-8" alt="PyCon MY Logo" />
+      <span
+        class="self-center text-2xl font-semibold whitespace-nowrap text-white"
+        >{SITE_TITLE}
+      </span>
+    </a>
 
-		<!-- REMARKS : Put aside Login feature for now -->
-		<!-- <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+    <!-- REMARKS : Put aside Login feature for now -->
+    <!-- <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
       <button
         type="button"
         class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
@@ -31,8 +25,8 @@ import { SITE_TITLE } from "../consts";
       </button>
     </div> -->
 
-		<div>
-			<!-- 
+    <div>
+      <!-- 
           REMARKS :
           - NavBar Tab as per Kristy's draft: Home - PyCon PSF - Code of Conduct - Sponsors - Speakers - Events - Membership - Contact 
           - chevron-down from https://heroicons.com/
@@ -40,159 +34,87 @@ import { SITE_TITLE } from "../consts";
           - Revised 2: Put PyCon PSf and Code of Conduct under About dropdown
         -->
 
-			<!-- Mobile view -->
-			<div class="lg:hidden">
-				<div class="dropdown dropdown-end">
-					<div
-						tabindex={0}
-						role="button"
-						class="btn btn-ghost lg:hidden">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
-							viewBox="0 0 24 24"
-							stroke-width="1.5"
-							stroke="currentColor"
-							class="w-6 h-6 text-white">
-							<path
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								d="m19.5 8.25-7.5 7.5-7.5-7.5"
-							></path>
-						</svg>
-					</div>
-					<ul
-						tabindex={0}
-						class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-						<li>
-							<a class="text-lg font-bold">About</a>
-							<ul class="p-2">
-								<li
-									><a
-										href="/about"
-										class="text-md"
-										>About PyCon</a
-									></li
-								>
-								<li
-									><a
-										href="/psf"
-										class="text-md"
-										>PyCon PSF</a
-									></li
-								>
-								<li
-									><a
-										href="/coc"
-										class="text-md"
-										>Code of Conduct</a
-									></li
-								>
-								<li
-									><a
-										href="/blog"
-										class="text-md"
-										>Blog</a
-									></li
-								>
-							</ul>
-						</li>
-						<li
-							><a
-								href="/partners"
-								class="text-lg font-bold"
-								>Partners</a
-							></li
-						>
-						<li
-							><a
-								href="/sponsors"
-								class="text-lg font-bold"
-								>Sponsors</a
-							></li
-						>
-						<li
-							><a
-								href="/speakers"
-								class="text-lg font-bold"
-								>Speakers</a
-							></li
-						>
-						<li
-							><a
-								href="/events"
-								class="text-lg font-bold"
-								>Events</a
-							></li
-						>
-						<li>
-							<a class="text-lg font-bold">Members</a>
-							<ul class="p-2">
-								<li
-									><a
-										href="/core-member"
-										class="text-md"
-										>Core Members</a
-									></li
-								>
-								<li
-									><a
-										href="/volunteer"
-										class="text-md"
-										>Volunteers</a
-									></li
-								>
-								<li
-									><a
-										href="/membership-signup"
-										class="text-md"
-										>Membership</a
-									></li
-								>
-							</ul>
-						</li>
-						<li
-							><a
-								href="/contact"
-								class="text-lg font-bold"
-								>Contact</a
-							></li
-						>
-					</ul>
-				</div>
-			</div>
+      <!-- Mobile view -->
+      <div class="lg:hidden">
+        <div class="dropdown dropdown-end">
+          <div tabindex={0} role="button" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 text-white"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+            </svg>
+          </div>
+          <ul
+            tabindex={0}
+            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <li>
+              <a class="text-lg font-bold">About</a>
+              <ul class="p-2">
+                <li><a href="/about" class="text-md">About PyCon</a></li>
+                <li><a href="/psf" class="text-md">PyCon PSF</a></li>
+                <li><a href="/coc" class="text-md">Code of Conduct</a></li>
+                <li><a href="/blog" class="text-md">Blog</a></li>
+              </ul>
+            </li>
+            <li><a href="/partners" class="text-lg font-bold">Partners</a></li>
+            <li><a href="/sponsors" class="text-lg font-bold">Sponsors</a></li>
+            <li><a href="/speakers" class="text-lg font-bold">Speakers</a></li>
+            <li><a href="/events" class="text-lg font-bold">Events</a></li>
+            <li>
+              <a class="text-lg font-bold">Members</a>
+              <ul class="p-2">
+                <li><a href="/core-member" class="text-md">Core Members</a></li>
+                <li><a href="/volunteer" class="text-md">Volunteers</a></li>
+                <li>
+                  <a href="/membership-signup" class="text-md">Membership</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="/contact" class="text-lg font-bold">Contact</a></li>
+          </ul>
+        </div>
+      </div>
 
-			<!-- Web view -->
-			<div class="navbar-center hidden lg:flex">
-				<ul class="menu menu-horizontal px-1">
-					<li class="text-xl font-semibold text-white hover:text-gray-400">
-						<details>
-							<summary>About</summary>
-							<ul class="p-2">
-								<li><a href="/about">About PyCon</a></li>
-								<li><a href="/psf">PyCon PSF</a></li>
-								<li><a href="/coc">Code of Conduct</a></li>
-								<li><a href="/blog">Blog</a></li>
-							</ul>
-						</details>
-					</li>
-					<HeaderLink href="/partners">Partners</HeaderLink>
-					<HeaderLink href="/sponsors">Sponsors</HeaderLink>
-					<HeaderLink href="/speakers">Speakers</HeaderLink>
-					<HeaderLink href="/events">Events</HeaderLink>
-					<li class="text-xl font-semibold text-white hover:text-gray-400">
-						<details>
-							<summary>Members</summary>
-							<ul class="p-2">
-								<li><a href="/core-members">Core Members</a></li>
-								<li><a href="/volunteers">Volunteers</a></li>
-								<li><a href="/membership-signup">Membership</a></li>
-							</ul>
-						</details>
-					</li>
-					<HeaderLink href="/contact">Contact</HeaderLink>
-				</ul>
-			</div>
-		</div>
-	</div>
+      <!-- Web view -->
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li class="text-xl font-semibold">
+            <details>
+              <summary class="text-white hover:text-gray-400">About</summary>
+              <ul class="p-2">
+                <li><a href="/about">About PyCon</a></li>
+                <li><a href="/psf">PyCon PSF</a></li>
+                <li><a href="/coc">Code of Conduct</a></li>
+                <li><a href="/blog">Blog</a></li>
+              </ul>
+            </details>
+          </li>
+          <HeaderLink href="/partners">Partners</HeaderLink>
+          <HeaderLink href="/sponsors">Sponsors</HeaderLink>
+          <HeaderLink href="/speakers">Speakers</HeaderLink>
+          <HeaderLink href="/events">Events</HeaderLink>
+          <li class="text-xl font-semibold">
+            <details>
+              <summary class="text-white hover:text-gray-400">Members</summary>
+              <ul class="p-2">
+                <li><a href="/core-members">Core Members</a></li>
+                <li><a href="/volunteers">Volunteers</a></li>
+                <li><a href="/membership-signup">Membership</a></li>
+              </ul>
+            </details>
+          </li>
+          <HeaderLink href="/contact">Contact</HeaderLink>
+        </ul>
+      </div>
+    </div>
+  </div>
 </nav>
