@@ -13,6 +13,7 @@ export default {
           tertiary: "#FFD100",
           accent: "#CC0000",
           background: "#ffffff",
+          info:"#2e83c2",
         },
       },
     ],
