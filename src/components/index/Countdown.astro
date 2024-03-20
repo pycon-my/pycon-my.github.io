@@ -41,10 +41,6 @@
   let timeLeftInSeconds = Math.round(
     (PYCON_DATE.valueOf() - TIME_NOW.valueOf()) / 1000
   );
-  // const day = timeLeftInMiliSeconds % (24 * 8.64e+7)
-  // const hours = timeLeftInMiliSeconds - (day * 24 * 8.64e+7) % 3.6e+6
-  // const minutes = timeLeftInMiliSeconds - (day * 24 * 8.64e+7 + ) % 60000
-  const seconds = timeLeftInSeconds;
 
   setInterval(function () {
     --timeLeftInSeconds;
