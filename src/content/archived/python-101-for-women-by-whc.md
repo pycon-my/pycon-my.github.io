@@ -1,11 +1,11 @@
 ---
 title: "Python 101 for women by WHC"
 date: "2017-03-11"
-categories: 
+categories:
   - "pycon-apac-2017"
   - "tie-ups"
   - "workshop"
-tags: 
+tags:
   - "python101"
   - "whc"
   - "workshops"

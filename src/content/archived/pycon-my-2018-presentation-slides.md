@@ -1,7 +1,7 @@
 ---
 title: "PyCon MY 2018 - Presentation Slides"
 date: "2018-09-16"
-categories: 
+categories:
   - "pycon-my-2018"
 ---
 

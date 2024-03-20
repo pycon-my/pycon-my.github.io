@@ -1,10 +1,10 @@
 ---
 title: "Program schedule for PyCon MY 2015 released!"
 date: "2015-07-31"
-categories: 
+categories:
   - "program"
   - "pyconmy2015"
-tags: 
+tags:
   - "announcement"
 ---
 

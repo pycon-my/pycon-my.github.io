@@ -7,8 +7,6 @@ We are pleased to announce our latest sponsor Jewel Paymentech. They are our Sil
 
 ![jp with crown](/archived-images/jp-with-crown.png)
 
-
-
 From Azim of Jewel Paymentech:
 
 _Jewel Paymentech is a FinTech focused on providing risk solutions for the payments industry. Our solutions are in place at leading banks, payment facilitators, payment gateways, and online marketplaces in this region._

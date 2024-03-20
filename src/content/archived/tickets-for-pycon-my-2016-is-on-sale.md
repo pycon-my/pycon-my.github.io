@@ -1,7 +1,7 @@
 ---
 title: "Tickets for PyCon MY 2016 is on sale!"
 date: "2016-04-12"
-categories: 
+categories:
   - "pycon-my-2016"
   - "tickets"
 coverImage: "peatix_screenshot.png"

@@ -1,9 +1,9 @@
 ---
 title: "PyCon APAC 2017 dates and venue announced"
 date: "2017-01-18"
-categories: 
+categories:
   - "pycon-apac-2017"
-tags: 
+tags:
   - "announcement"
   - "dates"
   - "venue"

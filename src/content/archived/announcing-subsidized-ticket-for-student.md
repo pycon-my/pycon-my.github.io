@@ -1,9 +1,9 @@
 ---
 title: "Announcing subsidized ticket for student"
 date: "2018-07-28"
-categories: 
+categories:
   - "announcements"
-tags: 
+tags:
   - "tickets"
 ---
 
@@ -12,7 +12,7 @@ Great news! We're announcing today that we are extending subsidized ticket of **
 To reiterate on what is a _subsidized ticket_:
 
 > **Subsidized tickets** The subsidized ticket is basically a reduced-priced ticket, from the actual cost of a person to attend the conference. You will get everything a full-priced ticket will get: Access to the conference, morning coffee/tea and snacks, lunch and coffee/tea breaks. Your attendance are being supported in half by our generous sponsors.
-> 
+>
 > As such, we would like to ask you (the community) to only purchase the subsidized ticket if you are a student and you can't afford the full-price ticket but you really would want to come to PyCon MY 2018. The subsidized ticket is limited in number, so please think carefully before purchasing these.
 
 Note: Travel stipend will be available via a different arrangement for conference speakers whose proposal has been selected.

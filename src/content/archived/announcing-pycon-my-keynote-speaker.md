@@ -1,10 +1,10 @@
 ---
 title: "Announcing PyCon MY Keynote Speaker Tarek Ziadé"
 date: "2016-04-11"
-categories: 
+categories:
   - "program"
   - "pycon-my-2016"
-tags: 
+tags:
   - "keynote"
   - "pyconmy2016"
 ---

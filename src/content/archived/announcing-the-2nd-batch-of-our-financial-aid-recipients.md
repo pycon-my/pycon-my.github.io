@@ -1,10 +1,10 @@
 ---
 title: "Announcing the 2nd batch of our Financial Aid recipients"
 date: "2017-08-14"
-categories: 
+categories:
   - "announcements"
   - "pycon-apac-2017"
-tags: 
+tags:
   - "financialaid"
   - "pyconapac2017"
 ---

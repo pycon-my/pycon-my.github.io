@@ -26,7 +26,7 @@ Conference Day started at 9AM with attendees coming in to register as early as 8
 
 \[caption id="attachment_849" align="alignnone" width="2688"\]![IMAG0092](/archived-images/imag0092.jpg) Tarek Ziade from Mozilla presenting his keynote\[/caption\]
 
-[Tarek Ziade](http://pycon.my/2016/04/11/announcing-pycon-my-keynote-speaker/) from Mozilla started the first conference day with his keynote: ***Python, the not-so-secret weapon at Mozilla***
+[Tarek Ziade](http://pycon.my/2016/04/11/announcing-pycon-my-keynote-speaker/) from Mozilla started the first conference day with his keynote: **_Python, the not-so-secret weapon at Mozilla_**
 
 Tarek talked about the thousands of ways python is being used in Mozilla, and why python is chosen in those cases.
 

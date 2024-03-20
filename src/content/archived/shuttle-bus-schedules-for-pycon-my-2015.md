@@ -1,9 +1,9 @@
 ---
 title: "Shuttle bus schedules for PyCon MY 2015"
 date: "2015-08-20"
-categories: 
+categories:
   - "pyconmy2015"
-tags: 
+tags:
   - "announcement"
   - "bus"
 ---

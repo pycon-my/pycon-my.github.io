@@ -1,9 +1,9 @@
 ---
 title: "End of Early Bird tickets"
 date: "2016-05-05"
-categories: 
+categories:
   - "pycon-my-2016"
-tags: 
+tags:
   - "earlybird"
   - "pyconmy2016"
   - "tickets"

@@ -1,10 +1,10 @@
 ---
 title: "We're looking for sponsors"
 date: "2016-04-26"
-categories: 
+categories:
   - "pycon-my-2016"
   - "sponsors"
-tags: 
+tags:
   - "pyconmy2016"
   - "sponsorship"
 ---

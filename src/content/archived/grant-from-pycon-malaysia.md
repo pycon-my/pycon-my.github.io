@@ -1,7 +1,7 @@
 ---
 title: "Grant from PyCon Malaysia"
 date: "2018-10-14"
-categories: 
+categories:
   - "financial-aid"
 ---
 

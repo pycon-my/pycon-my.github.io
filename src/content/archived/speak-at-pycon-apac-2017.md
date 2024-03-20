@@ -1,11 +1,11 @@
 ---
 title: "Speak at PyCon APAC 2017"
 date: "2017-02-25"
-categories: 
+categories:
   - "announcements"
   - "cfp"
   - "program"
-tags: 
+tags:
   - "talks"
 coverImage: "img_1761.jpg"
 ---
@@ -23,7 +23,7 @@ Your talk can be for Beginners, Intermediate or Advance python users and develop
 We welcome many topics concerning the usage of development of python, and with this being a regional conference we will especially be interested in talks that showcases specific use cases your locale. An example of the topics that we're looking for are
 
 - Web programming, including frameworks i.e Django, Flask, Pylons etc.)
--  Python in education, science and maths
+- Python in education, science and maths
 - Machine learning and data science
 - Python libraries, extending and embedding python in hardware
 - GUI and games

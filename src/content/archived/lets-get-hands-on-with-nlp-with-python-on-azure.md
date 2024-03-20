@@ -1,11 +1,11 @@
 ---
-title: "\"Let's Get Hands-on with NLP with Python on Azure.\""
+title: '"Let''s Get Hands-on with NLP with Python on Azure."'
 date: "2019-08-20"
-categories: 
+categories:
   - "pycon-my-2019"
   - "speakers"
   - "sponsors"
-tags: 
+tags:
   - "microsoft"
   - "nlp"
   - "pyconmy2019"

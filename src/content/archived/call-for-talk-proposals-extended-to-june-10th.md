@@ -1,10 +1,10 @@
 ---
 title: "Call for talk proposals extended to June 10th"
 date: "2016-05-31"
-categories: 
+categories:
   - "cfp"
   - "pycon-my-2016"
-tags: 
+tags:
   - "announcement"
   - "pyconmy2016"
 ---

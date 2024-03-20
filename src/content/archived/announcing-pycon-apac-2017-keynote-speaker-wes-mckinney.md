@@ -15,8 +15,6 @@ tags:
 
 ---
 
-
-
 We are excited to announce our first keynote speaker for PyCon APAC 2017, Wes McKinney, well known as the author of [Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython](http://shop.oreilly.com/product/0636920023784.do)
 
 \[caption id="attachment_975" align="aligncenter" width="296"\]![2017-01-12](/archived-images/2017-01-12.jpg?w=296) Wes McKinney\[/caption\]

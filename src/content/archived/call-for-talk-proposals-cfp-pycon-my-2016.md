@@ -1,7 +1,7 @@
 ---
 title: "Call for Talk Proposals (CFP) PyCon MY 2016"
 date: "2016-02-26"
-categories: 
+categories:
   - "cfp"
   - "pycon-my-2016"
 coverImage: "img_7679.jpg"
