@@ -7,11 +7,25 @@ import Sponsors from "../components/index/Sponsors.astro";
 ---
 
 <Default>
-  <Hero />
-  <div class="divider divider-neutral"></div>
-  <About />
-  <div class="divider divider-neutral"></div>
-  <Speaker />
-  <div class="divider divider-neutral"></div>
-  <Sponsors />
+  <div class="pyconmy-bg">
+    <Hero />
+    <div class="divider divider-neutral"></div>
+    <About />
+    <div class="divider divider-neutral"></div>
+    <Speaker />
+    <div class="divider divider-neutral"></div>
+    <Sponsors />
+  </div>
 </Default>
+
+<style>
+  .pyconmy-bg {
+    background: rgb(255, 209, 0);
+    background: linear-gradient(
+      rgba(255, 209, 0, 0.37) 0%,
+      rgba(245, 37, 37, 0.5) 33%,
+      rgba(15, 89, 188, 0.5) 66%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  }
+</style>
