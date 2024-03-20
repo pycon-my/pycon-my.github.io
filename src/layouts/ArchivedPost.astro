@@ -13,73 +13,20 @@ const { title, date } = Astro.props;
 <html lang="en">
   <head>
     <BaseHead title={title} description={title} />
-    <style>
-      main {
-        width: calc(100% - 2em);
-        max-width: 100%;
-        margin: 0;
-      }
-      .hero-image {
-        width: 100%;
-      }
-      .hero-image img {
-        display: block;
-        margin: 0 auto;
-        border-radius: 12px;
-        box-shadow: var(--box-shadow);
-      }
-      .prose {
-        width: 720px;
-        max-width: calc(100% - 2em);
-        margin: auto;
-        padding: 1em;
-        color: rgb(var(--gray-dark));
-      }
-      .title {
-        margin-bottom: 1em;
-        padding: 1em 0;
-        text-align: center;
-        line-height: 1;
-      }
-      .title h1 {
-        margin: 0 0 0.5em 0;
-      }
-      .date {
-        margin-bottom: 0.5em;
-        color: rgb(var(--gray));
-      }
-      .last-updated-on {
-        font-style: italic;
-      }
-    </style>
   </head>
 
   <body>
     <Header />
     <main>
       <article>
-        <div class="hero-image">
-          <!-- {
-            heroImage && (
-              <img width={1020} height={510} src={heroImage} alt="" />
-            )
-          } -->
-        </div>
-        <div class="prose">
-          <div class="title">
-            <div class="date">
+        <div class="prose pt-36 pb-10 mx-auto">
               <FormattedDate date={date} />
-              {
-                date && (
-                  <div class="last-updated-on">
-                    Last updated on <FormattedDate date={date} />
-                  </div>
-                )
-              }
-            </div>
             <h1>{title}</h1>
             <hr />
-          </div>
+            <div role="alert" class="alert alert-warning">
+              <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
+              <span>This is an archived blog post, information might not be up to date</span>
+            </div>
           <slot />
         </div>
       </article>
