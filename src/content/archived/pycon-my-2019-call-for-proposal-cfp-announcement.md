@@ -1,7 +1,7 @@
 ---
 title: "PyCon MY 2019 Call For Proposal (CFP) Announcement"
 date: "2019-04-02"
-categories: 
+categories:
   - "announcements"
   - "cfp"
 ---

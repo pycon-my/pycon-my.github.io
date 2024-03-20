@@ -1,10 +1,10 @@
 ---
 title: "Changing The World With Python, on BFM 89.9"
 date: "2017-08-03"
-categories: 
+categories:
   - "announcements"
   - "pycon-apac-2017"
-tags: 
+tags:
   - "bfm89-9"
   - "pyconapac2017"
 ---

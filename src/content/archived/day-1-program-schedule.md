@@ -1,7 +1,7 @@
 ---
 title: "DAY 1 PROGRAM SCHEDULE"
 date: "2020-09-11"
-categories: 
+categories:
   - "announcements"
   - "pycon-apac-2020"
 ---

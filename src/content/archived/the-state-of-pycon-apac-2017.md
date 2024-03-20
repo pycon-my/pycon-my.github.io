@@ -1,10 +1,10 @@
 ---
 title: "The State of PyCon APAC 2017"
 date: "2017-07-07"
-categories: 
+categories:
   - "announcements"
   - "pycon-apac-2017"
-tags: 
+tags:
   - "updates"
 coverImage: "25984315972_9b72b37fc3_z.jpg"
 ---

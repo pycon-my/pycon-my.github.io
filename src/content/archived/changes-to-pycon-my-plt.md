@@ -1,7 +1,7 @@
 ---
 title: "Changes to PyCon MY PLT"
 date: "2020-01-03"
-categories: 
+categories:
   - "announcements"
 ---
 

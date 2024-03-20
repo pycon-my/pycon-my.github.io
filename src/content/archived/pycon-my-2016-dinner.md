@@ -1,10 +1,10 @@
 ---
 title: "PyCon MY 2016 Dinner"
 date: "2016-08-12"
-categories: 
+categories:
   - "program"
   - "pycon-my-2016"
-tags: 
+tags:
   - "dinner"
   - "pyconmy2016"
 ---

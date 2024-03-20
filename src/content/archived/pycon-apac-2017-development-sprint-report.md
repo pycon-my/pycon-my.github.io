@@ -1,7 +1,7 @@
 ---
 title: "PyCon APAC 2017: Development sprint report"
 date: "2017-09-18"
-categories: 
+categories:
   - "pycon-apac-2017"
   - "sprints"
 ---

@@ -1,10 +1,10 @@
 ---
 title: "Financial Aid for PyCon APAC 2017"
 date: "2017-03-27"
-categories: 
+categories:
   - "announcements"
   - "pycon-apac-2017"
-tags: 
+tags:
   - "financialaid"
   - "students"
 ---
@@ -36,14 +36,14 @@ Financial reimbursement will only be provided for:
 - Travel expenses
 - Accommodations
 - Ground Transportation
-- PyCon APAC subsidized ticket 
+- PyCon APAC subsidized ticket
 
 Financial reimbursement does not cover:
 
 - Food
 - Miscellaneous expenses
 
-Note that financial aid will be given in the form of a reimbursement and proof of purchase (such as receipts) will be required for the reimbursement process. It is the attendee’s responsibility to provide these proof. 
+Note that financial aid will be given in the form of a reimbursement and proof of purchase (such as receipts) will be required for the reimbursement process. It is the attendee’s responsibility to provide these proof.
 
 To ensure a high attendance rate, our goal is to provide financial aid to _as many attendees_ as we can. This means instead of sending aid for 1 person who requires a larger amount, we’d prefer to split and send the same total amount to multiple attendees instead.
 

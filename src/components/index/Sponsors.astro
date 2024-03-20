@@ -1,0 +1,33 @@
+---
+import Title from "../Title.astro";
+import SponsorCard from "./SponsorCard.astro";
+---
+
+<div class="py-5">
+  <Title>Our Sponsor</Title>
+  <div class="flex justify-center px-0 lg:px-52 py-5 mx-auto">
+    <SponsorCard
+      image="https://dummyimage.com/600x400"
+      imageAlt="Platinum Sponsor"
+      sponsorTier="Platinum Sponsor"
+    />
+  </div>
+
+  <div class="flex flex-wrap justify-center gap-16 py-5 px-0 lg:px-52">
+    <SponsorCard
+      image="https://dummyimage.com/300x200"
+      imageAlt="Gold Sponsor"
+      sponsorTier="Gold Sponsor"
+    />
+    <SponsorCard
+      image="https://dummyimage.com/300x200"
+      imageAlt="Silver Sponsor"
+      sponsorTier="Silver Sponsor"
+    />
+    <SponsorCard
+      image="https://dummyimage.com/300x200"
+      imageAlt="Bronze Sponsor"
+      sponsorTier="Bronze Sponsor"
+    />
+  </div>
+</div>

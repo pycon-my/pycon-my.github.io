@@ -1,11 +1,11 @@
 ---
 title: "Get your Guidebook for PyCon APAC 2017"
 date: "2017-08-20"
-categories: 
+categories:
   - "announcements"
   - "program"
   - "pycon-apac-2017"
-tags: 
+tags:
   - "guidebook"
 ---
 

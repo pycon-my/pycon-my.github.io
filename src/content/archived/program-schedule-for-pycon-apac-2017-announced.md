@@ -1,11 +1,11 @@
 ---
 title: "Program Schedule for PyCon APAC 2017 Announced"
 date: "2017-07-17"
-categories: 
+categories:
   - "announcements"
   - "program"
   - "pycon-apac-2017"
-tags: 
+tags:
   - "announcement"
 ---
 

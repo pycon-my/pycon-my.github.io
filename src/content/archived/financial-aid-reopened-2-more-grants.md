@@ -1,10 +1,10 @@
 ---
 title: "Financial Aid reopened: 2 more grants"
 date: "2017-07-28"
-categories: 
+categories:
   - "announcements"
   - "pycon-apac-2017"
-tags: 
+tags:
   - "financialaid"
   - "grants"
 ---

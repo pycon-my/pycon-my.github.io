@@ -1,9 +1,9 @@
 ---
 title: "[Late Comers] Additional tickets go on sale"
 date: "2016-07-20"
-categories: 
+categories:
   - "pycon-my-2016"
-tags: 
+tags:
   - "latecomers"
   - "pyconmy2016"
   - "tickets"

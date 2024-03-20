@@ -1,9 +1,9 @@
 ---
 title: "Open Space Session"
 date: "2019-08-17"
-categories: 
+categories:
   - "pycon-my-2019"
-tags: 
+tags:
   - "pyconmy2019"
 ---
 

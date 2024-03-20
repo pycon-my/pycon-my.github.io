@@ -7,9 +7,9 @@ import Countdown from "./Countdown.astro";
     class="relative overflow-hidden isolate bg-gradient-to-b from-indigo-100/20"
   >
     <div
-      class="pt-10 pb-24 mx-auto max-w-7xl sm:pb-32 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:px-8 lg:py-40"
+      class="pt-10 pb-24 mx-auto max-w-7xl flex flex-col md:flex-row sm:pb-32 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:px-8 lg:py-40"
     >
-      <div class="px-6 lg:px-0 lg:pt-4">
+      <div class="px-6 order-2 md:order-1 lg:px-0 lg:pt-4">
         <div class="max-w-2xl mx-auto">
           <div class="max-w-lg">
             <h1
@@ -29,16 +29,16 @@ import Countdown from "./Countdown.astro";
         </div>
       </div>
       <div
-        class="mt-20 sm:mt-24 md:mx-auto md:max-w-2xl lg:mx-0 lg:mt-0 lg:w-screen"
+        class="flex flex-col items-center mt-20 mx-auto order-1 md:order-2 sm:mt-24 md:mx-auto md:max-w-2xl lg:mx-0 lg:mt-0 lg:w-screen"
       >
         <img
-          src="https://placehold.co/600x400"
-          alt="pycon malaysia index image"
+          src="/pycon-2023.jpg"
+          width="600"
+          height="400"
+          alt="PyCon 2023 group photo"
         />
+        <p class="text-sm text-gray-400">PyCon Malaysia 2023 group photo</p>
       </div>
     </div>
-  </div>
-  <div class="flex justify-center py-10">
-    <Countdown />
   </div>
 </div>

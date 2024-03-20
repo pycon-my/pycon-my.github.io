@@ -7,8 +7,6 @@ categories:
   - "sponsorships"
 ---
 
-
-
 ![omnilytics](/archived-images/omnilytics.png)
 
 We are happy to announce [Omnilytics](https://omnilytics.co/about-us) as our Gold sponsor for PyCon MY 2018!

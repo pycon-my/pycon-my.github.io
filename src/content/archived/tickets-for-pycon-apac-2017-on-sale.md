@@ -1,10 +1,10 @@
 ---
 title: "Tickets for PyCon APAC 2017 on sale"
 date: "2017-02-17"
-categories: 
+categories:
   - "announcements"
   - "pycon-apac-2017"
-tags: 
+tags:
   - "tickets"
 ---
 

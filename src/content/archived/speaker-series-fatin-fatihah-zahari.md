@@ -1,10 +1,10 @@
 ---
 title: "Speaker Series - Fatin Fatihah Zahari"
 date: "2019-08-23"
-categories: 
+categories:
   - "pycon-my-2019"
   - "speakers"
-tags: 
+tags:
   - "pyconmy2019"
   - "speaker"
 ---

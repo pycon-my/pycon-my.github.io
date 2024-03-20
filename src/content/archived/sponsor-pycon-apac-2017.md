@@ -1,10 +1,10 @@
 ---
 title: "Sponsor PyCon APAC 2017"
 date: "2017-02-28"
-categories: 
+categories:
   - "pycon-apac-2017"
   - "sponsors"
-tags: 
+tags:
   - "sponsorship"
 coverImage: "img_20160815_180845.jpg"
 ---

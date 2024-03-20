@@ -1,10 +1,10 @@
 ---
 title: "State of our Call For Proposals"
 date: "2017-05-13"
-categories: 
+categories:
   - "cfp"
   - "program"
-tags: 
+tags:
   - "pycon-apac-2017"
 ---
 

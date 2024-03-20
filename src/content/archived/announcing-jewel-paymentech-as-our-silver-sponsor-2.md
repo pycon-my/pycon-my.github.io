@@ -7,8 +7,6 @@ categories:
   - "sponsorships"
 ---
 
-
-
 ![Jewel Paymentech logo_RGB](/archived-images/jewel-paymentech-logo_rgb1.jpg)
 
 We are happy to announce [Jewel Paymentech](https://www.jewelpaymentech.com/about.html) as our Silver sponsor for PyCon MY 2018!

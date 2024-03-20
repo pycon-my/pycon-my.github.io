@@ -1,10 +1,10 @@
 ---
 title: "Announcing our Financial Aid recipients"
 date: "2017-07-22"
-categories: 
+categories:
   - "announcements"
   - "pycon-apac-2017"
-tags: 
+tags:
   - "financialaid"
   - "pyconapac2017"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "CfP ticket requirements"
 date: "2017-04-25"
-categories: 
+categories:
   - "cfp"
   - "pycon-apac-2017"
 ---

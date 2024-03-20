@@ -1,9 +1,9 @@
 ---
 title: "Announcing Travel Stipend for speakers"
 date: "2018-08-05"
-categories: 
+categories:
   - "announcements"
-tags: 
+tags:
   - "tickets"
 ---
 
