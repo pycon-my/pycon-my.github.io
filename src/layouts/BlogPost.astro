@@ -19,14 +19,14 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
     <Header />
     <main>
       <article>
-        <!-- <div class="hero-image">
+        <div class="prose pt-40 mx-auto">
           {
             heroImage && (
-              <img width={1020} height={510} src={heroImage} alt="" />
+              <img width={400} height={200} src={heroImage} alt="" />
             )
           }
-        </div> -->
-        <div class="prose pt-36 pb-10 mx-auto">
+        </div>
+        <div class="prose pt-10 pb-10 mx-auto">
           <FormattedDate date={pubDate} />
           {
             updatedDate && (
