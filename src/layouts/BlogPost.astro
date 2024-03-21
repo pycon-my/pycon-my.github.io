@@ -7,12 +7,12 @@ import FormattedDate from "../components/FormattedDate.astro";
 
 type Props = CollectionEntry<"blog">["data"];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { frontmatter } = Astro.props;
 ---
 
 <html lang="en">
   <head>
-    <BaseHead title={title} description={description} />
+    <BaseHead title={frontmatter.title} description={frontmatter.description} />
   </head>
 
   <body>
@@ -21,18 +21,18 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
       <article class="flex justify-center">
         <div class="prose">
           <div class="pt-24">
-            {heroImage && <img src={heroImage} class="w-full" alt="" />}
+            {frontmatter.heroImage && <img src={frontmatter.heroImage} class="w-full" alt="" />}
           </div>
-          <div class="pt-10 pb-10 mx-auto">
-            <FormattedDate date={pubDate} />
+          <div class="pt-10 pb-10 mx-auto p-3">
+            <FormattedDate date={new Date(frontmatter.pubDate)} />
             {
-              updatedDate && (
+              frontmatter.updatedDate && (
                 <div class="last-updated-on">
-                  Last updated on <FormattedDate date={updatedDate} />
+                  Last updated on <FormattedDate date={frontmatter.updatedDate} />
                 </div>
               )
             }
-            <h1>{title}</h1>
+            <h1>{frontmatter.title}</h1>
             <hr />
             <slot />
           </div>
