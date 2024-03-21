@@ -2,27 +2,27 @@
 
 ---
 
-<div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+<div class="grid grid-flow-col gap-5 rounded-lg bg-white p-5 text-center auto-cols-max">
   <div class="flex flex-col">
-    <span class="font-mono text-3xl sm:text-5xl countdown">
+    <span class="text-3xl sm:text-5xl countdown">
       <span style="--value:15;" id="days"></span>
     </span>
     days
   </div>
   <div class="flex flex-col">
-    <span class="font-mono text-3xl sm:text-5xl countdown">
+    <span class="text-3xl sm:text-5xl countdown">
       <span style="--value:10;" id="hours"></span>
     </span>
     hours
   </div>
   <div class="flex flex-col">
-    <span class="font-mono text-3xl sm:text-5xl countdown">
+    <span class="text-3xl sm:text-5xl countdown">
       <span style="--value:24;" id="minutes"></span>
     </span>
     min
   </div>
   <div class="flex flex-col">
-    <span class="font-mono text-3xl sm:text-5xl countdown">
+    <span class="text-3xl sm:text-5xl countdown">
       <span style="--value:52;" id="seconds"></span>
     </span>
     sec
@@ -45,13 +45,10 @@
   setInterval(function () {
     --timeLeftInSeconds;
 
-    const days = Math.round(timeLeftInSeconds / 86400) - 1;
-    const hours = Math.round((timeLeftInSeconds - days * 86400) / 3600) - 1;
-    const minutes =
-      Math.round((timeLeftInSeconds - days * 86400 - hours * 3600) / 60) - 1;
-    const seconds = Math.round(
-      timeLeftInSeconds - days * 86400 - hours * 3600 - minutes * 60
-    );
+    const days = Math.max(Math.floor(timeLeftInSeconds / 60 / 60 / 24));
+    const hours = Math.max(Math.floor(timeLeftInSeconds / 60 / 60)%24);
+    const minutes = Math.max(Math.floor(timeLeftInSeconds / 60) % 60);
+    const seconds = Math.max(Math.floor(timeLeftInSeconds) % 60);
     // console.log({ timeLeftInSeconds, days, hours, minutes, seconds });
     changeCountdownNumber("days", days);
     changeCountdownNumber("hours", hours);
