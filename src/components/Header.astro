@@ -3,7 +3,7 @@ import HeaderLink from "./HeaderLink.astro";
 import { SITE_TITLE } from "../consts";
 ---
 
-<nav class="bg-[#1a4a76] fixed w-full z-20 top-0 start-0 border-b border-gray-200">
+<nav class="bg-[#1a4a76] fixed w-full z-20 top-0 start-0">
   <div
     class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
   >
@@ -90,7 +90,9 @@ import { SITE_TITLE } from "../consts";
           <li class="text-xl font-semibold">
             <details>
               <summary class="text-white hover:text-gray-400">About</summary>
-              <ul class="shadow menu dropdown-content z-[1] bg-[#F3F4F6] rounded-box w-40 items-center">
+              <ul
+                class="shadow menu dropdown-content z-[1] bg-[#F3F4F6] rounded-box w-40 items-center"
+              >
                 <li><a href="/about" class="py-1">About PyCon</a></li>
                 <li><a href="/the-psf" class="py-1">The PSF</a></li>
                 <li><a href="/coc" class="py-1">Code of Conduct</a></li>
@@ -105,10 +107,14 @@ import { SITE_TITLE } from "../consts";
           <li class="text-xl font-semibold">
             <details>
               <summary class="text-white hover:text-gray-400">Members</summary>
-              <ul class="p-0 shadow menu dropdown-content z-[1] bg-[#F3F4F6] rounded-box w-40 items-center">
+              <ul
+                class="p-0 shadow menu dropdown-content z-[1] bg-[#F3F4F6] rounded-box w-40 items-center"
+              >
                 <li><a href="/core-members" class="py-1">Core Members</a></li>
                 <li><a href="/volunteers" class="py-1">Volunteers</a></li>
-                <li><a href="/membership-signup" class="py-1">Membership</a></li>
+                <li>
+                  <a href="/membership-signup" class="py-1">Membership</a>
+                </li>
               </ul>
             </details>
           </li>
