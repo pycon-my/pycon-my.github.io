@@ -7,22 +7,38 @@ import SpeakerCard from "./SpeakerCard.astro";
 <section class="">
   <div>
     <Title>Keynote Speakers</Title>
-    <div class="grid grid-cols-1 md:grid-cols-2">
-      <SpeakerCard name="John Smith" profession="Machine Learning Expert" />
-      <SpeakerCard name="Emma Johnson" profession="Software Developer" />
+    <div class="flex flex-wrap items-center justify-center">
+      <div class="p-4">
+        <div class="rounded-lg p-6">
+          <img
+            class="h-full rounded w-[500px] object-cover object-center mb-6"
+            src="https://dummyimage.com/600x400"
+            alt="content"
+          />
+        </div>
+      </div>
+      <div class="p-4">
+        <div class="rounded-lg p-6">
+          <img
+            class="h-full rounded w-[500px] object-cover object-center mb-6"
+            src="https://dummyimage.com/600x400"
+            alt="content"
+          />
+        </div>
+      </div>
     </div>
-  </div>
-  <div>
-    <Title>Meet Our Speakers</Title>
-    <div class="grid grid-cols-1 md:grid-cols-3">
-      <SpeakerCard name="Jane Doe" profession="Data Scientist" />
-      <SpeakerCard name="John Smith" profession="Machine Learning Expert" />
-      <SpeakerCard name="Emma Johnson" profession="Software Developer" />
+    <div>
+      <Title>Meet Our Speakers</Title>
+      <div class="grid grid-cols-1 md:grid-cols-3">
+        <SpeakerCard name="Jane Doe" profession="Data Scientist" />
+        <SpeakerCard name="John Smith" profession="Machine Learning Expert" />
+        <SpeakerCard name="Emma Johnson" profession="Software Developer" />
+      </div>
     </div>
-  </div>
-  <div class="flex flex-row items-center justify-center mb-4 gap-4">
-    <div class="rounded-full bg-gray-400 w-2 h-2"></div>
-    <div class="rounded-full bg-gray-300 w-2 h-2"></div>
-    <div class="rounded-full bg-gray-300 w-2 h-2"></div>
+    <div class="flex flex-row items-center justify-center mb-4 gap-4">
+      <div class="rounded-full bg-gray-400 w-2 h-2"></div>
+      <div class="rounded-full bg-gray-300 w-2 h-2"></div>
+      <div class="rounded-full bg-gray-300 w-2 h-2"></div>
+    </div>
   </div>
 </section>
