@@ -54,11 +54,11 @@ import { SITE_TITLE } from "../consts";
           </div>
           <ul
             tabindex={0}
-            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 max-h-[85vh] overflow-scroll"
+            class="menu menu-sm flex-nowrap gap-y-3 dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 max-h-[75vh] overflow-scroll"
           >
             <li>
               <a class="text-lg font-bold">About</a>
-              <ul class="p-2">
+              <ul class="p-2 flex flex-col gap-y-3">
                 <li><a href="/about" class="text-md">About PyCon</a></li>
                 <li><a href="/the-psf" class="text-md">The PSF</a></li>
                 <li><a href="/coc" class="text-md">Code of Conduct</a></li>
@@ -71,7 +71,7 @@ import { SITE_TITLE } from "../consts";
             <li><a href="/events" class="text-lg font-bold">Events</a></li>
             <li>
               <a class="text-lg font-bold">Members</a>
-              <ul class="p-2">
+              <ul class="p-2 flex flex-col gap-y-3">
                 <li><a href="/core-member" class="text-md">Core Members</a></li>
                 <li><a href="/volunteer" class="text-md">Volunteers</a></li>
                 <li>
