@@ -7,25 +7,9 @@ import SpeakerCard from "./SpeakerCard.astro";
 <section class="">
   <div>
     <Title>Keynote Speakers</Title>
-    <div class="flex flex-wrap items-center justify-center">
-      <div class="p-4">
-        <div class="rounded-lg p-6">
-          <img
-            class="h-full rounded w-[500px] object-cover object-center mb-6"
-            src="https://dummyimage.com/600x400"
-            alt="content"
-          />
-        </div>
-      </div>
-      <div class="p-4">
-        <div class="rounded-lg p-6">
-          <img
-            class="h-full rounded w-[500px] object-cover object-center mb-6"
-            src="https://dummyimage.com/600x400"
-            alt="content"
-          />
-        </div>
-      </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:px-72">
+      <SpeakerCard name="John Smith" profession="Machine Learning Expert" />
+      <SpeakerCard name="Emma Johnson" profession="Software Developer" />
     </div>
     <div>
       <Title>Meet Our Speakers</Title>
