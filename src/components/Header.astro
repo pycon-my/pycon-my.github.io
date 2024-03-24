@@ -36,25 +36,28 @@ import { SITE_TITLE } from "../consts";
 
       <!-- Mobile view -->
       <div class="lg:hidden">
-        <div class="dropdown dropdown-end">
-          <div tabindex={0} role="button" class="btn btn-ghost lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-6 h-6 text-white"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
-            </svg>
-          </div>
+        <button
+          class="btn btn-ghost lg:hidden"
+          onclick="mobile_menu.showModal()"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6 text-white"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+          </svg>
+        </button>
+        <dialog id="mobile_menu" class="modal modal-top">
           <ul
             tabindex={0}
-            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            class="modal-box mt-3 z-[1] p-5 bg-base-100 overflow-y-scroll"
           >
             <li>
               <a class="text-lg font-bold">About</a>
@@ -65,14 +68,22 @@ import { SITE_TITLE } from "../consts";
                 <li><a href="/blog" class="text-md">Blog</a></li>
               </ul>
             </li>
-            <li><a href="/partners" class="text-lg font-bold">Partners</a></li>
-            <li><a href="/sponsors" class="text-lg font-bold">Sponsors</a></li>
-            <li><a href="/speakers" class="text-lg font-bold">Speakers</a></li>
+            <li>
+              <a href="/partners" class="text-lg font-bold">Partners</a>
+            </li>
+            <li>
+              <a href="/sponsors" class="text-lg font-bold">Sponsors</a>
+            </li>
+            <li>
+              <a href="/speakers" class="text-lg font-bold">Speakers</a>
+            </li>
             <li><a href="/events" class="text-lg font-bold">Events</a></li>
             <li>
               <a class="text-lg font-bold">Members</a>
               <ul class="p-2">
-                <li><a href="/core-member" class="text-md">Core Members</a></li>
+                <li>
+                  <a href="/core-member" class="text-md">Core Members</a>
+                </li>
                 <li><a href="/volunteer" class="text-md">Volunteers</a></li>
                 <li>
                   <a href="/membership-signup" class="text-md">Membership</a>
@@ -81,7 +92,10 @@ import { SITE_TITLE } from "../consts";
             </li>
             <li><a href="/contact" class="text-lg font-bold">Contact</a></li>
           </ul>
-        </div>
+          <form method="dialog" class="modal-backdrop">
+            <button>close</button>
+          </form>
+        </dialog>
       </div>
 
       <!-- Web view -->
