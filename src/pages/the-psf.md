@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/BlogPost.astro
+layout: ../layouts/PagePost.astro
 title: About The Python Software Foundation
 description: About The Python Software Foundation
 pubDate: March 21 2024
@@ -37,20 +37,20 @@ according to the rules for such organizations._
    these services on behalf of other open source Python-related codebases.
 8. Raises funds to support PSF programs and services. The regulations for public
    charity funding are complex. Some consequences are that the vast bulk of
-   funding must come from private contributions (including sponsoring 
-   memberships) and public grants, must come from a broad base, and that no 
-   single private donor can supply a substantial percentage of the PSF's total 
-   funding. Additional revenue may be pursued in ways consistent with 
+   funding must come from private contributions (including sponsoring
+   memberships) and public grants, must come from a broad base, and that no
+   single private donor can supply a substantial percentage of the PSF's total
+   funding. Additional revenue may be pursued in ways consistent with
    then-current rules for public charities and with Python's standing as an open
-   source project. For example, the PSF may offer to sell conference 
-   proceedings, special Python distributions, or merchandise with distinctive 
+   source project. For example, the PSF may offer to sell conference
+   proceedings, special Python distributions, or merchandise with distinctive
    insignia.
 9. Publicizes, promotes the adoption of, and facilitates the ongoing development
    of Python-related technology and educational resources. This includes, but is
-   not limited to, maintaining a public web site, planning Python conferences, 
+   not limited to, maintaining a public web site, planning Python conferences,
    and offering grants to Python-related open source projects.
 10. Encourages and facilitates Python-related research in the public interest.
 
-"Open source" is defined as: freely available technology licensed under terms 
-compatible with Version 1.9 (or later) of the Open Source Definition, as 
+"Open source" is defined as: freely available technology licensed under terms
+compatible with Version 1.9 (or later) of the Open Source Definition, as
 established by the [Open Source Initiative](http://www.opensource.org/)

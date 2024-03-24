@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/BlogPost.astro
+layout: ../layouts/PagePost.astro
 title: About PyCon MY
 description: About PyCon MY
 pubDate: March 21 2024
@@ -23,11 +23,11 @@ Python community to get together for a few days a year to share knowledge and
 compare experiences allows the growth of ideas and also the exchange of skills,
 which will lead to a spillover of greater cooperation even after the conference
 is over. Stronger ties between developers and users of Python can be nurtured
-better when there is real human interaction, which is a big plus to the 
-community. But we need to have continuity and provide the opportunity for people 
-to get together to see the effects in the long run, and just providing a space 
-for a few days a year for people to get together doesn’t seem to be enough. 
-There should be more to that, because continuity and horizontal connections are 
+better when there is real human interaction, which is a big plus to the
+community. But we need to have continuity and provide the opportunity for people
+to get together to see the effects in the long run, and just providing a space
+for a few days a year for people to get together doesn’t seem to be enough.
+There should be more to that, because continuity and horizontal connections are
 the key.
 
 In order for us to have continuity and transparency going forward (especially
@@ -41,11 +41,11 @@ The current board members of PYCON MY PLT consists of:
 2. TANG ING WEI (Chair for PyCon MY 2019)</li>
 3. FUNG OI WEI (Chair for PyCon 2020)</li>
 
-
 The board can be contactable via [board@pycon.my](mailto:board@pycon.my).
 
 As defined in its contract of incorporation, PYCON MY PLT’s purpose are as
 follow:
+
 <ol type="a">
   <li>Organizing and hosting a yearly PyCon MY</li>
   <li>
