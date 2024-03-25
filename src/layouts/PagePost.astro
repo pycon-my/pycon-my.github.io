@@ -1,13 +1,20 @@
 ---
-import type { CollectionEntry } from "astro:content";
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import FormattedDate from "../components/FormattedDate.astro";
 
-type Props = CollectionEntry<"blog">["data"];
+interface Props {
+  frontmatter: {
+    title: string;
+    description: string;
+    heroImage?: string;
+    pubDate?: string;
+    updatedDate?: string;
+  };
+}
 
-const frontmatter = Astro.props;
+const { frontmatter } = Astro.props;
 ---
 
 <html lang="en">
@@ -28,12 +35,16 @@ const frontmatter = Astro.props;
             }
           </div>
           <div class="pt-10 pb-10 mx-auto p-3">
-            <FormattedDate date={frontmatter.pubDate} />
+            <FormattedDate
+              date={frontmatter?.pubDate
+                ? new Date(frontmatter.pubDate)
+                : new Date("1 Jan 2024")}
+            />
             {
               frontmatter.updatedDate && (
                 <div class="last-updated-on">
                   Last updated on{" "}
-                  <FormattedDate date={frontmatter.updatedDate} />
+                  <FormattedDate date={new Date(frontmatter.updatedDate)} />
                 </div>
               )
             }

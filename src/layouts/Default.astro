@@ -9,18 +9,23 @@ const { title, description } = Astro.props;
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead
-			title={title ?? SITE_TITLE}
-			description={description ?? SITE_DESCRIPTION}
-		/>
-		<ViewTransitions />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<slot />
-		</main>
-		<Footer />
-	</body>
+  <head>
+    <BaseHead
+      title={title ?? SITE_TITLE}
+      description={description ?? SITE_DESCRIPTION}
+    />
+    <ViewTransitions />
+    <!-- Required Core Stylesheet -->
+    <link rel="stylesheet" href="/styles/glide.core.min.css" />
+
+    <!-- Optional Theme Stylesheet -->
+    <link rel="stylesheet" href="/styles/glide.theme.min.css" />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+  </body>
 </html>
