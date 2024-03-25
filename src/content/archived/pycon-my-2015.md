@@ -23,4 +23,4 @@ The whole event was indeed a successful one, thanks to the sponsors, dedicated o
 
 Malaysia will definitely welcome PyCon with open hands again next year!
 
-_\*For more photos on PyCon MY 2015, check out_ [_http://t.co/lylYTftO4g_](http://t.co/lylYTftO4g)
+For more photos on PyCon MY 2015, check out [http://t.co/lylYTftO4g](http://t.co/lylYTftO4g)
