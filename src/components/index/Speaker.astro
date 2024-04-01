@@ -1,0 +1,83 @@
+---
+import Title from "../Title.astro";
+import SpeakerCard from "./SpeakerCard.astro";
+
+const keynoteSpeakers = [
+  { name: "John Smith", profession: "Machine Learning Expert" },
+  { name: "Emma Johnson", profession: "Software Developer" },
+];
+
+const speakers = [
+  { name: "John Smith", profession: "Machine Learning Expert" },
+  { name: "William M. Otero", profession: "Software Developer" },
+  { name: "Anissa J. Turnage", profession: "CEO Example inc." },
+  { name: "Smith Donald", profession: "Organizer" },
+  { name: "Rhonda Syder", profession: "Software Developer" },
+  { name: "David M. Brown", profession: "COO Some Company" },
+  { name: "Donald Herbert", profession: "Machine Learning Expert" },
+  { name: "William M. Otero", profession: "Software Developer" },
+  { name: "Anissa J. Turnage", profession: "CEO Example inc." },
+];
+---
+
+<section class="">
+  <div>
+    <Title>Keynote Speakers</Title>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:px-72">
+      {
+        keynoteSpeakers.map((s) => (
+          <SpeakerCard name={s.name} profession={s.profession} />
+        ))
+      }
+    </div>
+    <div>
+      <Title>Meet Our Speakers</Title>
+
+      <div class="glide">
+        <div class="glide__track pb-6" data-glide-el="track">
+          <ul class="glide__slides">
+            {
+              speakers.map((s) => (
+                <li class="glide__slide">
+                  <SpeakerCard name={s.name} profession={s.profession} />
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+          {
+            speakers.map((_s, index) => (
+              <button
+                class="glide__bullet w-3 h-3"
+                data-glide-dir={`=${index}`}
+              />
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // docs: https://glidejs.com/docs/options/
+  import Glide, {
+    Controls,
+    Breakpoints,
+    Autoplay,
+    Swipe,
+  } from "@glidejs/glide/dist/glide.modular.esm";
+
+  new Glide(".glide", {
+    type: "carousel",
+    startAt: 0,
+    perView: 3,
+    autoplay: 2000,
+  }).mount({
+    Controls,
+    Breakpoints,
+    Autoplay,
+    Swipe,
+  });
+</script>

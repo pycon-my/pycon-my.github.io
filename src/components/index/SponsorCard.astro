@@ -1,0 +1,20 @@
+---
+interface Props {
+  image: string;
+  imageAlt: string;
+  sponsorTier: string;
+}
+
+const { image, imageAlt, sponsorTier } = Astro.props;
+---
+
+<div>
+  <div class="bg-white text-primary-content shadow-lg">
+    <figure>
+      <img src={image} alt={imageAlt} />
+    </figure>
+  </div>
+  <div class="text-center pt-3">
+    <span class="font-semibold text-2xl">{sponsorTier}</span>
+  </div>
+</div>

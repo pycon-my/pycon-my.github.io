@@ -1,0 +1,20 @@
+---
+interface Props {
+  name: string;
+  profession: string;
+}
+
+const { name, profession } = Astro.props;
+---
+
+<div
+  class="bg-gray-200 m-8 rounded-lg shadow-lg shadow-gray-400 items-center flex flex-col p-6 lg:px-20"
+>
+  <div class="avatar p-4">
+    <div class="w-40 rounded-full">
+      <img class="" src="https://dummyimage.com/200x200" alt="avatar" />
+    </div>
+  </div>
+  <h1 class="font-semibold text-2xl">{name}</h1>
+  <h1 class="text-xl mb-2">{profession}</h1>
+</div>

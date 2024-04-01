@@ -1,0 +1,9 @@
+{
+  "editor.defaultFormatter": "astro-build.astro-vscode",
+  "editor.rulers": [
+    80
+],
+"[markdown]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+}

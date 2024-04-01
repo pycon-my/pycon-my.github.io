@@ -2,7 +2,11 @@
 export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'montserrat': ['Montserrat']
+      }
+    },
   },
   daisyui: {
     themes: [
@@ -13,9 +17,10 @@ export default {
           tertiary: "#FFD100",
           accent: "#CC0000",
           background: "#ffffff",
+          info: "#2e83c2",
         },
       },
     ],
   },
-  plugins: [require("daisyui")],
+  plugins: [require("@tailwindcss/typography"), require("daisyui")],
 };

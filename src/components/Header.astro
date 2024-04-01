@@ -3,78 +3,92 @@ import HeaderLink from "./HeaderLink.astro";
 import { SITE_TITLE } from "../consts";
 ---
 
-<nav
-  class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600 mb-10"
->
+<nav class="bg-[#00AFF0] fixed w-full z-20 top-0 start-0">
   <div
-    class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+    class="flex flex-wrap items-center justify-between mx-auto px-3 py-4"
   >
-    <a class="flex items-center space-x-3 rtl:space-x-reverse">
-      <img src="/pyconmy.svg" class="h-8" alt="PyCon MY Logo" />
+    <!-- REMARKS : Logo is the Home button -->
+    <a class="flex items-center px-5 space-x-0 rtl:space-x-reverse" href="/">
+      <img src="/pyconmy-logo.png" class="w-12 h-12" alt="PyCon MY Logo" />
       <span
-        class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
-        >{SITE_TITLE}</span
-      >
+        class="self-center text-xl font-semibold whitespace-nowrap text-white font-montserrat pl-4"
+        >{SITE_TITLE}
+      </span>
     </a>
-    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-      <button
-        type="button"
-        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-        >Login</button
-      >
-      <button
-        data-collapse-toggle="navbar-sticky"
-        type="button"
-        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-        aria-controls="navbar-sticky"
-        aria-expanded="false"
-      >
-        <span class="sr-only">Open main menu</span>
-        <svg
-          class="w-5 h-5"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 17 14"
-        >
-          <path
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M1 1h15M1 7h15M1 13h15"></path>
-        </svg>
-      </button>
-    </div>
-    <div
-      class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-      id="navbar-sticky"
-    >
-      <ul
-        class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
-      >
-        <!-- <li>
-          <a
-            href="#"
-            class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
-            aria-current="page">Home</a
+
+    <div>
+      <!-- 
+          REMARKS :
+          - NavBar Tab as per Kristy's draft: Home - PyCon PSF - Code of Conduct - Sponsors - Speakers - Events - Membership - Contact 
+          - chevron-down from https://heroicons.com/
+          - Revised 1: removed Home
+          - Revised 2: Put PyCon PSf and Code of Conduct under About dropdown
+        -->
+
+      <!-- Mobile view -->
+      <div class="lg:hidden">
+        <div class="dropdown dropdown-end">
+          <div tabindex={0} role="button" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 text-white"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+            </svg>
+          </div>
+          <ul
+            tabindex={0}
+            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-56"
           >
-        </li> -->
-        <HeaderLink href="/">Home</HeaderLink>
+            <li>
+              <a class="text-lg font-bold">About</a>
+              <ul class="p-2">
+                <li><a href="/about" class="text-md">About PyCon</a></li>
+                <li><a href="/the-psf" class="text-md">The PSF</a></li>
+                <li><a href="/coc" class="text-md">Code of Conduct</a></li>
+                <li><a href="/blog" class="text-md">Blog</a></li>
+              </ul>
+            </li>
+            <li><a href="/partners" class="text-lg font-bold">Partners</a></li>
+            <li><a href="/sponsors" class="text-lg font-bold">Sponsors</a></li>
+            <li><a href="/speakers" class="text-lg font-bold">Speakers</a></li>
+            <li><a href="/events" class="text-lg font-bold">Events</a></li>
+            <li>
+              <a class="text-lg font-bold">Members</a>
+              <ul class="p-2">
+                <li><a href="/core-member" class="text-md">Core Members</a></li>
+                <li><a href="/volunteer" class="text-md">Volunteers</a></li>
+                <li>
+                  <a href="/membership-signup" class="text-md">Membership</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="/contact" class="text-lg font-bold">Contact</a></li>
+          </ul>
+        </div>
+      </div>
 
-        <HeaderLink href="/about">About</HeaderLink>
-
-        <HeaderLink href="/volunteers">Volunteers</HeaderLink>
-
-        <HeaderLink href="/partners">Partners</HeaderLink>
-        <!-- <HeaderLink href="/sponsors">Sponsors</HeaderLink>
-        <HeaderLink href="/speakers">Speakers</HeaderLink>
-        <HeaderLink href="/core-members">Core Members</HeaderLink>
-        <HeaderLink href="/events">Events</HeaderLink>
-        <HeaderLink href="/blog">Blog</HeaderLink>
-        <HeaderLink href="/membership-signup">Membership</HeaderLink>
-        <HeaderLink href="/contact">Contact</HeaderLink> -->
-      </ul>
+      <!-- Web view -->
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          
+          <HeaderLink href="/">Home</HeaderLink>
+          <HeaderLink href="/the-psf">PyCon PSF</HeaderLink>
+          <HeaderLink href="/coc">Code of Conduct</HeaderLink>
+          <HeaderLink href="#sponsors">Sponsors</HeaderLink>
+          <HeaderLink href="#speakers">Speakers</HeaderLink>
+          <HeaderLink href="#events">Events</HeaderLink>
+          <HeaderLink href="/membership-signup">Membership</HeaderLink>
+          <HeaderLink href="/contact">Contact</HeaderLink>
+        </ul>
+      </div>
     </div>
   </div>
 </nav>
