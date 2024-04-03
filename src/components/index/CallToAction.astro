@@ -1,0 +1,21 @@
+---
+const buttons = [
+  { text: "Register Now", link: "#" },
+  { text: "Call for Sponsors", link: "#" },
+  { text: "Call for Papers", link: "#" },
+];
+---
+
+<div class="py-5"></div>
+<div class="flex flex-col items-center gap-y-10">
+  {
+    buttons.map((button) => (
+      <a
+        class="btn w-52 bg-[#FFF200] text-lg border-none hover:bg-slate-200"
+        href={button.link}
+      >
+        {button.text}
+      </a>
+    ))
+  }
+</div>

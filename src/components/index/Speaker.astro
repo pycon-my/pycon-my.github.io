@@ -74,6 +74,14 @@ const speakers = [
     startAt: 0,
     perView: 3,
     autoplay: 2000,
+    breakpoints: {
+      768: {
+        perView: 1,
+      },
+      1024: {
+        perView: 3,
+      },
+    },
   }).mount({
     Controls,
     Breakpoints,

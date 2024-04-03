@@ -2,32 +2,48 @@
 
 ---
 
-<div class="grid grid-flow-col gap-4 sm:gap-8 rounded-lg bg-white p-5 px-4 sm:px-24 text-center auto-cols-max">
-  <div class="flex flex-col">
-    <span class="text-3xl sm:text-5xl countdown">
-      <span style="--value:15;" id="days"></span>
-    </span>
-    DAYS
+<section class="flex flex-col items-center">
+  <div class="flex justify-center pb-10">
+    <div
+      class="grid grid-flow-col gap-4 sm:gap-8 rounded-lg bg-white p-5 px-4 sm:px-24 text-center auto-cols-max"
+    >
+      <div class="flex flex-col">
+        <span class="text-3xl sm:text-5xl countdown">
+          <span style="--value:15;" id="days"></span>
+        </span>
+        DAYS
+      </div>
+      <div class="flex flex-col">
+        <span class="text-3xl sm:text-5xl countdown">
+          <span style="--value:10;" id="hours"></span>
+        </span>
+        HOURS
+      </div>
+      <div class="flex flex-col">
+        <span class="text-3xl sm:text-5xl countdown">
+          <span style="--value:24;" id="minutes"></span>
+        </span>
+        MINUTES
+      </div>
+      <div class="flex flex-col">
+        <span class="text-3xl sm:text-5xl countdown">
+          <span style="--value:52;" id="seconds"></span>
+        </span>
+        SECONDS
+      </div>
+    </div>
   </div>
-  <div class="flex flex-col">
-    <span class="text-3xl sm:text-5xl countdown">
-      <span style="--value:10;" id="hours"></span>
-    </span>
-    HOURS
-  </div>
-  <div class="flex flex-col">
-    <span class="text-3xl sm:text-5xl countdown">
-      <span style="--value:24;" id="minutes"></span>
-    </span>
-    MINUTES
-  </div>
-  <div class="flex flex-col">
-    <span class="text-3xl sm:text-5xl countdown">
-      <span style="--value:52;" id="seconds"></span>
-    </span>
-    SECONDS
-  </div>
-</div>
+
+  <span class="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+    until
+  </span>
+
+  <img
+    src="/pycon2024-logo.png"
+    alt="PyCon 2024 Logo"
+    class="p-10 w-64 sm:w-80"
+  />
+</section>
 
 <script>
   function changeCountdownNumber(id: string, value: number) {
@@ -46,7 +62,7 @@
     --timeLeftInSeconds;
 
     const days = Math.max(Math.floor(timeLeftInSeconds / 60 / 60 / 24));
-    const hours = Math.max(Math.floor(timeLeftInSeconds / 60 / 60)%24);
+    const hours = Math.max(Math.floor(timeLeftInSeconds / 60 / 60) % 24);
     const minutes = Math.max(Math.floor(timeLeftInSeconds / 60) % 60);
     const seconds = Math.max(Math.floor(timeLeftInSeconds) % 60);
     // console.log({ timeLeftInSeconds, days, hours, minutes, seconds });
