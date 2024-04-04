@@ -1,0 +1,56 @@
+---
+import NavBar from "../components/NavBar.astro";
+import Footer from "../components/Footer.astro";
+const { title } = Astro.props;
+import { SEO } from "astro-seo";
+---
+
+<html lang="en">
+  <head>
+    <SEO
+      title="PyCon MY 2024"
+      description="Python Conference Malaysia 2024, happening on 24-25 August 2024 at Sunway University"
+      openGraph={{
+        basic: {
+          title: "PyCon MY 2024",
+          type: "image",
+          image: "/cover_pc.jpg",
+        },
+      }}
+      twitter={{
+        creator: "@pyconmy",
+      }}
+      extend={{
+        // extending the default link tags
+        link: [{ rel: "icon", href: "/favicon.svg" }],
+        // extending the default meta tags
+        meta: [
+          {
+            name: "twitter:image",
+            content: "/cover_pc.jpg",
+          },
+          { name: "twitter:title", content: "PyCon MY 2024" },
+          {
+            name: "twitter:description",
+            content:
+              "Python Conference Malaysia 2024, happening on 24-25 August 2024 at Sunway University",
+          },
+        ],
+      }}
+    />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>{title}</title>
+  </head>
+  <body>
+    <NavBar />
+    <slot />
+    <Footer />
+  </body>
+</html>

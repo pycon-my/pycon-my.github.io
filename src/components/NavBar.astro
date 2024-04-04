@@ -1,0 +1,85 @@
+---
+import PyConLogo from "./PyConLogo.astro";
+
+const NavItems = [
+  {
+    label: "Home",
+    link: "/",
+  },
+  {
+    label: "PyCon PSF",
+    link: "/psf",
+  },
+  {
+    label: "Code of Conduct",
+    link: "/coc",
+  },
+  {
+    label: "Sponsors",
+    link: "/sponsors",
+  },
+  {
+    label: "Speakers",
+    link: "/speakers",
+  },
+  {
+    label: "Events",
+    link: "/events",
+  },
+  {
+    label: "Membership",
+    link: "/membership",
+  },
+  {
+    label: "Contact",
+    link: "/contact",
+  },
+];
+---
+
+<div class="flex justify-between navbar bg-blue text-white px-8 py-3">
+  <div>
+    <a class="flex items-center" href="/">
+      <PyConLogo hw="w-12 h-12" />
+      <span class="pl-3 font-semibold">PyCon MY</span>
+    </a>
+  </div>
+  <div class="hidden lg:flex">
+    <ul class="menu menu-horizontal px-1 font-semibold">
+      {
+        NavItems.map((item) => (
+          <li>
+            <a href={item.link}>{item.label}</a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+  <div class="dropdown dropdown-end lg:hidden">
+    <div tabindex="0" role="button" class="btn btn-ghost">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        class="inline-block w-5 h-5 stroke-current"
+        ><path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"></path></svg
+      >
+    </div>
+    <ul
+      tabindex="0"
+      class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black-900"
+    >
+      {
+        NavItems.map((item) => (
+          <li>
+            <a href={item.link}>{item.label}</a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</div>

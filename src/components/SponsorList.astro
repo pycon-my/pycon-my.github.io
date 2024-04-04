@@ -1,0 +1,26 @@
+---
+import SponsorCard from "./SponsorCard.astro"
+
+interface Sponsor {
+    header: string;
+    sponsor: { img: string; alt: string; link: string; }[];
+}
+
+const { sponsors } = Astro.props as {sponsors:Sponsor[]};
+---
+
+<div class="flex flex-col items-center justify-center bg-yellow">
+    <h1 class="font-bold text-black-800 text-xl sm:text-3xl pt-16">Our Sponsors</h1>
+    {sponsors.map(sponsor => (
+        
+        <h3 class="mt-8 text-black-600">{sponsor.header}</h3>
+        <div class=`grid grid-cols-1 sm:grid-cols-${sponsor.sponsor.length < 4 ? sponsor.sponsor.length : 4} gap-4 m-4`>
+        {sponsor.sponsor.map(s => (
+                <SponsorCard img={s.img} alt={s.alt} link={s.link} />
+        ))}
+    </div>
+    ))}
+    
+
+    </div>
+</div>

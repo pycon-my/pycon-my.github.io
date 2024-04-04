@@ -1,0 +1,41 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+
+const { frontmatter } = Astro.props;
+---
+
+<BaseLayout>
+  <article class="flex justify-center">
+    <div class="prose">
+      <div class="px-8 py-12 md:px-12 mx-auto lg:pt-24 max-w-7xl lg:px-32">
+        <div class="lg:text-center">
+          {
+            frontmatter.image && (
+              <img
+                class="lg:h-72 w-full  object-cover object-center"
+                src={frontmatter.image.url}
+                alt={frontmatter.image.alt}
+              />
+            )
+          }
+          <h1
+            class="text-4xl tracking-tight text-balance mt-12 lg:mt-16 font-medium font-display text-black md:text-8xl"
+          >
+            {frontmatter.title}
+          </h1>
+          {
+            frontmatter.description && (
+              <p class="max-w-2xl mt-8 mx-auto text-zinc-500">
+                <em>{frontmatter.description}</em>
+              </p>
+            )
+          }
+        </div>
+
+        <div class="mt-12 max-w-2xl mx-auto">
+            <slot />
+        </div>
+      </div>
+    </div>
+  </article>
+</BaseLayout>

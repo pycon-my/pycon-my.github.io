@@ -1,0 +1,18 @@
+---
+import Card from "./Card.astro"
+
+interface Speaker {
+    image: string,
+    name: string,
+    title: string
+}
+
+const { speakers } = Astro.props as {speakers:Speaker[]};
+---
+<div class=`grid grid-cols-1 sm:grid-cols-${speakers.length < 3 ? speakers.length : 3} gap-4 m-4`>
+  {speakers.map(speaker => (
+          <Card image={speaker.image} name={speaker.name} subtitle={speaker.title}></Card>
+  ))}
+</div>
+
+
