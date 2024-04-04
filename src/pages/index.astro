@@ -9,119 +9,8 @@ const register_link = "#";
 const cfs_link = "#";
 const cfp_link = "#";
 
-const KeyNoteSpeakers = [
-  {
-    image: "https://placehold.co/400/png",
-    name: "Laura Laura",
-    title: "Data Science",
-  },
-  {
-    image: "https://placehold.co/400/png",
-    name: "Laura Laura",
-    title: "Data Science",
-  },
-];
-
-const Speakers = [
-  {
-    image: "https://placehold.co/400/png",
-    name: "Laura Laura",
-    title: "Data Science",
-  },
-  {
-    image: "https://placehold.co/400/png",
-    name: "Laura Laura",
-    title: "Data Science",
-  },
-  {
-    image: "https://placehold.co/400/png",
-    name: "Laura Laura",
-    title: "Data Science",
-  },
-  {
-    image: "https://placehold.co/400/png",
-    name: "Laura Laura",
-    title: "Data Science",
-  },
-];
-
-const Sponsors = [
-  {
-    header: "Platinum Sponsor",
-    sponsor: [
-      {
-        img: "https://placehold.co/600x400/png",
-        alt: "Sponsor Image 1",
-        link: "https://example.com/sponsor1",
-      },
-    ],
-  },
-  {
-    header: "Gold Sponsor",
-    sponsor: [
-      {
-        img: "https://placehold.co/600x400/png",
-        alt: "Sponsor Image 1",
-        link: "https://example.com/sponsor1",
-      },
-      {
-        img: "https://placehold.co/600x400/png",
-        alt: "Sponsor Image 2",
-        link: "https://example.com/sponsor2",
-      },
-    ],
-  },
-  {
-    header: "Silver Sponsor",
-    sponsor: [
-      {
-        img: "https://placehold.co/600x400/png",
-        alt: "Sponsor Image 1",
-        link: "https://example.com/sponsor1",
-      },
-      {
-        img: "https://placehold.co/600x400/png",
-        alt: "Sponsor Image 2",
-        link: "https://example.com/sponsor2",
-      },
-      {
-        img: "https://placehold.co/600x400/png",
-        alt: "Sponsor Image 2",
-        link: "https://example.com/sponsor2",
-      },
-      {
-        img: "https://placehold.co/600x400/png",
-        alt: "Sponsor Image 2",
-        link: "https://example.com/sponsor2",
-      },
-    ],
-  },
-  {
-    header: "Bronze Sponsor",
-    sponsor: [
-      {
-        img: "https://placehold.co/600x400/png",
-        alt: "Sponsor Image 1",
-        link: "https://example.com/sponsor1",
-      },
-      {
-        img: "https://placehold.co/600x400/png",
-        alt: "Sponsor Image 2",
-        link: "https://example.com/sponsor2",
-      },
-      {
-        img: "https://placehold.co/600x400/png",
-        alt: "Sponsor Image 2",
-        link: "https://example.com/sponsor2",
-      },
-      {
-        img: "https://placehold.co/600x400/png",
-        alt: "Sponsor Image 2",
-        link: "https://example.com/sponsor2",
-      },
-    ],
-  },
-];
+import { SponsorLists } from "../sponsorLists";
+import { AllSpeakers, KeyNoteSpeakers } from "../speakerLists";
 ---
 
 <BaseLayout title="PyCon MY 2024">
@@ -150,7 +39,7 @@ const Sponsors = [
     <h3 class="mt-8 text-white font-bold text-xl sm:text-3xl">
       Meet our Speakers
     </h3>
-    <SpeakerCard speakers={Speakers} />
+    <SpeakerCard speakers={AllSpeakers} />
     <Countdown />
     <span class="mt-10 mb-10 font-bold text-xl sm:text-3xl text-white"
       >until</span
@@ -166,5 +55,5 @@ const Sponsors = [
       class="btn bg-yellow text-black-900 m-8 w-56 lg:btn-lg">Register Now</a
     >
   </div>
-  <SponsorList sponsors={Sponsors} />
+  <SponsorList sponsors={SponsorLists} />
 </BaseLayout>
