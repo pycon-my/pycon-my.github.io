@@ -14,7 +14,7 @@ const { sponsors } = Astro.props as {sponsors:Sponsor[]};
     {sponsors.map(sponsor => (
         
         <h3 class="mt-8 text-black-600">{sponsor.header}</h3>
-        <div class=`grid grid-cols-1 sm:grid-cols-${sponsor.sponsor.length < 4 ? sponsor.sponsor.length : 4} gap-4 m-4`>
+        <div class=`grid grid-cols-1 items-center lg:grid-cols-${sponsor.sponsor.length < 4 ? sponsor.sponsor.length : 4} gap-4 m-4`>
         {sponsor.sponsor.map(s => (
                 <SponsorCard img={s.img} alt={s.alt} link={s.link} />
         ))}
