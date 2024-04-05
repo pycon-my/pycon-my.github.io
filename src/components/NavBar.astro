@@ -7,20 +7,92 @@ const NavItems = [
     link: "/",
   },
   {
-    label: "PyCon PSF",
-    link: "/psf",
+    label: "About",
+    link: [
+      {
+        label: "PyCon MY",
+        link: [
+          {
+            label: "All partners",
+            link: "/all-partners",
+          },
+          {
+            label: "All sponsors",
+            link: "/all-sponsors",
+          },
+          {
+            label: "All volunteers",
+            link: "/all-volunteers",
+          },
+          {
+            label: "All speakers",
+            link: "/all-speakers",
+          },
+        ],
+      },
+      {
+        label: "PyCon / PSF",
+        link: "/psf",
+      },
+      {
+        label: "Code of Conduct",
+        link: "/coc",
+      },
+    ],
   },
   {
-    label: "Code of Conduct",
-    link: "/coc",
-  },
-  {
-    label: "Sponsors",
-    link: "/sponsors",
-  },
-  {
-    label: "Speakers",
-    link: "/speakers",
+    label: "Events",
+    link: [
+      {
+        label: "PyCon MY 2024",
+        link: [
+          {
+            label: "Ticket",
+            link: "/ticket"
+          },
+          {
+            label: "CFP",
+            link: "/cfp"
+          },
+          {
+            label: "Keynote Speakers",
+            link: "/keynote-speakers"
+          },
+          {
+            label: "Speakers",
+            link: "/speakers"
+          },
+          {
+            label: "Agenda",
+            link: "/agenda"
+          },
+          {
+            label: "Venue",
+            link: "/Venue",
+          },
+          {
+            label: "Financial Aid",
+            link: "/aid"
+          },
+          {
+            label: "Claim your Certificate",
+            link: "/cert",
+          },
+          {
+            label: "Sponsors",
+            link: "/sponsors"
+          },
+          {
+            label: "Volunteers",
+            link: "/volunteers",
+          },
+        ]
+      },
+      {
+        label: "Past PyCon MY",
+        link: "/past-pycon",
+      }
+    ]
   },
   {
     label: "Blog",
@@ -29,10 +101,6 @@ const NavItems = [
   {
     label: "Membership",
     link: "/membership",
-  },
-  {
-    label: "Contact",
-    link: "/contact",
   },
 ];
 ---
@@ -48,11 +116,35 @@ const NavItems = [
     <ul class="menu menu-horizontal px-1 font-semibold">
       {
         NavItems.map((item) => (
+        typeof item.link === 'string' ? (
           <li>
             <a href={item.link}>{item.label}</a>
           </li>
-        ))
-      }
+        ):(
+          <li>
+            <details>
+          <summary>{item.label}</summary>
+          <ul class="menu p-2 w-56">
+            
+              {item.link.map((i)=> (
+                typeof i.link === 'string' ? (
+                <li class="text-black-800">
+                  <a href={i.link}>{i.label}</a>
+                </li>):(
+                <h2 class="menu-title text-black-600">{i.label}</h2>
+                <ul>
+                {i.link.map((j)=>(
+                <li class="text-black-800"><a href={j.link}>{j.label}</a></li>
+                ))}
+                </ul>
+                )
+              ))}
+          </ul>
+        </details>
+          </li>
+            )
+               )
+        )}
     </ul>
   </div>
   <div class="dropdown dropdown-end lg:hidden">
@@ -75,9 +167,30 @@ const NavItems = [
     >
       {
         NavItems.map((item) => (
-          <li>
+        typeof item.link === 'string' ? (
+          <li class="font-semibold">
             <a href={item.link}>{item.label}</a>
           </li>
+        ):(
+        <li>
+          <ul>
+            <li class="font-semibold"><a>{item.label}</a></li>
+              {item.link.map((i)=> (
+                typeof i.link === 'string' ? (
+                <li>
+                  <a href={i.link}>{i.label}</a>
+                </li>):(
+                <h2 class="menu-title font-medium text-black-600">{i.label}</h2>
+                <ul>
+                {i.link.map((j)=>(
+                <li class="text-black-800"><a href={j.link}>{j.label}</a></li>
+                ))}
+                </ul>
+                )
+              ))}
+          </ul>
+          </li>
+        )
         ))
       }
     </ul>

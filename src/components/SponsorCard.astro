@@ -1,7 +1,8 @@
 ---
-const { img, alt, link } = Astro.props;
+const { img, alt, link, name } = Astro.props;
 ---
 
 <div class="rounded-lg w-48 h-auto bg-white shadow-xl">
   <a href={link}><figure><img class="p-1" src={img} alt={alt} /></figure> </a>
+  {name&& (<span class="text-center">{name}</span>)}
 </div>
