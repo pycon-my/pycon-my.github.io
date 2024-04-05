@@ -124,7 +124,7 @@ const NavItems = [
           <li>
             <details>
           <summary>{item.label}</summary>
-          <ul class="menu p-2 w-56 z-20">
+          <ul class="menu bg-white text-black-900 p-2 w-56 z-20">
             
               {item.link.map((i)=> (
                 typeof i.link === 'string' ? (
@@ -163,7 +163,7 @@ const NavItems = [
     </div>
     <ul
       tabindex="0"
-      class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black-900"
+      class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black-900 bg-white"
     >
       {
         NavItems.map((item) => (

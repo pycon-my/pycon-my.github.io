@@ -3,7 +3,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout title="Previous PyCon MY">
-  <div class="bg-zinc py-8">
+  <div class="bg-zinc py-8 text-black-900">
     <div class="px-4 md:px-12 flex flex-col items-center justify-center">
       <h1 class="font-bold text-black-800 text-xl sm:text-3xl pt-16 pb-4">
         Past PyCon MY Events
@@ -37,7 +37,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           <div class="timeline-end mb-10">
             <img
               class="h-auto w-full rounded-xl"
-              src="https://placehold.co/600x400/png"
+              src="/media/pycon2014.jpg"
               alt="pycon 2014"
             />
           </div>
@@ -69,7 +69,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           <div class="timeline-end md:timeline-start md:text-end mb-10">
             <img
               class="h-auto w-full rounded-xl"
-              src="https://placehold.co/600x400/png"
+              src="/media/pycon2015.jpg"
               alt="pycon 2015"
             />
           </div>
@@ -101,7 +101,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           <div class="timeline-end mb-10">
             <img
               class="h-auto w-full rounded-xl"
-              src="https://placehold.co/600x400/png"
+              src="/media/pycon2016.jpg"
               alt="pycon 2016"
             />
           </div>
@@ -197,7 +197,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           <div class="timeline-end md:timeline-start md:text-end mb-10">
             <img
               class="h-auto w-full rounded-xl"
-              src="https://placehold.co/600x400/png"
+              src="/media/pycon2019.jpg"
               alt="pycon 2019"
             />
           </div>
@@ -357,7 +357,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           <div class="timeline-end md:timeline-start md:text-end mb-10">
             <img
               class="h-auto w-full rounded-xl"
-              src="https://placehold.co/600x400/png"
+              src="/media/pycon2023.jpg"
               alt="pycon 2023"
             />
           </div>
@@ -367,3 +367,16 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     </div>
   </div>
 </BaseLayout>
+
+<style>
+  .timeline-start{
+      @apply self-baseline;
+      @apply px-3
+  }
+  .timeline-end{
+      @apply px-3
+  }
+  hr {
+      @apply bg-pink;
+  }
+  </style>

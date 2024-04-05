@@ -8,6 +8,6 @@ const { image, name, subtitle } = Astro.props;
     </figure>
     <div class="card-body items-center text-center text-black-900">
       <h2 class="card-title">{name}</h2>
-      <p>{subtitle}</p>
+      {subtitle && (<p>{subtitle}</p>)}
     </div>
   </div>

@@ -32,7 +32,7 @@ const { frontmatter } = Astro.props;
           }
         </div>
 
-        <div class="mt-12 mx-auto text-black-900">
+        <div class="mt-12 mx-auto text-black-900 prose-headings:text-black-900 prose-a:text-black-900 marker:prose-li:text-black-900">
           
             <slot />
 
@@ -41,3 +41,9 @@ const { frontmatter } = Astro.props;
     </div>
   </article>
 </BaseLayout>
+
+<style>
+  .prose h3 {
+    @apply text-black-900
+  }
+</style>
