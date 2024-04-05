@@ -9,12 +9,12 @@ interface Sponsor {
 const { sponsors } = Astro.props as {sponsors:Sponsor[]};
 ---
 
-<div class="flex flex-col items-center justify-center bg-yellow">
+<div class="flex flex-col items-center justify-center bg-yellow py-8">
     <h1 class="font-bold text-black-800 text-xl sm:text-3xl pt-16">Our Sponsors</h1>
     {sponsors.map(sponsor => (
         
         <h3 class="mt-8 text-black-600">{sponsor.header}</h3>
-        <div class=`grid grid-cols-1 items-center lg:grid-cols-${sponsor.sponsor.length < 4 ? sponsor.sponsor.length : 4} gap-4 m-4`>
+        <div class="flex flex-wrap justify-center gap-2 mt-4">
         {sponsor.sponsor.map(s => (
                 <SponsorCard img={s.img} alt={s.alt} link={s.link} />
         ))}

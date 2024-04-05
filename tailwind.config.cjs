@@ -16,6 +16,7 @@ module.exports = {
 			'white': '#FFFFFF',
 			'pink': '#EB268F',
 		},
+		
 		extend: {},
 	},
 	plugins: [require("daisyui"),require('@tailwindcss/typography')],

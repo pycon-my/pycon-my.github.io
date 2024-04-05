@@ -72,6 +72,11 @@ export const SponsorLists = [
           alt: "Sponsor Image 2",
           link: "https://example.com/sponsor2",
         },
+        {
+          img: "https://placehold.co/600x400/png",
+          alt: "Sponsor Image 2",
+          link: "https://example.com/sponsor2",
+        },
       ],
     },
   ];
