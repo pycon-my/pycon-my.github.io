@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HeroImage from "../components/HeroImage.astro";
-import SpeakerCard from "../components/SpeakerCard.astro";
+import SpeakerCarousel from "../components/SpeakerCarousel.astro";
 import Countdown from "../components/Countdown.astro";
 import SponsorList from "../components/SponsorList.astro";
 
@@ -35,11 +35,11 @@ import { AllSpeakers, KeyNoteSpeakers } from "../speakerLists";
     <h3 class="mt-8 text-white font-bold text-xl sm:text-3xl">
       Keynote Speakers
     </h3>
-    <SpeakerCard speakers={KeyNoteSpeakers} />
+    <SpeakerCarousel speakers={KeyNoteSpeakers} />
     <h3 class="mt-8 text-white font-bold text-xl sm:text-3xl">
       Meet our Speakers
     </h3>
-    <SpeakerCard speakers={AllSpeakers} />
+    <SpeakerCarousel speakers={AllSpeakers} />
     <Countdown />
     <span class="mt-10 mb-10 font-bold text-xl sm:text-3xl text-white"
       >until</span

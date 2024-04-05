@@ -124,7 +124,7 @@ const NavItems = [
           <li>
             <details>
           <summary>{item.label}</summary>
-          <ul class="menu p-2 w-56">
+          <ul class="menu p-2 w-56 z-20">
             
               {item.link.map((i)=> (
                 typeof i.link === 'string' ? (
@@ -173,7 +173,7 @@ const NavItems = [
           </li>
         ):(
         <li>
-          <details close>
+          <details>
             <summary class="font-semibold">{item.label}</summary>
             <ul>
               {item.link.map((i)=> (

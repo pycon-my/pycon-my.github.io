@@ -1,22 +1,13 @@
 ---
-import Card from "./Card.astro"
+const { image, name, subtitle } = Astro.props;
 
-interface Speaker {
-    image: string,
-    name: string,
-    title: string
-}
-
-const { speakers } = Astro.props as {speakers:Speaker[]};
 ---
-
-<div class="carousel max-w-full mt-8">
-  <div class="carousel-item">
-    {speakers.map(speaker => (
-      <Card image={speaker.image} name={speaker.name} subtitle={speaker.title}></Card>
-))}
+<div class="card w-80 bg-white shadow-xl mx-3">
+    <figure class="px-10 pt-10">
+      <img src={image} alt={name} class="rounded-full" />
+    </figure>
+    <div class="card-body items-center text-center text-black-900">
+      <h2 class="card-title">{name}</h2>
+      <p>{subtitle}</p>
+    </div>
   </div>
-</div>
-
-
-
