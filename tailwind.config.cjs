@@ -15,6 +15,7 @@ module.exports = {
 			},
 			'white': '#FFFFFF',
 			'pink': '#EB268F',
+			'zinc': '#f4f4f5',
 		},
 		
 		extend: {},
