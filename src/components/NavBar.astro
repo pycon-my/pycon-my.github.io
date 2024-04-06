@@ -11,6 +11,7 @@ const NavItems = [
     link: [
       {
         label: "PyCon MY",
+        labelLink: "/about",
         link: [
           {
             label: "All partners",
@@ -36,7 +37,7 @@ const NavItems = [
       },
       {
         label: "Code of Conduct",
-        link: "/coc",
+        link: "/codeofconduct",
       },
     ],
   },
@@ -45,6 +46,7 @@ const NavItems = [
     link: [
       {
         label: "PyCon MY 2024",
+        labelLink: "/",
         link: [
           {
             label: "Ticket",
@@ -68,7 +70,7 @@ const NavItems = [
           },
           {
             label: "Venue",
-            link: "/Venue",
+            link: "/venue",
           },
           {
             label: "Financial Aid",
@@ -131,7 +133,7 @@ const NavItems = [
                 <li class="text-black-800">
                   <a href={i.link}>{i.label}</a>
                 </li>):(
-                <h2 class="menu-title text-black-600">{i.label}</h2>
+                <li class="text-black-600"><a href={i.labelLink}>{i.label}</a></li>
                 <ul>
                 {i.link.map((j)=>(
                 <li class="text-black-800"><a href={j.link}>{j.label}</a></li>
@@ -174,14 +176,19 @@ const NavItems = [
         ):(
         <li>
           <details>
-            <summary class="font-semibold">{item.label}</summary>
+            <summary class="font-semibold">
+              {item.label}
+            </summary>
             <ul>
               {item.link.map((i)=> (
                 typeof i.link === 'string' ? (
                 <li>
                   <a href={i.link}>{i.label}</a>
                 </li>):(
-                <summary>{i.label}</summary>
+                  
+                <summary>
+                  <li><a href={i.labelLink}>{i.label}</a></li>
+                  </summary>
                 <ul>
                 {i.link.map((j)=>(
                 <li class="text-black-800"><a href={j.link}>{j.label}</a></li>

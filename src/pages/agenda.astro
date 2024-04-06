@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 
-import { AgendaDayOne } from "../agenda";
+import { AgendaDayOne, AgendaDayTwo } from "../agenda";
 ---
 
 <BaseLayout title="Agenda">
@@ -9,24 +9,65 @@ import { AgendaDayOne } from "../agenda";
     <h3 class="my-8 text-black-900 font-bold text-xl sm:text-3xl">
       Day 1 (24 August 2024)
     </h3>
-    <ul class="timeline timeline-vertical">
+    <ul class="timeline timeline-vertical timeline-compact">
         {AgendaDayOne.map((agenda) =>
       <li>
         <hr />
         
-        <div class="timeline-start">{agenda.time}</div>
-        <div class="timeline-end timeline-box font-black-900">
+        <div class="timeline-start font-semibold text-pink">{agenda.time}</div>
+        <div class="timeline-middle">
+          <div class="w-4 h-4 bg-black-900 rounded-full"></div>
+    </div>
+        <div class="timeline-end font-black-900 flex flex-row gap-6">
+          {agenda.events.map((a)=>
+          <div class="timeline-box">
             <div class="text-lg font-bold">
-                {agenda.agenda}
+                {a.agenda}
             </div>
             <div class="text-sm font-semibold">
-                {agenda.subtitle}    
+                {a.subtitle}    
             </div>
             <div class="text-sm font-normal">
-                {agenda.location}
+                {a.location}
             </div>
-            
+          </div>
+          )}
         </div>
+        
+        
+        <hr />
+      </li>
+      )}
+    </ul>
+
+    <h3 class="my-8 mt-24 text-black-900 font-bold text-xl sm:text-3xl">
+      Day 2 (25 August 2024)
+    </h3>
+    <ul class="timeline timeline-vertical timeline-compact">
+        {AgendaDayTwo.map((agenda) =>
+      <li>
+        <hr />
+        
+        <div class="timeline-start font-semibold text-pink">{agenda.time}</div>
+        <div class="timeline-middle">
+          <div class="w-4 h-4 bg-black-900 rounded-full"></div>
+    </div>
+        <div class="timeline-end font-black-900 flex flex-row gap-6">
+          {agenda.events.map((a)=>
+          <div class="timeline-box">
+            <div class="text-lg font-bold">
+                {a.agenda}
+            </div>
+            <div class="text-sm font-semibold">
+                {a.subtitle}    
+            </div>
+            <div class="text-sm font-normal">
+                {a.location}
+            </div>
+          </div>
+          )}
+        </div>
+        
         
         <hr />
       </li>
