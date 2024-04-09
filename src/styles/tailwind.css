@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Avenir";
+    src: url("/assets/AvenirNext-Regular.ttf") format('truetype');
+    src: url("/assets/AvenirNext-Regular.woff") format('woff');
+    src: url("/assets/AvenirNext-Regular.eot?#iefix") format('embedded-opentype');
+    font-weight: normal;
+	font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Avenir";
+    src: url("/assets/AvenirNext-Medium.ttf") format('truetype');
+    src: url("/assets/AvenirNext-Medium.woff") format('woff');
+    src: url("/assets/AvenirNext-Medium.eot?#iefix") format('embedded-opentype');
+    font-weight: 400;
+	font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Avenir";
+    src: url("/assets/AvenirNext-DemiBold.ttf") format('truetype');
+    src: url("/assets/AvenirNext-DemiBold.woff") format('woff');
+    src: url("/assets/AvenirNext-DemiBold.eot?#iefix") format('embedded-opentype');
+    font-weight: 600;
+	font-style: normal;
+  }
+
+
+  @font-face {
+    font-family: "Avenir";
+    src: url("/assets/AvenirNext-Italic.ttf") format('truetype');
+    src: url("/assets/AvenirNext-Italic.woff") format('woff');
+    src: url("/assets/AvenirNext-Italic.eot?#iefix") format('embedded-opentype');
+    font-weight: normal;
+	font-style: italic;
+  }

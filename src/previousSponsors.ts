@@ -126,8 +126,6 @@ export const PreviousSponsorLists = [
     name: "PUG Singapore",
   },
   {
-    img: "https://placehold.co/600x400/png",
-    alt: "Shoppr Labs",
     link: "https://www.facebook.com/joinshoppr/",
     name: "Shoppr Labs",
   },
@@ -138,8 +136,6 @@ export const PreviousSponsorLists = [
     name: "Squeeze Inc",
   },
   {
-    img: "https://placehold.co/600x400/png",
-    alt: "Solution X",
     link: "https://www.solutionx.com.my/",
     name: "Solution X",
   },

@@ -13,10 +13,10 @@ const NavItems = [
         label: "PyCon MY",
         labelLink: "/about",
         link: [
-          {
-            label: "All partners",
-            link: "/all-partners",
-          },
+          // {
+          //   label: "All partners",
+          //   link: "/all-partners",
+          // },
           {
             label: "All sponsors",
             link: "/all-sponsors",
@@ -25,10 +25,10 @@ const NavItems = [
             label: "All volunteers",
             link: "/all-volunteers",
           },
-          {
-            label: "All speakers",
-            link: "/all-speakers",
-          },
+          // {
+          //   label: "All speakers",
+          //   link: "/all-speakers",
+          // },
         ],
       },
       {
@@ -57,10 +57,6 @@ const NavItems = [
             link: "/cfp"
           },
           {
-            label: "Keynote Speakers",
-            link: "/keynote-speakers"
-          },
-          {
             label: "Speakers",
             link: "/speakers"
           },
@@ -72,18 +68,18 @@ const NavItems = [
             label: "Venue",
             link: "/venue",
           },
-          {
-            label: "Financial Aid",
-            link: "/aid"
-          },
-          {
-            label: "Claim your Certificate",
-            link: "/cert",
-          },
-          {
-            label: "Sponsors",
-            link: "/sponsors"
-          },
+          // {
+          //   label: "Financial Aid",
+          //   link: "/aid"
+          // },
+          // {
+          //   label: "Claim your Certificate",
+          //   link: "/cert",
+          // },
+          // {
+          //   label: "Sponsors",
+          //   link: "/sponsors"
+          // },
           {
             label: "Volunteers",
             link: "/volunteers",
@@ -107,7 +103,7 @@ const NavItems = [
 ];
 ---
 
-<div class="flex justify-between navbar bg-blue text-white px-8 py-3">
+<div class="flex justify-between navbar bg-blue text-white px-8 py-3 sticky top-0 z-50 backdrop-filter backdrop-blur-lg bg-opacity-80">
   <div>
     <a class="flex items-center" href="/">
       <PyConLogo hw="w-12 h-12" />
@@ -115,7 +111,7 @@ const NavItems = [
     </a>
   </div>
   <div class="hidden lg:flex">
-    <ul class="menu menu-horizontal px-1 font-semibold">
+    <ul class="menu menu-horizontal px-1 font-semibold items-center">
       {
         NavItems.map((item) => (
         typeof item.link === 'string' ? (
@@ -123,27 +119,28 @@ const NavItems = [
             <a href={item.link}>{item.label}</a>
           </li>
         ):(
-          <li>
-            <details>
-          <summary>{item.label}</summary>
-          <ul class="menu bg-white text-black-900 p-2 w-56 z-20">
+
+            <div class="dropdown dropdown-hover -my-4">
+          <div tabindex="0" role="button" class="btn btn-ghost">{item.label}</div>
+          <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box bg-white text-black-900 w-56 z-20">
             
               {item.link.map((i)=> (
                 typeof i.link === 'string' ? (
                 <li class="text-black-800">
                   <a href={i.link}>{i.label}</a>
                 </li>):(
-                <li class="text-black-600"><a href={i.labelLink}>{i.label}</a></li>
+                <li class="text-black-800"><a href={i.labelLink}>{i.label}</a>
                 <ul>
                 {i.link.map((j)=>(
                 <li class="text-black-800"><a href={j.link}>{j.label}</a></li>
                 ))}
                 </ul>
+              </li>
                 )
               ))}
           </ul>
-        </details>
-          </li>
+        </div>
+
             )
                )
         )}
