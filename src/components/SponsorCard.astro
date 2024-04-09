@@ -5,6 +5,7 @@ const { img, alt, link, name } = Astro.props;
 <div class="rounded-lg w-48 h-auto bg-white shadow-xl text-center font-semibold flex flex-col items-center">
   <a href={link}>
     {img && (<figure><img class="p-1" src={img} alt={alt} /></figure>)}
-  </a>
+  
   {name&& (<span class="text-black-900">{name}</span>)}
+</a>
 </div>
