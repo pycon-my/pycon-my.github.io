@@ -1,27 +1,46 @@
 ---
-import SponsorCard from "./SponsorCard.astro"
+import SponsorCard from "./SponsorCard.astro";
 
 interface Sponsor {
-    header: string;
-    sponsor: { img: string; alt: string; link: string; }[];
+  header: string;
+  sponsor: { img: string; alt: string; link: string }[];
 }
 
-const { sponsors } = Astro.props as {sponsors:Sponsor[]};
+const { sponsors } = Astro.props as { sponsors: Sponsor[] };
 ---
 
-<!-- diamond larger size -->
-<div class="flex flex-col items-center justify-center bg-yellow py-8">
-    <h1 class="font-bold text-black-800 text-xl sm:text-3xl pt-16">Our Sponsors</h1>
-    {sponsors.map(sponsor => (
-        
-        <h3 class="mt-8 text-black-600">{sponsor.header}</h3>
-        <div class="flex flex-wrap justify-center gap-2 mt-4">
-        {sponsor.sponsor.map(s => (
-                <SponsorCard img={s.img} alt={s.alt} link={s.link} />
-        ))}
-    </div>
-    ))}
-    
-
-    </div>
+<div class="flex flex-col items-center justify-center bg-pink pb-8 border-t-8 border-black-900">
+  <div class="bg-black-900 px-16 py-4 [clip-path:polygon(0%_0%,100%_0%,98%_90%,3%_80%)]">
+    <h1 class="font-bold font-autobus text-white text-xl sm:text-2xl">
+      Our Sponsors_
+    </h1>
+  </div>
+</div>
+<div class="flex flex-col items-center justify-center bg-pink py-4">
+  {
+    sponsors.map((sponsor) =>
+      sponsor.header === "Platinum Sponsor" ||
+      sponsor.header === "Gold Sponsor" ? (
+        <>
+          <h3 class="mt-8 text-yellow font-autobus text-2xl">
+            {sponsor.header}_
+          </h3>
+          <div class="flex flex-wrap justify-center gap-2 mt-4">
+            {sponsor.sponsor.map((s) => (
+              <SponsorCard img={s.img} alt={s.alt} link={s.link} width="w-96" />
+            ))}
+          </div>
+        </>
+      ) : (
+        <div class="bg-black-900 w-11/12 text-center my-4 pb-5">
+          <h3 class="mt-8 text-green font-autobus">{sponsor.header}_</h3>
+          <div class="flex flex-wrap justify-center gap-2 mt-4">
+            {sponsor.sponsor.map((s) => (
+              <SponsorCard img={s.img} alt={s.alt} link={s.link} />
+            ))}
+          </div>
+        </div>
+      )
+    )
+  }
 </div>

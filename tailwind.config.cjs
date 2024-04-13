@@ -3,7 +3,9 @@ module.exports = {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
 		fontFamily: {
-			sans: ['Avenir', 'sans-serif'] //change Avenir
+			sans: ['Avenir', 'sans-serif'], //change Avenir
+			autobus: ['Autobus', 'sans-serif'],
+			chunq: ['Chunq','sans-serif']
 		  },
 
 		colors: {
@@ -17,6 +19,7 @@ module.exports = {
 			'white': '#FFFFFF',
 			'pink': '#EB268F',
 			'zinc': '#f4f4f5',
+			'green': '#A9CF47',
 		},
 		
 		extend: {},

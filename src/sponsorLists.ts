@@ -3,7 +3,7 @@ export const SponsorLists = [
       header: "Platinum Sponsor",
       sponsor: [
         {
-          img: "https://placehold.co/600x400/png",
+          img: "https://placehold.co/800x600/png",
           alt: "Sponsor Image 1",
           link: "https://example.com/sponsor1",
         },
