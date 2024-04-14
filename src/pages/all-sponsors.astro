@@ -1,0 +1,17 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import SponsorCard from "../components/SponsorCard.astro";
+import { PreviousSponsorLists } from "../previousSponsors";
+---
+
+<BaseLayout title="PyCon MY Previous Sponsors">
+    <div class="flex flex-col items-center justify-center bg-yellow py-8">
+        <h1 class="font-bold text-black-800 text-xl sm:text-3xl pt-16 mb-8 font-autobus">Previous Sponsors</h1>
+            <div class="flex flex-wrap justify-center gap-2 mt-4 w-5/6">
+            {PreviousSponsorLists.map(s => (
+                    <SponsorCard img={s.img} alt={s.alt} link={s.link} name={s.name} />
+            ))}
+
+        </div>
+    </div>
+</BaseLayout>

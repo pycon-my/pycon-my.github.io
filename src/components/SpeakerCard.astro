@@ -1,0 +1,13 @@
+---
+const { image, name, subtitle } = Astro.props;
+
+---
+<div class="card w-80 bg-white shadow-xl mx-3">
+    <figure class="px-10 pt-10">
+      <img src={image} alt={name} class="rounded-full" />
+    </figure>
+    <div class="card-body items-center text-center text-black-900">
+      <h2 class="card-title">{name}</h2>
+      {subtitle && (<p>{subtitle}</p>)}
+    </div>
+  </div>

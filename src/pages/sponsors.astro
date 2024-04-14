@@ -1,0 +1,9 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import SponsorList from "../components/SponsorList.astro";
+import { SponsorLists } from "../sponsorLists";
+---
+
+<BaseLayout title="PyCon MY Sponsors">
+    <SponsorList sponsors={SponsorLists} />
+</BaseLayout>

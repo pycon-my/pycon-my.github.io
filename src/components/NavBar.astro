@@ -1,0 +1,208 @@
+---
+import PyConLogo from "./PyConLogo.astro";
+
+const NavItems = [
+  {
+    label: "Home",
+    link: "/",
+  },
+  {
+    label: "About",
+    link: [
+      {
+        label: "PyCon MY",
+        labelLink: "/about",
+        link: [
+          // {
+          //   label: "All partners",
+          //   link: "/all-partners",
+          // },
+          {
+            label: "All sponsors",
+            link: "/all-sponsors",
+          },
+          {
+            label: "All volunteers",
+            link: "/all-volunteers",
+          },
+          // {
+          //   label: "All speakers",
+          //   link: "/all-speakers",
+          // },
+        ],
+      },
+      {
+        label: "PyCon / PSF",
+        link: "/psf",
+      },
+      {
+        label: "Code of Conduct",
+        link: "/codeofconduct",
+      },
+    ],
+  },
+  {
+    label: "Events",
+    link: [
+      {
+        label: "PyCon MY 2024",
+        labelLink: "/",
+        link: [
+          {
+            label: "Ticket",
+            link: "https://www.eventbrite.sg/e/pycon-my-2024-tickets-882784250457 "
+          },
+          {
+            label: "CFP",
+            link: "https://cfp.pycon.my/pyconmy-2024/cfp"
+          },
+          {
+            label: "CFS",
+            link: "https://docs.google.com/forms/d/e/1FAIpQLSfDTb2Nex843MBf1C-FQKNwPrholCXHIoThmWkkCKA3FUYfBg/viewform"
+          },
+          // {
+          //   label: "Speakers",
+          //   link: "/speakers"
+          // },
+          // {
+          //   label: "Agenda",
+          //   link: "/agenda"
+          // },
+          {
+            label: "Venue",
+            link: "/venue",
+          },
+          // {
+          //   label: "Financial Aid",
+          //   link: "/aid"
+          // },
+          // {
+          //   label: "Claim your Certificate",
+          //   link: "/cert",
+          // },
+          // {
+          //   label: "Sponsors",
+          //   link: "/sponsors"
+          // },
+          // {
+          //   label: "Volunteers",
+          //   link: "/volunteers",
+          // },
+        ]
+      },
+      {
+        label: "Past PyCon MY",
+        link: "/past-pycon",
+      }
+    ]
+  },
+  // {
+  //   label: "Blog",
+  //   link: "/blog",
+  // },
+  // {
+  //   label: "Membership",
+  //   link: "/membership",
+  // },
+];
+---
+
+<div class="flex justify-between navbar bg-blue text-white px-8 py-3 sticky top-0 z-50 backdrop-filter backdrop-blur-lg bg-opacity-80">
+  <div>
+    <a class="flex items-center" href="/">
+      <PyConLogo hw="w-12 h-12" />
+      <span class="pl-3 font-semibold text-lg">PyCon MY</span>
+    </a>
+  </div>
+  <div class="hidden font-autobus lg:flex">
+    <ul class="menu menu-horizontal px-1 font-semibold items-center">
+      {
+        NavItems.map((item) => (
+        typeof item.link === 'string' ? (
+          <li>
+            <a href={item.link}>{item.label}</a>
+          </li>
+        ):(
+
+            <div class="dropdown dropdown-hover dropdown-end -my-4">
+          <div tabindex="0" role="button" class="btn btn-ghost">{item.label}</div>
+          <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box bg-white text-black-900 w-56 z-20">
+            
+              {item.link.map((i)=> (
+                typeof i.link === 'string' ? (
+                <li class="text-black-800">
+                  <a href={i.link}>{i.label}</a>
+                </li>):(
+                <li class="text-black-800"><a href={i.labelLink}>{i.label}</a>
+                <ul>
+                {i.link.map((j)=>(
+                <li class="text-black-800"><a href={j.link}>{j.label}</a></li>
+                ))}
+                </ul>
+              </li>
+                )
+              ))}
+          </ul>
+        </div>
+
+            )
+               )
+        )}
+    </ul>
+  </div>
+  <div class="dropdown dropdown-end lg:hidden">
+    <div tabindex="0" role="button" class="btn btn-ghost">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        class="inline-block w-5 h-5 stroke-current"
+        ><path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"></path></svg
+      >
+    </div>
+    <ul
+      tabindex="0"
+      class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black-900 bg-white"
+    >
+      {
+        NavItems.map((item) => (
+        typeof item.link === 'string' ? (
+          <li class="font-semibold">
+            <a href={item.link}>{item.label}</a>
+          </li>
+        ):(
+        <li>
+          <details>
+            <summary class="font-semibold">
+              {item.label}
+            </summary>
+            <ul>
+              {item.link.map((i)=> (
+                typeof i.link === 'string' ? (
+                <li>
+                  <a href={i.link}>{i.label}</a>
+                </li>):(
+                  
+                <summary>
+                  <li><a href={i.labelLink}>{i.label}</a></li>
+                  </summary>
+                <ul>
+                {i.link.map((j)=>(
+                <li class="text-black-800"><a href={j.link}>{j.label}</a></li>
+                ))}
+                </ul>
+                )
+              ))}
+          </ul>
+        </details>
+          </li>
+        )
+        ))
+      }
+    </ul>
+  </div>
+</div>

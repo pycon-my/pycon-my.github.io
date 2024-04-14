@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pycon.my/sitemap-index.xml

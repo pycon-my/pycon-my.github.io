@@ -1,23 +1,79 @@
 ---
-import Default from "../layouts/Default.astro";
-import HeroImage from "../components/index/HeroImage.astro";
-// import About from "../components/index/About.astro";
-// import Speaker from "../components/index/Speaker.astro";
-// import Sponsors from "../components/index/Sponsors.astro";
-// import RegisterButton from "../components/index/RegisterButton.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HeroImage from "../components/HeroImage.astro";
+import SpeakerCarousel from "../components/SpeakerCarousel.astro";
+import Countdown from "../components/Countdown.astro";
+import SponsorList from "../components/SponsorList.astro";
+
+const register_link = "https://www.eventbrite.sg/e/pycon-my-2024-tickets-882784250457 ";
+const cfs_link = "https://docs.google.com/forms/d/e/1FAIpQLSfDTb2Nex843MBf1C-FQKNwPrholCXHIoThmWkkCKA3FUYfBg/viewform";
+const cfp_link = "https://cfp.pycon.my/pyconmy-2024/cfp";
+
+import { SponsorLists } from "../sponsorLists";
+import { AllSpeakers, KeyNoteSpeakers } from "../speakerLists";
 ---
 
-<Default>
-  <div class="bg-[#01ADEF]">
-    <HeroImage />
-    <!-- <RegisterButton />
-    <div class="divider divider-neutral"></div>
-    <Speaker />
-   
-    <div class="divider divider-neutral"></div>
-    <About />
-    <RegisterButton />
-     <div class="divider divider-neutral"></div>
-    <Sponsors /> -->
+<BaseLayout title="PyCon MY 2024">
+  <HeroImage />
+  <div class="bg-blue flex flex-col items-center justify-center">
+    <div class="flex flex-col lg:flex-row gap-3">
+
+    <a href={cfs_link} class="mt-10 w-72 mb-12" target="_blank"
+      ><div class="relative">
+        <img class="absolute" src="/assets/CFS_Mouse_Up.png" />
+        <img
+          class="absolute opacity-0 hover:opacity-100"
+          src="/assets/CFS_Mouse_Over.png"
+        />
+      </div></a
+    >
+
+    <a href={register_link} class="mt-10 w-72 mb-12" target="_blank">
+      <div class="relative">
+        <img class="absolute" src="/assets/Register_Mouse_Up.png" />
+        <img
+          class="absolute opacity-0 hover:opacity-100"
+          src="/assets/Register_Mouse_Over.png"
+        />
+      </div>
+    </a>
+
+    <a href={cfp_link} class="mt-10 w-72 mb-24" target="_blank">
+      <div class="relative">
+        <img class="absolute" src="/assets/CFP_Mouse_Up.png" />
+        <img
+          class="absolute opacity-0 hover:opacity-100"
+          src="/assets/CFP_Mouse_Over.png"
+        />
+      </div></a
+    >
   </div>
-</Default>
+    <!-- <h3 class="mt-16 text-white font-bold text-xl sm:text-3xl">
+      Keynote Speakers
+    </h3>
+    <SpeakerCarousel speakers={KeyNoteSpeakers} /> -->
+    <!-- <h3 class="mt-8 text-white font-bold text-xl sm:text-3xl">
+      Meet our Speakers
+    </h3>
+    <SpeakerCarousel speakers={AllSpeakers} /> -->
+    <Countdown />
+    <span class="mt-10 mb-10 font-bold text-xl sm:text-3xl text-white"
+      >until</span
+    >
+    <img
+      class="object-contain h-48 w-48"
+      src="/pycon24_logo.png"
+      alt="PyCon MY 2024 Logo"
+    />
+    <a href={register_link} class="mt-8 w-72 mb-36" target="_blank">
+      <div class="relative">
+        <img class="absolute" src="/assets/Register_Mouse_Up.png" />
+        <img
+          class="absolute opacity-0 hover:opacity-100"
+          src="/assets/Register_Mouse_Over.png"
+        />
+      </div>
+    </a>
+  </div>
+  <!-- <SponsorList sponsors={SponsorLists} /> -->
+</BaseLayout>
