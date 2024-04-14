@@ -5,9 +5,9 @@ import SpeakerCarousel from "../components/SpeakerCarousel.astro";
 import Countdown from "../components/Countdown.astro";
 import SponsorList from "../components/SponsorList.astro";
 
-const register_link = "#";
+const register_link = "https://www.eventbrite.sg/e/pycon-my-2024-tickets-882784250457 ";
 const cfs_link = "https://docs.google.com/forms/d/e/1FAIpQLSfDTb2Nex843MBf1C-FQKNwPrholCXHIoThmWkkCKA3FUYfBg/viewform";
-const cfp_link = "https://cfp.pycon.my/pyconmy-2024/";
+const cfp_link = "https://cfp.pycon.my/pyconmy-2024/cfp";
 
 import { SponsorLists } from "../sponsorLists";
 import { AllSpeakers, KeyNoteSpeakers } from "../speakerLists";
@@ -17,15 +17,6 @@ import { AllSpeakers, KeyNoteSpeakers } from "../speakerLists";
   <HeroImage />
   <div class="bg-blue flex flex-col items-center justify-center">
     <div class="flex flex-col lg:flex-row gap-3">
-    <a href={register_link} class="mt-10 w-72 mb-12">
-      <div class="relative">
-        <img class="absolute" src="/assets/Register_Mouse_Up.png" />
-        <img
-          class="absolute opacity-0 hover:opacity-100"
-          src="/assets/Register_Mouse_Over.png"
-        />
-      </div>
-    </a>
 
     <a href={cfs_link} class="mt-10 w-72 mb-12"
       ><div class="relative">
@@ -36,6 +27,17 @@ import { AllSpeakers, KeyNoteSpeakers } from "../speakerLists";
         />
       </div></a
     >
+
+    <a href={register_link} class="mt-10 w-72 mb-12">
+      <div class="relative">
+        <img class="absolute" src="/assets/Register_Mouse_Up.png" />
+        <img
+          class="absolute opacity-0 hover:opacity-100"
+          src="/assets/Register_Mouse_Over.png"
+        />
+      </div>
+    </a>
+
     <a href={cfp_link} class="mt-10 w-72 mb-24">
       <div class="relative">
         <img class="absolute" src="/assets/CFP_Mouse_Up.png" />
