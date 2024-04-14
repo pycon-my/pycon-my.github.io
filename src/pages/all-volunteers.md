@@ -36,14 +36,11 @@ In alphabetical order, we'd like to thank
 21. Nicholas Ng Wei Bin 
 22. Nithiya Malar
 23. Nurul Hanani Binti Zakaria
-24. Seoh Keng soon
-25. Siti Nuraini Mohd Azman
-26. Tan Lina
-27. Tan Tun Tai
-28. Terence Tan
-29. Tiong Kei Yan
-30. Wilson Chang
-31. Zulykha bt Zainal Abidin
+24. Siti Nuraini Mohd Azman
+25. Terence Tan
+26. Tiong Kei Yan
+27. Wilson Chang
+28. Zulykha bt Zainal Abidin
 
 Each volunteer has played an integral role in fostering an inclusive and vibrant
 Python community in Malaysia. 

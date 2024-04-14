@@ -32,12 +32,6 @@ concerning sponsorship monies), on 17th Dec 2015, we have incorporated PYCON
 MY PLT (LLP0006642-LGN) as a Limited Liability Partnership under the laws of
 Malaysia.
 
-The current board members of PYCON MY PLT consists of:
-
-1. MOHAMAD HILMI BIN MOHAMAD BAKHARI (Chair for PyCon MY 2018)</li>
-2. TANG ING WEI (Chair for PyCon MY 2019)</li>
-3. FUNG OI WEI (Chair for PyCon 2020)</li>
-
 The board can be contactable via [board@pycon.my](mailto:board@pycon.my).
 
 As defined in its contract of incorporation, PYCON MY PLT’s purpose are as
