@@ -6,8 +6,8 @@ import Countdown from "../components/Countdown.astro";
 import SponsorList from "../components/SponsorList.astro";
 
 const register_link = "#";
-const cfs_link = "#";
-const cfp_link = "#";
+const cfs_link = "https://docs.google.com/forms/d/e/1FAIpQLSfDTb2Nex843MBf1C-FQKNwPrholCXHIoThmWkkCKA3FUYfBg/viewform";
+const cfp_link = "https://cfp.pycon.my/pyconmy-2024/";
 
 import { SponsorLists } from "../sponsorLists";
 import { AllSpeakers, KeyNoteSpeakers } from "../speakerLists";
@@ -16,7 +16,8 @@ import { AllSpeakers, KeyNoteSpeakers } from "../speakerLists";
 <BaseLayout title="PyCon MY 2024">
   <HeroImage />
   <div class="bg-blue flex flex-col items-center justify-center">
-    <a href={register_link} class="mt-16 w-72 mb-12">
+    <div class="flex flex-col lg:flex-row gap-3">
+    <a href={register_link} class="mt-10 w-72 mb-12">
       <div class="relative">
         <img class="absolute" src="/assets/Register_Mouse_Up.png" />
         <img
@@ -26,7 +27,7 @@ import { AllSpeakers, KeyNoteSpeakers } from "../speakerLists";
       </div>
     </a>
 
-    <a href={cfs_link} class="mt-8 w-72 mb-12"
+    <a href={cfs_link} class="mt-10 w-72 mb-12"
       ><div class="relative">
         <img class="absolute" src="/assets/CFS_Mouse_Up.png" />
         <img
@@ -35,7 +36,7 @@ import { AllSpeakers, KeyNoteSpeakers } from "../speakerLists";
         />
       </div></a
     >
-    <a href={cfp_link} class="mt-8 w-72 mb-24">
+    <a href={cfp_link} class="mt-10 w-72 mb-24">
       <div class="relative">
         <img class="absolute" src="/assets/CFP_Mouse_Up.png" />
         <img
@@ -44,10 +45,11 @@ import { AllSpeakers, KeyNoteSpeakers } from "../speakerLists";
         />
       </div></a
     >
-    <h3 class="mt-16 text-white font-bold text-xl sm:text-3xl">
+  </div>
+    <!-- <h3 class="mt-16 text-white font-bold text-xl sm:text-3xl">
       Keynote Speakers
     </h3>
-    <SpeakerCarousel speakers={KeyNoteSpeakers} />
+    <SpeakerCarousel speakers={KeyNoteSpeakers} /> -->
     <!-- <h3 class="mt-8 text-white font-bold text-xl sm:text-3xl">
       Meet our Speakers
     </h3>
@@ -71,5 +73,5 @@ import { AllSpeakers, KeyNoteSpeakers } from "../speakerLists";
       </div>
     </a>
   </div>
-  <SponsorList sponsors={SponsorLists} />
+  <!-- <SponsorList sponsors={SponsorLists} /> -->
 </BaseLayout>

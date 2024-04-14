@@ -54,16 +54,20 @@ const NavItems = [
           },
           {
             label: "CFP",
-            link: "/cfp"
+            link: "https://cfp.pycon.my/pyconmy-2024/"
           },
           {
-            label: "Speakers",
-            link: "/speakers"
+            label: "CFS",
+            link: "https://docs.google.com/forms/d/e/1FAIpQLSfDTb2Nex843MBf1C-FQKNwPrholCXHIoThmWkkCKA3FUYfBg/viewform"
           },
-          {
-            label: "Agenda",
-            link: "/agenda"
-          },
+          // {
+          //   label: "Speakers",
+          //   link: "/speakers"
+          // },
+          // {
+          //   label: "Agenda",
+          //   link: "/agenda"
+          // },
           {
             label: "Venue",
             link: "/venue",
@@ -80,10 +84,10 @@ const NavItems = [
           //   label: "Sponsors",
           //   link: "/sponsors"
           // },
-          {
-            label: "Volunteers",
-            link: "/volunteers",
-          },
+          // {
+          //   label: "Volunteers",
+          //   link: "/volunteers",
+          // },
         ]
       },
       {
@@ -92,14 +96,14 @@ const NavItems = [
       }
     ]
   },
-  {
-    label: "Blog",
-    link: "/blog",
-  },
-  {
-    label: "Membership",
-    link: "/membership",
-  },
+  // {
+  //   label: "Blog",
+  //   link: "/blog",
+  // },
+  // {
+  //   label: "Membership",
+  //   link: "/membership",
+  // },
 ];
 ---
 
@@ -120,7 +124,7 @@ const NavItems = [
           </li>
         ):(
 
-            <div class="dropdown dropdown-hover -my-4">
+            <div class="dropdown dropdown-hover dropdown-end -my-4">
           <div tabindex="0" role="button" class="btn btn-ghost">{item.label}</div>
           <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box bg-white text-black-900 w-56 z-20">
             
