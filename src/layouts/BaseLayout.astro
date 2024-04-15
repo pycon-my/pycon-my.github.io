@@ -9,6 +9,7 @@ import { SEO } from "astro-seo";
 
 <html lang="en">
   <head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <SEO
       title={pageTitle}
       description="Python Conference Malaysia 2024, happening on 24-25 August 2024 at Sunway University"
@@ -43,7 +44,7 @@ import { SEO } from "astro-seo";
     <link rel="sitemap" href="/sitemap-index.xml" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   </head>
-  <body class="min-h-screen">
+  <body class="min-h-screen max-w-full">
     <NavBar />
     <slot />
     <Footer />
