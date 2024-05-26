@@ -2,32 +2,41 @@
 
 ---
 
-<div class="mt-10 grid grid-flow-col gap-4 sm:gap-8 bg-black-900 text-white p-5 px-4 sm:px-24 text-center auto-cols-max [clip-path:polygon(4%_0%,96%_0%,100%_100%,0%_100%)]">
-    <div class="flex flex-col items-center">
-      <span class="font-bold text-3xl sm:text-5xl countdown">
-        <span style="--value:15;" id="days"></span>
-      </span>
-      <span class="text-xs lg:text-base">DAYS</span>
+<div class="mt-10 inset-0 w-full h-full relative lg:flex">
+    <img class="h-auto w-full" src="/assets/countdown_bg.png" alt="countdown cover" />
+    <div class="absolute inset-0 flex justify-center items-center" style="transform: translateY(-38%);">
+        <div class="grid grid-flow-col gap-2 sm:gap-8 text-white p-5 px-4 sm:px-24 text-center auto-cols-max">
+            <div class="flex flex-col items-center">
+                <span class="font-bold text-md sm:text-3xl lg:text-5xl countdown font-autobus">
+                    <span style="--value:15;" id="days"></span>
+                </span>
+                <span class="text-xs lg:text-base">DAYS</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <span class="font-bold text-md sm:text-3xl lg:text-5xl countdown font-autobus">
+                    <span style="--value:10;" id="hours"></span>
+                </span>
+                <span class="text-xs lg:text-base">HOURS</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <span class="font-bold text-md sm:text-3xl lg:text-5xl countdown font-autobus">
+                    <span style="--value:24;" id="minutes"></span>
+                </span>
+                <span class="text-xs lg:text-base">MIN</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <span class="font-bold text-md sm:text-3xl lg:text-5xl countdown font-autobus">
+                    <span style="--value:52;" id="seconds"></span>
+                </span>
+                <span class="text-xs lg:text-base">SEC</span>
+            </div>
+        </div>
     </div>
-    <div class="flex flex-col items-center">
-      <span class="font-bold text-3xl sm:text-5xl countdown">
-        <span style="--value:10;" id="hours"></span>
-      </span>
-      <span class="text-xs lg:text-base">HOURS</span>
-    </div>
-    <div class="flex flex-col items-center">
-      <span class="font-bold text-3xl sm:text-5xl countdown">
-        <span style="--value:24;" id="minutes"></span>
-      </span>
-      <span class="text-xs lg:text-base">MINUTES</span>
-    </div>
-    <div class="flex flex-col items-center">
-      <span class="font-bold text-3xl sm:text-5xl countdown">
-        <span style="--value:52;" id="seconds"></span>
-      </span>
-      <span class="text-xs lg:text-base">SECONDS</span>
-    </div>
-  </div>
+</div>
+
+
+
+
   
   <script>
     function changeCountdownNumber(id: string, value: number) {

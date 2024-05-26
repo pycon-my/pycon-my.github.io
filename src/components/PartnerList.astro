@@ -1,0 +1,27 @@
+---
+import SponsorCard from "./SponsorCard.astro";
+
+interface Partner {
+  img: string;
+  alt: string;
+  link: string
+}
+
+const { partners } = Astro.props as { partners: Partner[] };
+---
+
+<div class="flex flex-col items-center justify-center bg-pink pb-8 border-t-8 border-black-900">
+  <div class="bg-black-900 px-16 py-4 [clip-path:polygon(0%_0%,100%_0%,98%_90%,3%_80%)]">
+    <h1 class="font-bold font-autobus text-white text-xl sm:text-2xl">
+      Our Partners_
+    </h1>
+  </div>
+</div>
+<div class="flex flex-col items-center justify-center bg-pink py-4">
+  
+      <div class="flex flex-wrap justify-center gap-2 mt-4">
+            {partners.map((p) => (
+              <SponsorCard img={p.img} alt={p.alt} link={p.link} />
+            ))}
+          </div>
+</div>
