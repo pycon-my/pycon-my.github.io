@@ -3,7 +3,7 @@ import SponsorCard from "./SponsorCard.astro";
 
 interface Sponsor {
   header: string;
-  sponsor: { img: string; alt: string; link: string }[];
+  sponsor: { img: string; alt: string; link: string, name: string; }[];
 }
 
 const { sponsors } = Astro.props as { sponsors: Sponsor[] };
@@ -27,7 +27,7 @@ const { sponsors } = Astro.props as { sponsors: Sponsor[] };
           </h3>
           <div class="flex flex-wrap justify-center gap-2 mt-4">
             {sponsor.sponsor.map((s) => (
-              <SponsorCard img={s.img} alt={s.alt} link={s.link} width="w-96" />
+              <SponsorCard img={s.img} alt={s.alt} link={s.link} name={s.name}  width="w-96" />
             ))}
           </div>
         </>
@@ -36,7 +36,7 @@ const { sponsors } = Astro.props as { sponsors: Sponsor[] };
           <h3 class="mt-8 text-green font-autobus">{sponsor.header}_</h3>
           <div class="flex flex-wrap justify-center gap-2 mt-4">
             {sponsor.sponsor.map((s) => (
-              <SponsorCard img={s.img} alt={s.alt} link={s.link} />
+              <SponsorCard img={s.img} alt={s.alt} link={s.link} name={s.name} />
             ))}
           </div>
         </div>
