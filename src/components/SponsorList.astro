@@ -16,7 +16,7 @@ const { sponsors } = Astro.props as { sponsors: Sponsor[] };
     </h1>
   </div>
 </div>
-<div class="flex flex-col items-center justify-center bg-pink py-4">
+<div class="flex flex-col items-center justify-center bg-pink py-4 pb-10">
   {
     sponsors.map((sponsor) =>
       sponsor.header === "Platinum Sponsor" ||
@@ -27,7 +27,7 @@ const { sponsors } = Astro.props as { sponsors: Sponsor[] };
           </h3>
           <div class="flex flex-wrap justify-center gap-2 mt-4">
             {sponsor.sponsor.map((s) => (
-              <SponsorCard img={s.img} alt={s.alt} link={s.link} name={s.name}  width="w-96" />
+              <SponsorCard img={s.img} alt={s.alt} link={s.link}  width="w-96" />
             ))}
           </div>
         </>
@@ -36,7 +36,7 @@ const { sponsors } = Astro.props as { sponsors: Sponsor[] };
           <h3 class="mt-8 text-green font-autobus">{sponsor.header}_</h3>
           <div class="flex flex-wrap justify-center gap-2 mt-4">
             {sponsor.sponsor.map((s) => (
-              <SponsorCard img={s.img} alt={s.alt} link={s.link} name={s.name} />
+              <SponsorCard img={s.img} alt={s.alt} link={s.link} />
             ))}
           </div>
         </div>
