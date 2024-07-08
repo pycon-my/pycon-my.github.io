@@ -32,8 +32,8 @@ const { sponsors } = Astro.props as { sponsors: Sponsor[] };
           </div>
         </>
       ) : (
-        <div class="bg-black-900 w-11/12 text-center my-4 pb-5">
-          <h3 class="mt-8 text-green font-autobus">{sponsor.header}_</h3>
+        <div class="w-11/12 text-center my-4 pb-5">
+          <h3 class="mt-8 text-yellow font-autobus">{sponsor.header}_</h3>
           <div class="flex flex-wrap justify-center gap-2 mt-4">
             {sponsor.sponsor.map((s) => (
               <SponsorCard img={s.img} alt={s.alt} link={s.link} />

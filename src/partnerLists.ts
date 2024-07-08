@@ -4,4 +4,9 @@ export const PartnerLists = [
       alt: "MDEC",
       link: "https://mdec.my"
     },
+    {
+      img: "/assets/sponsors/stc-logo-text-horizontal.png",
+      alt: "Sunway Tech Club",
+      link: "#"
+    },
 ]

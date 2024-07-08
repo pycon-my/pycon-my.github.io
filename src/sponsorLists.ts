@@ -17,6 +17,43 @@ export const SponsorLists = [
         },
       ],
     },
+    {
+      header: "Venue Sponsor",
+      sponsor: [
+        {
+          img: "/assets/sponsors/sunway.png",
+          alt: "Sunway University",
+          link: "https://sunwayuniversity.edu.my/",
+          name: "Sunway University",
+          desc: `
+            Sunway University
+            `,
+          },
+        ],
+      },
+      {
+        header: "Sponsor",
+        sponsor: [
+          {
+            img: "/assets/sponsors/jetbrains.png",
+            alt: "Jetbrains",
+            link: "https://www.jetbrains.com/",
+            name: "Jetbrains",
+            desc: `
+              Jetbrains
+              `,
+            },
+            {
+              img: "/assets/sponsors/OReilly_logo_rgb.png",
+              alt: "O'Reilly Media",
+              link: "https://www.oreilly.com/",
+              name: "O'Reilly Media",
+              desc: `
+                O'Reilly Media
+                `,
+              },
+          ],
+        },
 // {
 //   header: "Gold Sponsor",
 //     sponsor: [
