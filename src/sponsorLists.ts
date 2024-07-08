@@ -32,7 +32,7 @@ export const SponsorLists = [
         ],
       },
       {
-        header: "Sponsor",
+        header: "Sponsors",
         sponsor: [
           {
             img: "/assets/sponsors/jetbrains.png",
