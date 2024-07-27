@@ -1,10 +1,56 @@
 ---
-// src/pages/agenda.astro
 import BaseLayout from "../layouts/BaseLayout.astro";
 import AgendaCard from "../components/AgendaCard.astro";
 import { Talk } from "../talks";
 
-const formatDateTime = (datetime: string | number | Date) => {
+type Speaker = {
+  code?: string;
+  name: string;
+  biography: string;
+  avatar?: string;
+  email?: string;
+};
+
+type Slot = {
+  room_id?: number;
+  room: {
+    en: string;
+  };
+  start: string;
+  end: string;
+};
+
+type Talk = {
+  code?: string;
+  speakers: Speaker[];
+  title: string;
+  submission_type?: {
+    en: string;
+  };
+  submission_type_id?: number;
+  track?: string | null;
+  track_id?: string | null;
+  state?: string;
+  abstract?: string;
+  description?: string;
+  duration?: number;
+  slot_count?: number;
+  do_not_record?: boolean;
+  is_featured?: boolean;
+  content_locale?: string;
+  slot: Slot;
+  image?: string;
+  resources?: string[];
+  answers?: string[];
+  created?: string;
+  pending_state?: string | null;
+  notes?: string;
+  internal_notes?: string | null;
+  tags?: string[];
+  tag_ids?: string[];
+};
+
+const formatDateTime = (datetime: string | number | Date): string => {
   return new Date(datetime).toLocaleTimeString([], {
     timeZone: "Asia/Kuala_Lumpur",
     hour: "2-digit",
@@ -12,19 +58,16 @@ const formatDateTime = (datetime: string | number | Date) => {
   });
 };
 
-const filterAndSortTalks = (talks, date) => {
-  const targetDate = new Date(date).toISOString().split("T")[0]; // Get the date in YYYY-MM-DD format
+const filterAndSortTalks = (talks: Talk[], date: string): Talk[] => {
+  const targetDate = new Date(date).toISOString().split("T")[0];
 
   return talks
-    .filter(
-      (talk) =>
-        new Date(talk.slot.start).toISOString().split("T")[0] === targetDate,
-    )
-    .sort((a, b) => new Date(a.slot.start) - new Date(b.slot.start));
+    .filter((talk) => new Date(talk.slot.start).toISOString().split("T")[0] === targetDate)
+    .sort((a, b) => new Date(a.slot.start).getTime() - new Date(b.slot.start).getTime());
 };
 
-const groupByStartTime = (talks) => {
-  return talks.reduce((groups, talk) => {
+const groupByStartTime = (talks: Talk[]): Record<string, Talk[]> => {
+  return talks.reduce((groups: Record<string, Talk[]>, talk) => {
     const time = formatDateTime(talk.slot.start);
     if (!groups[time]) {
       groups[time] = [];
@@ -34,8 +77,27 @@ const groupByStartTime = (talks) => {
   }, {});
 };
 
-const sortedTalksDay1 = filterAndSortTalks(Talk, "2024-08-24");
-const sortedTalksDay2 = filterAndSortTalks(Talk, "2024-08-25");
+const validateTalks = (talks: any[]): Talk[] => {
+  return talks.filter((talk) => {
+    return (
+      talk.title &&
+      talk.abstract &&
+      talk.slot &&
+      talk.slot.start &&
+      talk.slot.end &&
+      talk.speakers &&
+      Array.isArray(talk.speakers) &&
+      talk.speakers.length > 0 &&
+      talk.speakers[0].name &&
+      talk.speakers[0].biography
+    );
+  }) as Talk[];
+};
+
+const validTalks = validateTalks(Talk);
+
+const sortedTalksDay1 = filterAndSortTalks(validTalks, "2024-08-24");
+const sortedTalksDay2 = filterAndSortTalks(validTalks, "2024-08-25");
 
 const groupedTalksDay1 = groupByStartTime(sortedTalksDay1);
 const groupedTalksDay2 = groupByStartTime(sortedTalksDay2);
@@ -96,16 +158,3 @@ const groupedTalksDay2 = groupByStartTime(sortedTalksDay2);
     ))}
   </div>
 </BaseLayout>
-
-<style>
-  .timeline-start {
-    @apply self-baseline;
-    @apply px-3;
-  }
-  .timeline-end {
-    @apply px-3;
-  }
-  hr {
-    @apply bg-pink;
-  }
-</style>
