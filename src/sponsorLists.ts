@@ -32,6 +32,20 @@ export const SponsorLists = [
         ],
       },
       {
+        header: "Technology Sponsor",
+        sponsor: [
+          {
+            img: "/assets/sponsors/Jublia.png",
+            alt: "Jublia",
+            link: "https://jublia.com/",
+            name: "Jublia",
+            desc: `
+              Jublia
+              `,
+            },
+          ],
+        },
+      {
         header: "Sponsors",
         sponsor: [
           {

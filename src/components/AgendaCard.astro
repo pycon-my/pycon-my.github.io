@@ -1,0 +1,42 @@
+---
+import { marked } from "marked";
+const { title, desc, room, time, img, name, work } = Astro.props;
+const htmlDesc = desc ? marked.parse(desc) : "";
+const htmlWork = work ? marked.parse(work) : "";
+---
+
+<div class="flex flex-col gap-2 p-6 border border-black-600 rounded-lg shadow">
+    <h5 class="text-2xl font-bold tracking-tight text-black-800">
+        {title}
+    </h5>
+    <p class="flex md:hidden text-black-600">{time}</p>
+
+    {
+        room &&
+            (room === "JC 1" ? (
+                <div class="badge badge-primary">{room}</div>
+            ) : room === "JC 2" ? (
+                <div class="badge badge-secondary">{room}</div>
+            ) : (
+                <div class="badge badge-ghost">{room}</div>
+            ))
+    }
+    {desc && <p set:html={htmlDesc} />}
+    {
+        img && (
+            <div class="flex flex-row items-center">
+                <div class="avatar">
+                    <div class="w-16 rounded-full">
+                        <img src={img} />
+                    </div>
+                </div>
+                <div class="flex flex-col pl-4">
+                    <p class="font-bold text-black-800">{name}</p>
+                    <p class="text-sm text-black-600">
+                        {work && <p set:html={htmlWork} />}
+                    </p>
+                </div>
+            </div>
+        )
+    }
+</div>

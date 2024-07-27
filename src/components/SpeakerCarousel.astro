@@ -10,12 +10,12 @@ interface Speaker {
 const { speakers } = Astro.props as {speakers:Speaker[]};
 ---
 
-<div class="carousel max-w-full mt-8">
-  <div class="carousel-item">
+<div class="flex flex-row flex-wrap justify-center gap-4 max-w-full mt-8">
+
     {speakers.map(speaker => (
       <Card image={speaker.image} name={speaker.name} subtitle={speaker.title}></Card>
 ))}
-  </div>
+
 </div>
 
 

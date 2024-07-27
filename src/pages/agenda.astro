@@ -1,90 +1,111 @@
 ---
+// src/pages/agenda.astro
 import BaseLayout from "../layouts/BaseLayout.astro";
+import AgendaCard from "../components/AgendaCard.astro";
+import { Talk } from "../talks";
 
-import { AgendaDayOne, AgendaDayTwo } from "../agenda";
+const formatDateTime = (datetime: string | number | Date) => {
+  return new Date(datetime).toLocaleTimeString([], {
+    timeZone: "Asia/Kuala_Lumpur",
+    hour: "2-digit",
+    minute: "2-digit",
+  });
+};
+
+const filterAndSortTalks = (talks, date) => {
+  const targetDate = new Date(date).toISOString().split("T")[0]; // Get the date in YYYY-MM-DD format
+
+  return talks
+    .filter(
+      (talk) =>
+        new Date(talk.slot.start).toISOString().split("T")[0] === targetDate,
+    )
+    .sort((a, b) => new Date(a.slot.start) - new Date(b.slot.start));
+};
+
+const groupByStartTime = (talks) => {
+  return talks.reduce((groups, talk) => {
+    const time = formatDateTime(talk.slot.start);
+    if (!groups[time]) {
+      groups[time] = [];
+    }
+    groups[time].push(talk);
+    return groups;
+  }, {});
+};
+
+const sortedTalksDay1 = filterAndSortTalks(Talk, "2024-08-24");
+const sortedTalksDay2 = filterAndSortTalks(Talk, "2024-08-25");
+
+const groupedTalksDay1 = groupByStartTime(sortedTalksDay1);
+const groupedTalksDay2 = groupByStartTime(sortedTalksDay2);
 ---
 
 <BaseLayout title="Agenda">
-  <div class="flex flex-col items-center justify-center bg-yellow py-8">
-    <h3 class="my-8 text-black-900 font-bold text-xl sm:text-3xl">
-      Day 1 (24 August 2024)
-    </h3>
-    <ul class="timeline timeline-vertical timeline-compact">
-        {AgendaDayOne.map((agenda) =>
-      <li>
-        <hr />
-        
-        <div class="timeline-start font-semibold text-pink">{agenda.time}</div>
-        <div class="timeline-middle">
-          <div class="w-4 h-4 bg-black-900 rounded-full"></div>
-    </div>
-        <div class="timeline-end font-black-900 flex flex-row gap-6">
-          {agenda.events.map((a)=>
-          <div class="timeline-box">
-            <div class="text-lg font-bold">
-                {a.agenda}
-            </div>
-            <div class="text-sm font-semibold">
-                {a.subtitle}    
-            </div>
-            <div class="text-sm font-normal">
-                {a.location}
-            </div>
+  <div class="flex flex-col items-center justify-center py-8">
+    <h3 class="my-8 text-black-900 font-bold text-2xl sm:text-6xl">Day 1</h3>
+    <span class="text-black-800 text-xl sm:text-2xl">24 August 2024</span>
+  </div>
+  <div class="px-1 md:pr-32">
+    {Object.entries(groupedTalksDay1).map(([time, talks]) => (
+      <div class="grid md:grid-cols-4 gap-4 items-start p-2">
+        <div class="hidden md:flex justify-end text-black-600 mt-1">{time}</div>
+        <div class={`col-span-${talks.length === 1 ? 3 : 3}`}>
+          <div class={`grid grid-cols-1 md:grid-cols-${talks.length} gap-4`}>
+            {talks.map((talk) => (
+              <AgendaCard
+                title={talk.title}
+                desc={talk.abstract}
+                room={talk.slot.room.en}
+                time={`${formatDateTime(talk.slot.start)} - ${formatDateTime(talk.slot.end)}`}
+                img={talk.speakers[0]?.avatar}
+                name={talk.speakers[0]?.name}
+                work={talk.speakers[0]?.biography}
+              />
+            ))}
           </div>
-          )}
         </div>
-        
-        
-        <hr />
-      </li>
-      )}
-    </ul>
+      </div>
+    ))}
+  </div>
 
-    <h3 class="my-8 mt-24 text-black-900 font-bold text-xl sm:text-3xl">
-      Day 2 (25 August 2024)
-    </h3>
-    <ul class="timeline timeline-vertical timeline-compact">
-        {AgendaDayTwo.map((agenda) =>
-      <li>
-        <hr />
-        
-        <div class="timeline-start font-semibold text-pink">{agenda.time}</div>
-        <div class="timeline-middle">
-          <div class="w-4 h-4 bg-black-900 rounded-full"></div>
-    </div>
-        <div class="timeline-end font-black-900 flex flex-row gap-6">
-          {agenda.events.map((a)=>
-          <div class="timeline-box">
-            <div class="text-lg font-bold">
-                {a.agenda}
-            </div>
-            <div class="text-sm font-semibold">
-                {a.subtitle}    
-            </div>
-            <div class="text-sm font-normal">
-                {a.location}
-            </div>
+  <div class="flex flex-col items-center justify-center py-8">
+    <h3 class="my-8 text-black-900 font-bold text-2xl sm:text-6xl">Day 2</h3>
+    <span class="text-black-800 text-xl sm:text-2xl">25 August 2024</span>
+  </div>
+  <div class="px-1 md:pr-32">
+    {Object.entries(groupedTalksDay2).map(([time, talks]) => (
+      <div class="grid md:grid-cols-4 gap-4 items-start p-2">
+        <div class="hidden md:flex justify-end text-black-600 mt-1">{time}</div>
+        <div class={`col-span-${talks.length === 1 ? 3 : 3}`}>
+          <div class={`grid grid-cols-1 md:grid-cols-${talks.length} gap-4`}>
+            {talks.map((talk) => (
+              <AgendaCard
+                title={talk.title}
+                desc={talk.abstract}
+                room={talk.slot.room.en}
+                time={`${formatDateTime(talk.slot.start)} - ${formatDateTime(talk.slot.end)}`}
+                img={talk.speakers[0]?.avatar}
+                name={talk.speakers[0]?.name}
+                work={talk.speakers[0]?.biography}
+              />
+            ))}
           </div>
-          )}
         </div>
-        
-        
-        <hr />
-      </li>
-      )}
-    </ul>
+      </div>
+    ))}
   </div>
 </BaseLayout>
 
 <style>
-.timeline-start{
+  .timeline-start {
     @apply self-baseline;
-    @apply px-3
-}
-.timeline-end{
-    @apply px-3
-}
-hr {
+    @apply px-3;
+  }
+  .timeline-end {
+    @apply px-3;
+  }
+  hr {
     @apply bg-pink;
-}
+  }
 </style>
