@@ -36,7 +36,7 @@ export const AllSpeakers = [
     "name": "Khairil Yusof",
     "desc": "Khairil is the Coordinator at Sinar Project and an independent investigative journalist working on applying innovative methods of open data and standards, for transparency and anti-corruption.",
     "image": "https://cfp.pycon.my/media/avatars/Add_a_little_bit_of_body_text_20240726_155340_0000_ujAB4z1.png",
-    "title": "Coordinator at Sina Project"
+    "title": "Coordinator at Sinar Project"
   },
   {
     "name": "Samsuddin Wira Samsuddin",
