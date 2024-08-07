@@ -1,18 +1,18 @@
 export const KeyNoteSpeakers = [
   {
-    image: "/assets/speakers/Asaad_Abdollahzadeh.png",
+    image: "/assets/speakers/Asaad_Abdollahzadeh.jpg",
     name: "Asaad Abdollahzadeh",
     title: "Senior Manager of Data Science at Petronas Digital Sdn. Bhd",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus, ante at hendrerit mollis, massa magna ultrices diam, eu finibus ex arcu eget ligula. Integer fringilla massa eu felis porttitor, vitae tempor lorem consequat. Sed facilisis risus in purus pharetra posuere. Cras eget congue mi. Aenean efficitur quam ac libero finibus, sit amet accumsan diam pellentesque. Donec vel mauris lobortis, eleifend quam et, porta nisi. Maecenas efficitur odio elit, at consequat nisl vehicula viverra. Morbi tincidunt, dui a dictum congue, orci justo ultricies velit, nec congue velit ex nec augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer id posuere nibh. Cras quis dignissim leo, eget porttitor odio. Mauris eget fermentum mi. Nullam posuere nunc non nulla dapibus porta. Donec eu bibendum sapien, et tempus diam. Suspendisse dictum iaculis metus vitae faucibus. In nec justo iaculis, dapibus urna hendrerit, malesuada turpis."
   },
   {
-    image: "/assets/speakers/Daphne_Choong.png",
+    image: "/assets/speakers/Daphne_Choong.jpg",
     name: "Daphne Choong",
     title: "Senior Partner Development Manager of Microsoft",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus, ante at hendrerit mollis, massa magna ultrices diam, eu finibus ex arcu eget ligula. Integer fringilla massa eu felis porttitor, vitae tempor lorem consequat. Sed facilisis risus in purus pharetra posuere. Cras eget congue mi. Aenean efficitur quam ac libero finibus, sit amet accumsan diam pellentesque. Donec vel mauris lobortis, eleifend quam et, porta nisi. Maecenas efficitur odio elit, at consequat nisl vehicula viverra. Morbi tincidunt, dui a dictum congue, orci justo ultricies velit, nec congue velit ex nec augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer id posuere nibh. Cras quis dignissim leo, eget porttitor odio. Mauris eget fermentum mi. Nullam posuere nunc non nulla dapibus porta. Donec eu bibendum sapien, et tempus diam. Suspendisse dictum iaculis metus vitae faucibus. In nec justo iaculis, dapibus urna hendrerit, malesuada turpis."
   },
   {
-    image: "/assets/speakers/Micaela_Reyes.png",
+    image: "/assets/speakers/Micaela_Reyes.jpg",
     name: "Micaela Reyes",
     title: "Co-founder and Training Advisor of CodeHappy.ph",
     desc: "Lorem ipsum"
@@ -21,7 +21,7 @@ export const KeyNoteSpeakers = [
 
 export const AllSpeakers = [
   {
-    image: "/assets/speakers/Iqbal_Abdullah.png",
+    image: "/assets/speakers/Iqbal_Abdullah.webp",
     name: "Iqbal Abdullah",
     title: "CEO of LaLoka Labs",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus, ante at hendrerit mollis, massa magna ultrices diam, eu finibus ex arcu eget ligula. Integer fringilla massa eu felis porttitor, vitae tempor lorem consequat. Sed facilisis risus in purus pharetra posuere. Cras eget congue mi. Aenean efficitur quam ac libero finibus, sit amet accumsan diam pellentesque. Donec vel mauris lobortis, eleifend quam et, porta nisi. Maecenas efficitur odio elit, at consequat nisl vehicula viverra. Morbi tincidunt, dui a dictum congue, orci justo ultricies velit, nec congue velit ex nec augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer id posuere nibh. Cras quis dignissim leo, eget porttitor odio. Mauris eget fermentum mi. Nullam posuere nunc non nulla dapibus porta. Donec eu bibendum sapien, et tempus diam. Suspendisse dictum iaculis metus vitae faucibus. In nec justo iaculis, dapibus urna hendrerit, malesuada turpis."
@@ -36,7 +36,7 @@ export const AllSpeakers = [
     "name": "Khairil Yusof",
     "desc": "Khairil is the Coordinator at Sinar Project and an independent investigative journalist working on applying innovative methods of open data and standards, for transparency and anti-corruption.",
     "image": "https://cfp.pycon.my/media/avatars/Add_a_little_bit_of_body_text_20240726_155340_0000_ujAB4z1.png",
-    "title": "Coordinator at Sina Project"
+    "title": "Coordinator at Sinar Project"
   },
   {
     "name": "Samsuddin Wira Samsuddin",
