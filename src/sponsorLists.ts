@@ -18,6 +18,20 @@ export const SponsorLists = [
       ],
     },
     {
+      header: "Gold Sponsor",
+      sponsor: [
+        {
+          img: "/assets/sponsors/grab.png",
+          alt: "Grab",
+          link: "https://grab.com/",
+          name: "Grab",
+          desc: `
+            Grab is Southeast Asia’s leading superapp. From getting your favourite meals delivered to helping you manage your finances and getting around town hassle-free, they've got your back with everything. Guided by The Grab Way and their four core values of Heart, Hunger, Honour, and Humility, they make a lasting difference in Southeast Asia by creating economic empowerment for everyone.
+            `,
+          },
+        ],
+      },
+    {
       header: "Venue Sponsor",
       sponsor: [
         {

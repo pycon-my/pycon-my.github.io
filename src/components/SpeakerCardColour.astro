@@ -2,7 +2,7 @@
 const { image, name, subtitle } = Astro.props;
 ---
 
-<div class="group w-[22rem] h-[32rem] bg-yellow border-[12px] border-pink rounded-lg justify-center mx-2 rounded-[2.5rem] transition-colors duration-300 hover:bg-black-900">
+<button onclick={`window.my_modal_2.showModal()`} class="group w-[22rem] h-[32rem] bg-yellow border-[12px] border-pink rounded-lg justify-center mx-2 rounded-[2.5rem] transition-colors duration-300 hover:bg-black-900">
     <figure class="-m-1">
       <img src={image} alt={name} class="w-[22rem] h-[22rem] object-cover object-top rounded-full border-pink border-[16px]" />
     </figure>
@@ -10,4 +10,14 @@ const { image, name, subtitle } = Astro.props;
         <h2 class="text-xl text-center text-pink group-hover:text-white font-autobus sm:text-2xl transition-colors duration-300">{name}_</h2>
         <p class="mt-1 text-xs text-center text-pink group-hover:text-yellow font-autobus sm:text-sm transition-colors duration-300">{subtitle}</p>
     </div>
-</div>
+  </button>
+
+  <dialog id="my_modal_2" class="modal">
+    <div class="modal-box">
+      <h3 class="text-lg font-bold">Hello!</h3>
+      <p class="py-4">Press ESC key or click outside to close</p>
+    </div>
+    <form method="dialog" class="modal-backdrop">
+      <button>close</button>
+    </form>
+  </dialog>

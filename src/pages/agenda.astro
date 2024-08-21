@@ -3,15 +3,27 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout title="Agenda">
-  <h3 class="text-center my-4 md:my-16 text-black font-bold text-xl sm:text-4xl font-autobus">
+  <h3
+    class="text-center my-4 md:my-16 text-black font-bold text-xl sm:text-4xl font-autobus"
+  >
     Agenda_
   </h3>
-  <div class="md:px-12">
-    <img src="/assets/day1_1.png" />
-    <img src="/assets/day1_2.png" />
-  </div>
-  <div class="md:px-12 mt-12">
-    <img src="/assets/day2_1.png" />
-    <img src="/assets/day2_2.png" />
-  </div>
+  <script
+    type="text/javascript"
+    src="https://cfp.pycon.my/pyconmy-2024/schedule/widget/v2.en.js"></script>
+  <pretalx-schedule
+    event-url="https://cfp.pycon.my/pyconmy-2024/"
+    locale="en"
+    style="--pretalx-clr-primary: #3aa57c"></pretalx-schedule>
+  <noscript>
+    <div class="pretalx-widget">
+      <div class="pretalx-widget-info-message">
+        JavaScript is disabled in your browser. To access our schedule without
+        JavaScript, please <a
+          target="_blank"
+          href="https://cfp.pycon.my/pyconmy-2024/schedule/">click here</a
+        >.
+      </div>
+    </div>
+  </noscript>
 </BaseLayout>
