@@ -12,7 +12,7 @@ const { sponsors } = Astro.props as { sponsors: Sponsor[] };
 <div class="flex flex-col items-center justify-center bg-pink pb-8 border-t-8 border-black-900">
   <div class="bg-black-900 px-16 py-4 [clip-path:polygon(0%_0%,100%_0%,98%_90%,3%_80%)]">
     <h1 class="font-bold font-autobus text-white text-xl sm:text-2xl">
-      Our Sponsors_
+      Our Sponsors
     </h1>
   </div>
 </div>
@@ -23,7 +23,7 @@ const { sponsors } = Astro.props as { sponsors: Sponsor[] };
       sponsor.header === "Gold Sponsor" ? (
         <>
           <h3 class="mt-8 text-yellow font-autobus text-2xl">
-            {sponsor.header}_
+            {sponsor.header}
           </h3>
           <div class="flex flex-wrap justify-center gap-2 mt-4">
             {sponsor.sponsor.map((s) => (
@@ -33,7 +33,7 @@ const { sponsors } = Astro.props as { sponsors: Sponsor[] };
         </>
       ) : (
         <div class="w-11/12 text-center my-4 pb-5">
-          <h3 class="mt-8 text-yellow font-autobus">{sponsor.header}_</h3>
+          <h3 class="mt-8 text-yellow font-autobus">{sponsor.header}</h3>
           <div class="flex flex-wrap justify-center gap-2 mt-4">
             {sponsor.sponsor.map((s) => (
               <SponsorCard img={s.img} alt={s.alt} link={s.link} />
