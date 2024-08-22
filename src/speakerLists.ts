@@ -117,6 +117,12 @@ export const AllSpeakers = [
     "title": "Data scientist @ Orsted Malaysia"
   },
   {
+    "name": "Liang Fang Wen",
+    "desc": "A Chemical Engineering Graduate with a strong passion for AI and emerging technologies. A self-taught programmer with approximately 3-4 years of experience. Currently serving as a Fullstack Software Engineer at Grab, part of the GATE team.",
+    "image": "https://cfp.pycon.my/media/avatars/Passport_size_photo_AoX4ME0.jpg",
+    "title": "Fullstack Software Engineer at Grab"
+  },
+  {
     "name": "Matt Lebrun",
     "desc": "Matt is a technology and community leader passionate about exploring the learning process and applying these insights to foster the professional growth of his team, volunteer leaders in his community, and students.",
     "image": "https://cfp.pycon.my/media/avatars/matt-profile-2022_JMbL2Gv.jpg",
@@ -176,13 +182,6 @@ export const AllSpeakers = [
     "image": "https://cfp.pycon.my/media/avatars/Conference_TrinidadCarreno_Picture_d12IBEb_K8BbxSM.jpg",
     "title": "Intern at Sinar Project"
   },
-  {
-    "name": "Yudhiesh Ravindranath",
-    "desc": "Yudhiesh Ravindranath is a Senior Machine Learning Engineer at MoneyLion, where he is a part of the Machine Learning Labs team, tackling high-impact AI projects. Initially focused on Machine Learning Infrastructure, he later transitioned to Research and Development (R&D).",
-    "image": "https://cfp.pycon.my/media/avatars/IMG_4997_fFTgieZ.jpg",
-    "title": "Senior Machine Learning Engineer at MoneyLion"
-  },
-  
 
   
   

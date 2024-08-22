@@ -12,5 +12,11 @@ import { AllSpeakers, KeyNoteSpeakers } from "../speakerLists";
     {KeyNoteSpeakers.map(speaker => (
         <SpeakerCardDescription image={speaker.image} name={speaker.name} subtitle={speaker.title} description={speaker.desc} />
         ))}
+        <h3 class="my-8 text-black-900 font-bold text-xl sm:text-3xl">
+             Speakers
+        </h3>
+        {AllSpeakers.map(speaker => (
+            <SpeakerCardDescription image={speaker.image} name={speaker.name} subtitle={speaker.title} description={speaker.desc} />
+            ))}
 </div>
 </BaseLayout>
