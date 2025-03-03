@@ -43,15 +43,27 @@ export default function Home() {
                   <h1 className="font-thin -ml-2">&quot;</h1>
                 </div>
               </div>
-              <div
-                className="mt-8 group inline-block rounded-full border border-black/5 bg-green-200 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-900 dark:hover:bg-neutral-800"
-              >
-                <a href="https://forms.gle/KyLbYkuEYRzLBKio9" target="_blank" rel="noopener noreferrer" aria-label="Volunteer with us">
-                  <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
-                    <span>✨ Volunteer with us!</span>
-                    <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
-                  </AnimatedShinyText>
-                </a>
+              <div className="mt-8 flex flex-wrap gap-4">
+                <div
+                  className="group inline-block rounded-full border border-black/5 bg-green-200 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-900 dark:hover:bg-neutral-800"
+                >
+                  <a href="https://forms.gle/KyLbYkuEYRzLBKio9" target="_blank" rel="noopener noreferrer" aria-label="Volunteer with us">
+                    <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
+                      <span>✨ Volunteer with us!</span>
+                      <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
+                    </AnimatedShinyText>
+                  </a>
+                </div>
+                <div
+                  className="group inline-block rounded-full border border-black/5 bg-red-200 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-900 dark:hover:bg-neutral-800"
+                >
+                  <a href="/pycon24" aria-label="PyCon MY 2024 Performance">
+                    <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
+                      <span>PyCon MY 2024 Performance</span>
+                      <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
+                    </AnimatedShinyText>
+                  </a>
+                </div>
               </div>
               <div className="mt-8 flex items-center space-x-4 text-lg text-gray-700">
                 <span>Follow us at</span>

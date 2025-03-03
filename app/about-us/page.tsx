@@ -1,4 +1,4 @@
-import { Card } from "@/components/ui/card"
+import { Card } from "@/components/ui/card-fancy"
 import FooterLink from "@/components/footer-link"
 
 const cardHeaderContent = {
