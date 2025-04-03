@@ -25,7 +25,7 @@ export default function Home() {
               <div className="text-2xl tracking-tighter md:text-5xl lg:text-7xl xl:text-8xl">
                 <div className="flex gap-1 md:gap-2 lg:gap-3 xl:gap-4">
                   <h1 className="font-thin">&quot;Get ready this</h1>
-                  <p className="font-semibold">September</p>
+                  <p className="font-semibold">November</p>
                 </div>
                 <div className="flex items-center gap-1 md:gap-2 lg:gap-3 xl:gap-4">
                   <p className="font-thin">for</p>
