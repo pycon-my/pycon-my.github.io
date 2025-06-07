@@ -31,24 +31,42 @@ const Navbar: React.FC = () => {
       
       <div className="navbar-end">
         <div className="hidden lg:flex gap-8 text-2xl font-instrument-serif">
-          <Link href="/about" className={`${isActive('/about') ? "text-text-focused" : "text-text-secondary"} hover:text-text-focused cursor-pointer`}>About</Link>
-          <Link href="/sponsor" className={`${isActive('/sponsor') ? "text-text-focused" : "text-text-secondary"} hover:text-text-focused cursor-pointer`}>Sponsor</Link>
-          <Link href="/cfp" className={`${isActive('/cfp') ? "text-text-focused" : "text-text-secondary"} hover:text-text-focused cursor-pointer`}>CFP</Link>
-          <Link href="/schedule" className={`${isActive('/schedule') ? "text-text-focused" : "text-text-secondary"} hover:text-text-focused cursor-pointer`}>Schedule</Link>
-          <Link href="/volunteer" className={`${isActive('/volunteer') ? "text-text-focused" : "text-text-secondary"} hover:text-text-focused cursor-pointer`}>Volunteer</Link>
+          <div className="dropdown dropdown-hover">
+            <div tabIndex={0} role="button" className={`${isActive('/about') || pathname.startsWith('/about/') ? "text-focused" : "text-black"} hover:text-focused hover:italic cursor-pointer`}>
+              About
+            </div>
+            <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow mt-2">
+              <li><Link href="/about/pycon-my" className="text-black hover:text-focused hover:italic">PyCon MY</Link></li>
+              <li><Link href="/about/python-software-foundation" className="text-black hover:text-focused hover:italic">Python Software Foundation</Link></li>
+              <li><Link href="/about/code-of-conduct" className="text-black hover:text-focused hover:italic">Code of Conduct</Link></li>
+            </ul>
+          </div>
+          <Link href="/sponsor" className={`${isActive('/sponsor') ? "text-focused" : "text-black"} hover:text-focused hover:italic cursor-pointer`}>Sponsor</Link>
+          <Link href="/cfp" className={`${isActive('/cfp') ? "text-focused" : "text-black"} hover:text-focused hover:italic cursor-pointer`}>CFP</Link>
+          <Link href="/schedule" className={`${isActive('/schedule') ? "text-focused" : "text-black"} hover:text-focused hover:italic cursor-pointer`}>Schedule</Link>
+          <Link href="/volunteer" className={`${isActive('/volunteer') ? "text-focused" : "text-black"} hover:text-focused hover:italic cursor-pointer`}>Volunteer</Link>
         </div>
-        <div className="dropdown">
+        <div className="dropdown dropdown-end">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </div>
           <ul tabIndex={0} className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow font-instrument-serif">
-            <li><Link href="/about" className={`${isActive('/about') ? "text-text-focused" : "text-text-secondary"} hover:text-text-focused`}>About</Link></li>
-            <li><Link href="/sponsor" className={`${isActive('/sponsor') ? "text-text-focused" : "text-text-secondary"} hover:text-text-focused`}>Sponsor</Link></li>
-            <li><Link href="/cfp" className={`${isActive('/cfp') ? "text-text-focused" : "text-text-secondary"} hover:text-text-focused`}>CFP</Link></li>
-            <li><Link href="/schedule" className={`${isActive('/schedule') ? "text-text-focused" : "text-text-secondary"} hover:text-text-focused`}>Schedule</Link></li>
-            <li><Link href="/volunteer" className={`${isActive('/volunteer') ? "text-text-focused" : "text-text-secondary"} hover:text-text-focused`}>Volunteer</Link></li>
+            <li>
+              <details>
+                <summary className={`${isActive('/about') || pathname.startsWith('/about/') ? "text-focused" : "text-black"} hover:text-focused hover:italic`}>About</summary>
+                <ul>
+                  <li><Link href="/about/pycon-my" className="text-black hover:text-focused hover:italic">PyCon MY</Link></li>
+                  <li><Link href="/about/python-software-foundation" className="text-black hover:text-focused hover:italic">Python Software Foundation</Link></li>
+                  <li><Link href="/about/code-of-conduct" className="text-black hover:text-focused hover:italic">Code of Conduct</Link></li>
+                </ul>
+              </details>
+            </li>
+            <li><Link href="/sponsor" className={`${isActive('/sponsor') ? "text-focused" : "text-black"} hover:text-focused hover:italic`}>Sponsor</Link></li>
+            <li><Link href="/cfp" className={`${isActive('/cfp') ? "text-focused" : "text-black"} hover:text-focused hover:italic`}>CFP</Link></li>
+            <li><Link href="/schedule" className={`${isActive('/schedule') ? "text-focused" : "text-black"} hover:text-focused hover:italic`}>Schedule</Link></li>
+            <li><Link href="/volunteer" className={`${isActive('/volunteer') ? "text-focused" : "text-black"} hover:text-focused hover:italic`}>Volunteer</Link></li>
           </ul>
         </div>
       </div>

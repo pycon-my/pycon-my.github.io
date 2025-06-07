@@ -4,11 +4,9 @@ import Image from 'next/image';
 const Hero: React.FC = () => {
   return (
     <div className="relative w-full">
-      {/* Hero Section with Hills */}
       <header 
         className="relative w-full h-[60vh] md:h-[80vh] overflow-hidden bg-hero"
       >
-        {/* Main logo */}
         <div className="relative z-10 pt-32 flex flex-col items-center justify-center">
           <div className="w-full max-w-2xl mx-auto px-4">
             <div className="w-full relative h-40 md:h-60">
@@ -25,12 +23,10 @@ const Hero: React.FC = () => {
           </div>
         </div>
 
-        {/* Background hills */}
         <div className="absolute inset-0 z-0">
-          {/* Hills */}
           <div className="absolute -bottom-2 left-0 w-full h-3/4">
               <Image 
-                src="/assets/hill_full.png"
+                src="/assets/hill-full.png"
                 alt="Hills"
                 fill
                 style={{
@@ -43,7 +39,6 @@ const Hero: React.FC = () => {
         </div>
       </header>
 
-      {/* Boat with characters - positioned between hero and sea sections */}
       <div className="absolute bottom-[20vh] left-3/4 md:left-5/6 transform -translate-x-1/2 z-50 animate-boat-slide">
         <div className="relative w-52 h-34 md:w-96 md:h-56">
           <Image 
@@ -58,7 +53,6 @@ const Hero: React.FC = () => {
         </div>
       </div>
 
-      {/* Sea eye/creature beside the boat */}
       <div className="absolute bottom-[30vh] left-3/4 md:left-5/6 transform translate-x-8 z-50 animate-eye-flip">
         <div className="relative w-12 h-12 md:w-24 md:h-24">
           <Image 
@@ -73,9 +67,7 @@ const Hero: React.FC = () => {
         </div>
       </div>
 
-      {/* Sea Section */}
       <section className="relative w-full h-[40vh] bg-sea overflow-hidden">
-        {/* Coconut tree at 2/5 position from left */}
         <div className="absolute -bottom-4 left-2/7 transform -translate-x-1/2 z-10">
           <div className="relative w-32 h-32 md:w-48 md:h-48">
             <Image 
@@ -91,7 +83,6 @@ const Hero: React.FC = () => {
           </div>
         </div>
 
-        {/* Sea stone on the bottom right */}
         <div className="absolute -bottom-4 right-4 z-5">
           <div className="relative w-12 h-8 md:w-16 md:h-10">
             <Image 
@@ -108,7 +99,6 @@ const Hero: React.FC = () => {
         </div>
       </section>
 
-      {/* Top right tree positioned between Hero and Intro sections */}
       <div className="hidden md:block absolute -bottom-36 right-8 md:right-16 z-30">
         <div className="relative w-32 h-40 md:w-48 md:h-60">
           <Image 
@@ -123,9 +113,8 @@ const Hero: React.FC = () => {
         </div>
       </div>
 
-      {/* Left tree positioned between Hero and Intro sections */}
-      <div className="hidden md:block absolute -bottom-60 left-0 z-30">
-        <div className="relative w-48 h-60 md:w-96 md:h-80">
+      <div className="hidden md:block absolute -bottom-40 lg:-bottom-60 left-0 z-30">
+        <div className="relative w-58 h-72 lg:w-96 lg:h-80">
           <Image 
             src="/assets/tree-3.png"
             alt="Left tree"
@@ -138,8 +127,6 @@ const Hero: React.FC = () => {
           />
         </div>
       </div>
-
-     
     </div>
   );
 };

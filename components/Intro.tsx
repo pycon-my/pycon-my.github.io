@@ -4,8 +4,7 @@ import Image from 'next/image';
 const Intro: React.FC = () => {
   return (
     <section className="relative w-full min-h-[110vh] bg-land overflow-hidden py-4 md:py-8">
-      {/* Bottom right trees cluster */}
-      <div className="hidden md:block absolute -bottom-20 right-0 z-10">
+      <div className="hidden md:block absolute -bottom-20 right-0 z-50">
         <div className="relative w-80 h-64 md:w-128 md:h-100">
           <Image 
             src="/assets/tree-2.png"
@@ -20,7 +19,6 @@ const Intro: React.FC = () => {
         </div>
       </div>
 
-      {/* Main content container */}
       <div className="relative z-20 max-w-4xl mx-auto px-6 md:px-8 pt-2">
         <div className="text-center mb-12 font-instrument-serif text-green">
           <h2 className="text-4xl md:text-6xl mb-2 leading-tight">
@@ -34,7 +32,6 @@ const Intro: React.FC = () => {
           </p>
         </div>
 
-        {/* Python character illustration */}
         <div className="flex justify-center mb-4">
           <div className="relative w-32 h-32 md:w-48 md:h-48">
             <Image 
@@ -49,8 +46,7 @@ const Intro: React.FC = () => {
           </div>
         </div>
 
-        {/* Description text */}
-        <div className="w-full md:absolute md:left-[10%] md:w-[45%] max-w-2xl md:max-w-none mx-auto md:mx-0 text-left font-space-grotesk text-body">
+        <div className="w-full md:absolute md:left-[15%] md:w-[45%] max-w-2xl md:max-w-none mx-auto md:mx-0 text-left font-space-grotesk text-body">
           <p className="text-lg md:text-xl leading-tight mb-4">
             We are so excited to welcome our community back to the sunny city of 
             Kuala Lumpur for PyCon MY 2025!
