@@ -3,41 +3,10 @@ import Image from 'next/image';
 
 const Intro: React.FC = () => {
   return (
-    <section className="relative w-full min-h-screen bg-land overflow-hidden py-16 md:py-24">
-      {/* Left side coconut tree with flowers */}
-      <div className="absolute top-2 left-0 z-10">
-        <div className="relative w-48 h-60 md:w-96 md:h-80">
-          <Image 
-            src="/assets/tree-3.png"
-            alt="Coconut tree"
-            fill
-            style={{
-              objectFit: "contain",
-              objectPosition: "bottom"
-            }}
-            priority
-          />
-        </div>
-      </div>
-
-      {/* Top right tree */}
-      <div className="absolute top-4 right-8 md:right-16 z-10">
-        <div className="relative w-32 h-40 md:w-40 md:h-52">
-          <Image 
-            src="/assets/tree-1.png"
-            alt="Tree"
-            fill
-            style={{
-              objectFit: "contain"
-            }}
-            priority
-          />
-        </div>
-      </div>
-
+    <section className="relative w-full min-h-[110vh] bg-land overflow-hidden py-4 md:py-8">
       {/* Bottom right trees cluster */}
-      <div className="absolute bottom-0 right-0 z-10">
-        <div className="relative w-80 h-64 md:w-96 md:h-80">
+      <div className="hidden md:block absolute -bottom-20 right-0 z-10">
+        <div className="relative w-80 h-64 md:w-128 md:h-100">
           <Image 
             src="/assets/tree-2.png"
             alt="Trees cluster"
@@ -66,8 +35,8 @@ const Intro: React.FC = () => {
         </div>
 
         {/* Python character illustration */}
-        <div className="flex justify-center mb-12">
-          <div className="relative w-32 h-32 md:w-40 md:h-40">
+        <div className="flex justify-center mb-4">
+          <div className="relative w-32 h-32 md:w-48 md:h-48">
             <Image 
               src="/assets/bird.png"
               alt="Python character"
@@ -81,12 +50,12 @@ const Intro: React.FC = () => {
         </div>
 
         {/* Description text */}
-        <div className="max-w-2xl mx-auto text-left font-space-grotesk text-body">
-          <p className="text-lg md:text-xl leading-relaxed mb-6">
+        <div className="w-full md:absolute md:left-[10%] md:w-[45%] max-w-2xl md:max-w-none mx-auto md:mx-0 text-left font-space-grotesk text-body">
+          <p className="text-lg md:text-xl leading-tight mb-4">
             We are so excited to welcome our community back to the sunny city of 
             Kuala Lumpur for PyCon MY 2025!
           </p>
-          <p className="text-lg md:text-xl leading-relaxed mb-8">
+          <p className="text-lg md:text-xl leading-tight mb-4">
             Mark your calendars and be sure to read the About PyCon MY page for 
             more details. We can&apos;t wait to see you all at the Sunway University&apos;s 
             Conference Hall again this year!
