@@ -1,70 +1,117 @@
 import React from 'react';
 import Image from 'next/image';
-import Navbar from './Navbar';
 
 const Hero: React.FC = () => {
   return (
-    <header className="relative w-full h-[90vh] bg-gradient-to-b from-[#F5E6B8] to-[#E8D5A3] overflow-hidden">
-      {/* Navigation menu */}
-      <Navbar />
+    <div className="relative w-full">
+      {/* Hero Section with Hills */}
+      <header 
+        className="relative w-full h-[60vh] md:h-[80vh] overflow-hidden bg-hero"
+      >
+        {/* Main logo */}
+        <div className="relative z-10 pt-32 flex flex-col items-center justify-center">
+          <div className="w-full max-w-2xl mx-auto px-4">
+            <div className="w-full relative h-40 md:h-60">
+              <Image
+                src="/assets/PyConMY2025_EventLogo2.svg"
+                alt="PyCon Malaysia 2025 Logo"
+                fill
+                style={{
+                  objectFit: "contain"
+                }}
+                priority
+              />
+            </div>
+          </div>
+        </div>
 
-      {/* Main logo */}
-      <div className="relative z-10 pt-16 flex flex-col items-center justify-center">
-        <div className="w-full max-w-2xl mx-auto px-4">
-          <div className="w-full relative h-40 md:h-60">
-            <Image
-              src="/assets/PyConMY2025_Logotype.svg"
-              alt="PyCon Malaysia 2025 Logo"
+        {/* Background hills */}
+        <div className="absolute inset-0 z-0">
+          {/* Hills */}
+          <div className="absolute -bottom-2 left-0 w-full h-3/4">
+              <Image 
+                src="/assets/hill_full.png"
+                alt="Hills"
+                fill
+                style={{
+                  objectFit: "contain",
+                  objectPosition: "bottom"
+                }}
+                priority
+              />
+          </div>
+        </div>
+      </header>
+
+      {/* Boat with characters - positioned between hero and sea sections */}
+      <div className="absolute bottom-[20vh] left-5/6 transform -translate-x-1/2 z-50 animate-boat-slide">
+        <div className="relative w-40 h-24 md:w-96 md:h-56">
+          <Image 
+            src="/assets/sea-boat.png"
+            alt="Boat with characters"
+            fill
+            style={{
+              objectFit: "contain"
+            }}
+            priority
+          />
+        </div>
+      </div>
+
+      {/* Sea eye/creature beside the boat */}
+      <div className="absolute bottom-[30vh] left-5/6 transform translate-x-8 z-50 animate-eye-flip">
+        <div className="relative w-12 h-12 md:w-24 md:h-24">
+          <Image 
+            src="/assets/sea-eye.png"
+            alt="Sea creature"
+            fill
+            style={{
+              objectFit: "contain"
+            }}
+            priority
+          />
+        </div>
+      </div>
+
+      {/* Sea Section */}
+      <section className="relative w-full h-[40vh] bg-sea overflow-hidden">
+        {/* Coconut tree at 2/5 position from left */}
+        <div className="absolute bottom-0 left-2/5 transform -translate-x-1/2 z-10">
+          <div className="relative w-32 h-32 md:w-48 md:h-48">
+            <Image 
+              src="/assets/sea-coconut.png"
+              alt="Coconut tree"
               fill
               style={{
-                objectFit: "contain"
+                objectFit: "contain",
+                objectPosition: "bottom"
               }}
               priority
             />
           </div>
         </div>
-      </div>
 
-      {/* Background hills */}
-      <div className="absolute inset-0 z-0">
-        {/* Hills */}
-        <div className="absolute bottom-0 left-0 w-full h-3/4">
-          {/* Left hill */}
-          <div className="absolute bottom-0 left-0 w-1/2 h-full">
+        {/* Sea stone on the bottom right */}
+        <div className="absolute bottom-0 right-4 z-5">
+          <div className="relative w-12 h-8 md:w-16 md:h-10">
             <Image 
-              src="/assets/left_hill.png"
-              alt="Left hill"
+              src="/assets/sea-stone.png"
+              alt="Sea stone"
               fill
               style={{
                 objectFit: "contain",
-                objectPosition: "bottom left"
-              }}
-              priority
-            />
-          </div>
-          
-          {/* Right hill */}
-          <div className="absolute bottom-0 right-0 w-1/2 h-full">
-            <Image 
-              src="/assets/right_hill.png"
-              alt="Right hill"
-              fill
-              style={{
-                objectFit: "contain",
-                objectPosition: "bottom right"
+                objectPosition: "bottom"
               }}
               priority
             />
           </div>
         </div>
-      </div>
-      
-      {/* Decorative elements */}
-      <div className="absolute z-5 top-1/4 left-1/4 w-2 h-2 bg-white rounded-full opacity-70"></div>
-      <div className="absolute z-5 top-1/3 right-1/3 w-3 h-3 bg-white rounded-full opacity-60"></div>
-      <div className="absolute z-5 top-1/5 right-1/4 w-1.5 h-1.5 bg-white rounded-full opacity-80"></div>
-    </header>
+      </section>
+
+     
+    </div>
   );
 };
 
 export default Hero;
+

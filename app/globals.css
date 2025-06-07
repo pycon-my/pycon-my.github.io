@@ -1,17 +1,26 @@
 @import "tailwindcss";
+@plugin "daisyui";
+
+@theme {
+  --color-hero: #ffe0ae;
+  --color-sea: #c0efff;
+  --color-land: #e5cfb1;
+  --color-secondary: #bacc76;
+  --color-tertiary: #296642;
+  --color-green: #40531b;
+  --color-text-secondary: #000000;
+  --color-body: #1a1a1a;
+  --color-focused: #fe9920;
+}
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --secondary-color: #6d3d14;
+  --text-color: #1a1a1a;
+ 
+  --font-sans: var(--font-space-grotesk);
   --font-serif: var(--font-instrument-serif);
-  --font-display: var(--font-space-grotesk);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,5 +33,52 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-space-grotesk), sans-serif;
+}
+
+/* Ensure Instrument Serif is applied to navbar */
+.font-instrument-serif {
+  font-family: var(--font-instrument-serif), serif !important;
+}
+
+/* Additional specificity for navbar text */
+.navbar .menu li a {
+  font-family: var(--font-instrument-serif), serif !important;
+}
+
+/* Boat wiggle animation */
+@keyframes boat-slide {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateX(-50%) translateY(-2px) rotate(1deg);
+  }
+  50% {
+    transform: translateX(-50%) translateY(2px) rotate(-1deg);
+  }
+  75% {
+    transform: translateX(-50%) translateY(-1px) rotate(0.5deg);
+  }
+}
+
+.animate-boat-slide {
+  animation: boat-slide 3s ease-in-out infinite;
+}
+
+/* Sea eye flip animation - flips every 6 seconds with longer pauses */
+@keyframes eye-flip {
+  0%, 92% {
+    transform: scaleX(1);
+  }
+  94%, 98% {
+    transform: scaleX(-1);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.animate-eye-flip {
+  animation: eye-flip 6s ease-in-out infinite;
 }

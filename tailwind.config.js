@@ -8,19 +8,17 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: '#ffe0ae',
-        secondary: '#6d3d14',
-        text: '#1a1a1a',
       },
       fontFamily: {
-        sans: ['var(--font-space-grotesk)'],
-        title: ['var(--font-instrument-serif)'],
+        'instrument-serif': ['var(--font-instrument-serif)'],
+        'space-grotesk': ['var(--font-space-grotesk)'],
       },
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: false, // We'll use our own custom theme
+  },
 };
