@@ -31,18 +31,18 @@ const Navbar: React.FC = () => {
       
       <div className="navbar-end">
         <div className="hidden lg:flex gap-8 text-2xl font-instrument-serif">
-          <div className="dropdown dropdown-hover">
-            <div tabIndex={0} role="button" className={`${isActive('/about') || pathname.startsWith('/about/') ? "text-focused" : "text-black"} hover:text-focused hover:italic cursor-pointer`}>
+          <div className="dropdown dropdown-center">
+            <div tabIndex={0} role="button">
               About
             </div>
             <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow mt-2">
-              <li><Link href="/about/pycon-my" className="text-black hover:text-focused hover:italic">PyCon MY</Link></li>
-              <li><Link href="/about/python-software-foundation" className="text-black hover:text-focused hover:italic">Python Software Foundation</Link></li>
-              <li><Link href="/about/code-of-conduct" className="text-black hover:text-focused hover:italic">Code of Conduct</Link></li>
+              <li><Link href="/about" className="text-black hover:text-focused hover:italic">PyCon MY</Link></li>
+              <li><Link href="/psf" className="text-black hover:text-focused hover:italic">Python Software Foundation</Link></li>
+              <li><Link href="/coc" className="text-black hover:text-focused hover:italic">Code of Conduct</Link></li>
             </ul>
           </div>
           <Link href="/sponsor" className={`${isActive('/sponsor') ? "text-focused" : "text-black"} hover:text-focused hover:italic cursor-pointer`}>Sponsor</Link>
-          <Link href="/cfp" className={`${isActive('/cfp') ? "text-focused" : "text-black"} hover:text-focused hover:italic cursor-pointer`}>CFP</Link>
+          <Link href="https://cfp.pycon.my" className={`${isActive('/cfp') ? "text-focused" : "text-black"} hover:text-focused hover:italic cursor-pointer`}>CFP</Link>
           <Link href="/schedule" className={`${isActive('/schedule') ? "text-focused" : "text-black"} hover:text-focused hover:italic cursor-pointer`}>Schedule</Link>
           <Link href="/volunteer" className={`${isActive('/volunteer') ? "text-focused" : "text-black"} hover:text-focused hover:italic cursor-pointer`}>Volunteer</Link>
         </div>
