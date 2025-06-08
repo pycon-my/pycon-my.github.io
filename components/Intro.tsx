@@ -28,7 +28,7 @@ const Intro: React.FC = () => {
             PyCon Malaysia 2025
           </h1>
           <p className="text-4xl md:text-6xl mb-2">
-            November 14–22, 2025
+            November 1-2, 2025
           </p>
         </div>
 
@@ -53,7 +53,7 @@ const Intro: React.FC = () => {
           </p>
           <p className="text-lg md:text-xl leading-tight mb-4">
             Mark your calendars and be sure to read the About PyCon MY page for 
-            more details. We can&apos;t wait to see you all at the Sunway University&apos;s 
+            more details. We can&apos;t wait to see you all at the <b>Sunway University</b>&apos;s 
             Conference Hall again this year!
           </p>
 
