@@ -108,3 +108,18 @@ We are grateful to all the organizations that have supported PyCon MY over the y
 
 
 
+import Image from 'next/image'
+
+<div className="flex justify-center">
+    <div className="relative w-48 h-48 md:w-72 md:h-72">
+        <Image 
+        src="/assets/tiger.png"
+        alt="Python character"
+        fill
+        style={{
+            objectFit: "contain"
+        }}
+        priority
+        />
+    </div>
+</div>

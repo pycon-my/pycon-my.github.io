@@ -48,3 +48,19 @@ according to the rules for such organizations._
 "Open source" is defined as: freely available technology licensed under terms
 compatible with Version 1.9 (or later) of the Open Source Definition, as
 established by the [Open Source Initiative](http://www.opensource.org/)
+
+import Image from 'next/image'
+
+<div className="flex justify-center">
+    <div className="relative w-48 h-48 md:w-72 md:h-72">
+        <Image 
+        src="/assets/bird.png"
+        alt="Python character"
+        fill
+        style={{
+            objectFit: "contain"
+        }}
+        priority
+        />
+    </div>
+</div>
