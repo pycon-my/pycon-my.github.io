@@ -1,7 +1,7 @@
 import Hero from "../components/Hero";
-
 import Intro from "@/components/Intro";
 import CFPHero from "@/components/CFPHero";
+import SponsorHero from "@/components/SponsorHero";
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
       <Hero />
       <Intro />
       <CFPHero />
-      
+      <SponsorHero />
     </div>
   );
 }

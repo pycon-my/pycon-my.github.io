@@ -4,21 +4,7 @@ import Image from 'next/image';
 const Intro: React.FC = () => {
   return (
     <section className="relative w-full min-h-[110vh] bg-land overflow-hidden py-4 md:py-8">
-      <div className="hidden md:block absolute -bottom-20 right-0 z-50">
-        <div className="relative w-80 h-64 md:w-128 md:h-100">
-          <Image 
-            src="/assets/tree-2.png"
-            alt="Trees cluster"
-            fill
-            style={{
-              objectFit: "contain",
-              objectPosition: "bottom right"
-            }}
-            priority
-          />
-        </div>
-      </div>
-
+      
       <div className="relative z-20 max-w-4xl mx-auto px-6 md:px-8 pt-2">
         <div className="text-center mb-12 font-instrument-serif text-green">
           <h2 className="text-4xl md:text-6xl mb-2 leading-tight">
