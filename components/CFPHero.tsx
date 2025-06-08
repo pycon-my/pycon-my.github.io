@@ -27,7 +27,7 @@ const CFPHero: React.FC = () => {
           </h1>
           
           <p className="font-space-grotesk text-md md:text-lg text-text-secondary mt-4">
-            Register as this year&apos;s speaker <Link href="https://cfp.pycon.my" className="hover:italic underline">here</Link>.
+            Register as this year&apos;s speaker <Link href="https://cfp.pycon.my/pyconmy-2025" className="hover:italic underline">here</Link>.
           </p>
         </div>
       </div>

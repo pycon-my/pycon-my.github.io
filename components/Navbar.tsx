@@ -42,7 +42,7 @@ const Navbar: React.FC = () => {
             </ul>
           </div>
           <Link href="/sponsor" className={`${isActive('/sponsor') ? "text-focused" : "text-black"} hover:text-focused hover:italic cursor-pointer`}>Sponsor</Link>
-          <Link href="https://cfp.pycon.my" className={`${isActive('/cfp') ? "text-focused" : "text-black"} hover:text-focused hover:italic cursor-pointer`}>CFP</Link>
+          <Link href="https://cfp.pycon.my/pyconmy-2025" className={`${isActive('/cfp') ? "text-focused" : "text-black"} hover:text-focused hover:italic cursor-pointer`}>CFP</Link>
           <Link href="/schedule" className={`${isActive('/schedule') ? "text-focused" : "text-black"} hover:text-focused hover:italic cursor-pointer`}>Schedule</Link>
           <Link href="/volunteer" className={`${isActive('/volunteer') ? "text-focused" : "text-black"} hover:text-focused hover:italic cursor-pointer`}>Volunteer</Link>
         </div>
@@ -64,7 +64,7 @@ const Navbar: React.FC = () => {
               </details>
             </li>
             <li><Link href="/sponsor" className={`${isActive('/sponsor') ? "text-focused" : "text-black"} hover:text-focused hover:italic`}>Sponsor</Link></li>
-            <li><Link href="/cfp" className={`${isActive('/cfp') ? "text-focused" : "text-black"} hover:text-focused hover:italic`}>CFP</Link></li>
+            <li><Link href="https://cfp.pycon.my/pyconmy-2025" className={`${isActive('/cfp') ? "text-focused" : "text-black"} hover:text-focused hover:italic`}>CFP</Link></li>
             <li><Link href="/schedule" className={`${isActive('/schedule') ? "text-focused" : "text-black"} hover:text-focused hover:italic`}>Schedule</Link></li>
             <li><Link href="/volunteer" className={`${isActive('/volunteer') ? "text-focused" : "text-black"} hover:text-focused hover:italic`}>Volunteer</Link></li>
           </ul>
