@@ -57,9 +57,9 @@ const Navbar: React.FC = () => {
               <details>
                 <summary className={`${isActive('/about') || pathname.startsWith('/about/') ? "text-focused" : "text-black"} hover:text-focused hover:italic`}>About</summary>
                 <ul>
-                  <li><Link href="/about/pycon-my" className="text-black hover:text-focused hover:italic">PyCon MY</Link></li>
-                  <li><Link href="/about/python-software-foundation" className="text-black hover:text-focused hover:italic">Python Software Foundation</Link></li>
-                  <li><Link href="/about/code-of-conduct" className="text-black hover:text-focused hover:italic">Code of Conduct</Link></li>
+                  <li><Link href="/about" className="text-black hover:text-focused hover:italic">PyCon MY</Link></li>
+                  <li><Link href="/psf" className="text-black hover:text-focused hover:italic">Python Software Foundation</Link></li>
+                  <li><Link href="/coc" className="text-black hover:text-focused hover:italic">Code of Conduct</Link></li>
                 </ul>
               </details>
             </li>
