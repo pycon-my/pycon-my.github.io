@@ -27,7 +27,8 @@ const CFPHero: React.FC = () => {
           </h1>
           
           <p className="font-space-grotesk text-md md:text-lg text-text-secondary mt-4">
-            Our Call for Proposals will open on June 14th, 2025 - stay tuned for your chance to share your Python expertise with the community!
+            Register as this year&apos;s speaker <Link href="https://cfp.pycon.my/pyconmy-2025/cfp" className="hover:italic underline">here</Link>.
+            
           </p>
         </div>
       </div>
