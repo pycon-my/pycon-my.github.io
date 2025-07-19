@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
               proudly organised by
             </h3>
             <p className="text-lg font-space-grotesk text-body">
-              PyCon MY PLT
+              PyCon MY PLT (LLP0006642-LGN)
             </p>
           </div>
 
