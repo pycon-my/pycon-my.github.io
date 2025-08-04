@@ -23,7 +23,7 @@ const CFPHero: React.FC = () => {
       <div className="relative z-20 md:ml-[50%] max-w-3xl px-6 md:px-8">
         <div className="text-left mb-16">
           <h1 className="text-2xl md:text-4xl font-instrument-serif text-text-primary leading-tight">
-            Call For Proposal opening soon!
+            Call For Proposal: Now Open!
           </h1>
           
           <p className="font-space-grotesk text-md md:text-lg text-text-secondary mt-4">
