@@ -35,7 +35,11 @@ const Navbar: React.FC = () => {
         <div className="navbar-end">
           <div className="hidden lg:flex gap-8 text-2xl font-instrument-serif">
             <div className="dropdown dropdown-center">
-              <div tabIndex={0} role="button">
+              <div
+    tabIndex={0}
+    role="button"
+    className={`cursor-pointer ${isActive('/about') ? "text-focused italic" : "text-black"} hover:text-focused hover:italic`}
+  >
                 About
               </div>
               <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow mt-2">

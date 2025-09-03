@@ -11,6 +11,7 @@
   --color-green: #40531b;
   --color-body: #1a1a1a;
   --color-focused: #fe9920;
+  --color-silver:#7a7777;
 }
 
 :root {
@@ -78,3 +79,17 @@ body {
 .animate-eye-flip {
   animation: eye-flip 6s ease-in-out infinite;
 }
+
+.prose h1 {
+  color: var(--color-focused);
+}
+
+.prose h2 {
+  color: var(--color-tertiary);
+}
+
+.prose h3 {
+  color: var(--color-green);
+}
+
+

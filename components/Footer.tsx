@@ -2,6 +2,29 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
+const socials = [
+  {
+    name: 'LinkedIn',
+    href: 'https://www.linkedin.com/company/pyconmy/',
+    logo: '/assets/linkedin.png',
+  },
+  {
+    name: 'Instagram',
+    href: 'https://www.instagram.com/pyconmy',
+    logo: '/assets/instagram.png',
+  },
+  {
+    name: 'X (formerly Twitter)',
+    href: 'https://twitter.com/pyconmy',
+    logo: '/assets/x.png',
+  },
+  {
+    name: 'Facebook',
+    href: 'https://www.facebook.com/PyConMYofficial',
+    logo: '/assets/facebook.png',
+  },
+];
+
 const Footer: React.FC = () => {
   return (
     <footer className="relative w-full bg-land px-6 md:px-10 pt-16">
@@ -19,16 +42,25 @@ const Footer: React.FC = () => {
           </div>
 
           <div className="md:col-span-1 mt-16 md:mt-20">
-            <div className="space-y-1">
-              <Link href="https://www.linkedin.com/company/pyconmy/" className="block text-lg font-space-grotesk text-body hover:text-text-focused hover:italic">
-                LinkedIn
-              </Link>
-              <Link href="https://twitter.com/pyconmy" className="block text-lg font-space-grotesk text-body hover:text-text-focused hover:italic">
-                X
-              </Link>
-              <Link href="https://www.facebook.com/PyConMYofficial" className="block text-lg font-space-grotesk text-body hover:text-text-focused hover:italic">
-                Facebook
-              </Link>
+            <div className="space-y-3">
+              {socials.map((social) => (
+                <Link
+                  key={social.name}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-lg font-space-grotesk text-body hover:text-text-focused hover:italic"
+                >
+                  <Image
+                    src={social.logo}
+                    alt={`${social.name} logo`}
+                    width={24}
+                    height={24}
+                    className="inline-block"
+                  />
+                  {social.name}
+                </Link>
+              ))}
             </div>
           </div>
 
