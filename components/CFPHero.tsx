@@ -23,12 +23,11 @@ const CFPHero: React.FC = () => {
       <div className="relative z-20 md:ml-[50%] max-w-3xl px-6 md:px-8">
         <div className="text-left mb-16">
           <h1 className="text-2xl md:text-4xl font-instrument-serif text-text-primary leading-tight">
-            Call For Proposal: Now Open!
+            Call For Proposal: Closed!
           </h1>
           
           <p className="font-space-grotesk text-md md:text-lg text-text-secondary mt-4">
-            Register as this year&apos;s speaker <Link href="https://cfp.pycon.my/pyconmy-2025/cfp" className="hover:italic underline">here</Link>.
-            
+            Check your email for confirmation. If you have any questions, please reach out to us at <Link href="mailto:board@pycon.my">board@pycon.my</Link>.
           </p>
         </div>
       </div>

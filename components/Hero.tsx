@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Hero: React.FC = () => {
   return (
@@ -19,6 +20,22 @@ const Hero: React.FC = () => {
                 }}
                 priority
               />
+            </div>
+            
+            {/* Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
+              <Link 
+                href="https://www.eventbrite.sg/e/pycon-my-2025-tickets-1447422954019" 
+                className="bg-focused hover:bg-focused/90 text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform"
+              >
+                Buy Ticket
+              </Link>
+              <Link 
+                href="/hrdc-claimable" 
+                className="bg-white hover:bg-gray-50 text-focused font-semibold py-3 px-8 rounded-lg border-2 border-focused transition-colors duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform"
+              >
+                HRDC Claimable
+              </Link>
             </div>
           </div>
         </div>

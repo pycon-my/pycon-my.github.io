@@ -49,7 +49,7 @@ const Navbar: React.FC = () => {
               </ul>
             </div>
             <Link href="/sponsor" className={`${isActive('/sponsor') ? "text-focused" : "text-black"} hover:text-focused hover:italic cursor-pointer`}>Sponsor</Link>
-            <Link href="https://cfp.pycon.my/pyconmy-2025" className={`${isActive('/cfp') ? "text-focused" : "text-black"} hover:text-focused hover:italic cursor-pointer`}>CFP</Link>
+            <Link href="/travel-info" className={`${isActive('/travel-info') ? "text-focused" : "text-black"} hover:text-focused hover:italic cursor-pointer`}>Travel Info</Link>
             <Link href="/schedule" className={`${isActive('/schedule') ? "text-focused" : "text-black"} hover:text-focused hover:italic cursor-pointer`}>Schedule</Link>
             <Link href="/volunteer" className={`${isActive('/volunteer') ? "text-focused" : "text-black"} hover:text-focused hover:italic cursor-pointer`}>Volunteer</Link>
             <Link href="https://www.eventbrite.sg/e/pycon-my-2025-tickets-1447422954019" className={`${isActive('/buy') ? "text-focused" : "text-black"} hover:text-focused hover:italic cursor-pointer`}>Buy Ticket</Link>
@@ -72,7 +72,7 @@ const Navbar: React.FC = () => {
                 </details>
               </li>
               <li><Link href="/sponsor" className={`${isActive('/sponsor') ? "text-focused" : "text-black"} hover:text-focused hover:italic`}>Sponsor</Link></li>
-              <li><Link href="https://cfp.pycon.my/pyconmy-2025" className={`${isActive('/cfp') ? "text-focused" : "text-black"} hover:text-focused hover:italic`}>CFP</Link></li>
+              <li><Link href="/travel-info" className={`${isActive('/travel-info') ? "text-focused" : "text-black"} hover:text-focused hover:italic`}>Travel Info</Link></li>
               <li><Link href="/schedule" className={`${isActive('/schedule') ? "text-focused" : "text-black"} hover:text-focused hover:italic`}>Schedule</Link></li>
               <li><Link href="/volunteer" className={`${isActive('/volunteer') ? "text-focused" : "text-black"} hover:text-focused hover:italic`}>Volunteer</Link></li>
               <li><Link href="https://www.eventbrite.sg/e/pycon-my-2025-tickets-1447422954019" className={`${isActive('/buy') ? "text-focused" : "text-black"} hover:text-focused hover:italic`}>Buy Ticket</Link></li>
