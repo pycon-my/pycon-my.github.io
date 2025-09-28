@@ -3,6 +3,15 @@ import createMDX from '@next/mdx'
 
 const nextConfig: NextConfig = {
   pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'cfp.pycon.my',
+        pathname: '/media/**',
+      },
+    ],
+  },
 };
 
 const withMDX = createMDX({
