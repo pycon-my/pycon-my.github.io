@@ -3,7 +3,9 @@ import Cors from 'cors';
 
 // Initialize the CORS middleware
 const cors = Cors({
-  origin: 'https://pycon.my', // Replace with your domain
+  origin: process.env.NODE_ENV === 'development' 
+    ? ['http://localhost:3000', 'https://localhost:3000']
+    : 'https://pycon.my',
   methods: ['GET'],
 });
 
@@ -36,10 +38,24 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     return res.status(405).json({ message: 'Method not allowed' });
   }
 
-  // Validate API key
-  const apiKey = req.headers['x-api-key'];
-  if (apiKey !== process.env.API_KEY) {
-    return res.status(401).json({ message: 'Unauthorized: Invalid API key' });
+  // Validate API key only for external requests
+  const origin = req.headers.origin;
+  const referer = req.headers.referer;
+  const isInternalRequest = !origin || origin.includes('localhost') || origin.includes('pycon.my') || 
+                           (referer && (referer.includes('localhost') || referer.includes('pycon.my')));
+  
+  if (!isInternalRequest) {
+    const apiKey = req.headers['x-api-key'];
+    console.log('External request - validating API key');
+    
+    if (apiKey !== process.env.API_KEY) {
+      console.log('API key validation failed for external request');
+      return res.status(401).json({ message: 'Unauthorized: Invalid API key' });
+    }
+    
+    console.log('API key validation successful for external request');
+  } else {
+    console.log('Internal request - skipping API key validation');
   }
 
   try {

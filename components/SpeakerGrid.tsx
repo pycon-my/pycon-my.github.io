@@ -19,6 +19,13 @@ const SpeakerGrid: React.FC = () => {
     const fetchSpeakers = async () => {
       try {
         const response = await fetch('/api/speakers');
+        
+        if (!response.ok) {
+          const errorText = await response.text();
+          console.error('API Error:', errorText);
+          throw new Error(`HTTP ${response.status}: ${errorText}`);
+        }
+        
         const data = await response.json();
         setSpeakers(data);
       } catch (error) {
