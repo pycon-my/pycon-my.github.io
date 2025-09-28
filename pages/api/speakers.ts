@@ -1,4 +1,22 @@
 import { NextApiRequest, NextApiResponse } from 'next';
+import Cors from 'cors';
+
+// Initialize the CORS middleware
+const cors = Cors({
+  origin: 'https://pycon.my', // Replace with your domain
+  methods: ['GET'],
+});
+
+function runMiddleware(req: NextApiRequest, res: NextApiResponse, fn: Function) {
+  return new Promise((resolve, reject) => {
+    fn(req, res, (result: unknown) => {
+      if (result instanceof Error) {
+        return reject(result);
+      }
+      return resolve(result);
+    });
+  });
+}
 
 type Speaker = {
   name: string;
@@ -12,8 +30,16 @@ type Submission = {
 };
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+  await runMiddleware(req, res, cors);
+
   if (req.method !== 'GET') {
     return res.status(405).json({ message: 'Method not allowed' });
+  }
+
+  // Validate API key
+  const apiKey = req.headers['x-api-key'];
+  if (apiKey !== process.env.API_KEY) {
+    return res.status(401).json({ message: 'Unauthorized: Invalid API key' });
   }
 
   try {
