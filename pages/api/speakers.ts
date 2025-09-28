@@ -42,11 +42,26 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     return res.status(405).json({ message: 'Method not allowed' });
   }
 
-  // Validate API key only for external requests
+  // Validate API key for all requests except same-origin requests
   const origin = req.headers.origin;
   const referer = req.headers.referer;
-  const isInternalRequest = !origin || origin.includes('localhost') || origin.includes('pycon.my') || 
-                           (referer && (referer.includes('localhost') || referer.includes('pycon.my')));
+  const host = req.headers.host;
+  
+  // Check if request is from same origin (browser making request from your site)
+  const isSameOrigin = origin && (
+    origin.includes('localhost') || 
+    origin.includes('pycon.my') ||
+    origin === `http://${host}` ||
+    origin === `https://${host}`
+  );
+  
+  // Check if request is from same site via referer (for cases where origin might not be set)
+  const isSameReferer = referer && (
+    referer.includes('localhost') ||
+    referer.includes('pycon.my')
+  );
+  
+  const isInternalRequest = isSameOrigin || isSameReferer;
   
   if (!isInternalRequest) {
     const apiKey = req.headers['x-api-key'];
