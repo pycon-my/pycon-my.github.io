@@ -94,7 +94,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     const data: { results: Submission[] } = await response.json();
 
     const acceptedSpeakers: Speaker[] = data.results
-      .filter((submission) => submission.state === 'accepted')
+      .filter((submission) => submission.state === 'confirmed')
       .flatMap((submission) => submission.speakers);
 
     res.status(200).json(acceptedSpeakers);
