@@ -7,7 +7,7 @@ const cors = Cors({
     ? ['http://localhost:3000', 'https://localhost:3000']
     : 'https://pycon.my',
   methods: ['GET'],
-});
+}); 
 
 function runMiddleware(
   req: NextApiRequest, 
