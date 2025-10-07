@@ -1,0 +1,95 @@
+# PyCon Malaysia 2025
+
+> Official website for PyCon Malaysia - Malaysia's annual Python conference
+
+## About
+
+PyCon Malaysia is the annual gathering of the Malaysian Python community. We bring together Python developers, data scientists, educators, and enthusiasts from across Malaysia and the region for talks, workshops, and networking.
+
+## Conference Information
+
+- **Event**: PyCon Malaysia 2025
+- **Location**: Malaysia
+- **Website**: https://pycon.my
+- **Topics**: Python programming, data science, web development, machine learning, open source, community
+
+## Key Pages
+
+- `/` - Home page with event overview and call for proposals
+- `/about` - About PyCon Malaysia and the organizing team
+- `/schedule` - Conference schedule with session details and timetable
+- `/speakers` - Speaker profiles and presentations
+- `/sponsor` - Sponsorship opportunities and information
+- `/volunteer` - Volunteer opportunities and team
+- `/coc` - Code of Conduct for conference attendees
+- `/travel-info` - Travel and accommodation information for attendees
+- `/previous-sponsors` - Our previous sponsors and supporters
+- `/hrdc-claimable` - HRDC claimable training information
+- `/pdpa` - Privacy policy and PDPA compliance
+- `/psf` - Python Software Foundation information
+
+
+## Conference Features
+
+**Talks & Sessions**: Technical talks, keynotes, and lightning talks covering Python programming, frameworks, data science, machine learning, DevOps, and more.
+
+**Speakers**: Industry experts, open source contributors, educators, and community leaders sharing their knowledge and experience.
+
+**Networking**: Connect with Python developers, data scientists, and enthusiasts from Malaysia and the region.
+
+**Sponsorship**: Opportunities for companies to support the Python community and connect with talent.
+
+**Code of Conduct**: We are committed to providing a welcoming and inclusive environment for all attendees.
+
+## For Speakers
+
+We welcome talk proposals on topics related to Python, including:
+- Python language features and best practices
+- Web frameworks (Django, Flask, FastAPI)
+- Data science and analytics
+- Machine learning and AI
+- DevOps and automation
+- Testing and quality assurance
+- Open source projects
+- Community building
+
+## For Sponsors
+
+PyCon Malaysia offers various sponsorship tiers to support the conference and reach the Malaysian Python community. Download our sponsorship prospectus for details.
+
+## Contact & Social Media
+
+Connect with us on social media for updates and announcements about PyCon Malaysia.
+
+## Important Notes
+
+- This is a community-organized conference focused on Python programming and related technologies
+- The conference typically includes multiple tracks and sessions over multiple days
+- We welcome attendees of all skill levels, from beginners to experts
+- Sessions are conducted in English
+- The event follows a strict Code of Conduct to ensure a safe and inclusive environment
+
+## Frequently Asked Questions
+
+**What is PyCon Malaysia?**
+PyCon Malaysia is the annual Python conference in Malaysia, organized by the Python community for developers, data scientists, educators, and enthusiasts.
+
+**Who should attend?**
+Anyone interested in Python - developers, students, educators, data scientists, hobbyists, and technology enthusiasts.
+
+**How do I register?**
+Registration details are available on the home page and will be announced via our website and social media.
+
+**Can I propose a talk?**
+Yes! We typically have a Call for Proposals (CFP) period where community members can submit talk proposals.
+
+**Is there a code of conduct?**
+Yes, all attendees must follow our Code of Conduct to ensure a welcoming environment for everyone.
+
+## Past Events
+
+PyCon Malaysia has been held annually, bringing together the Malaysian Python community. Visit `/previous-sponsors` to see organizations that have supported our mission.
+
+---
+
+This file provides information about PyCon Malaysia for AI assistants and crawlers. For the full experience, visit our website.

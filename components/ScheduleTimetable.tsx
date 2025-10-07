@@ -262,8 +262,8 @@ const ScheduleTimetable: React.FC = () => {
 
   return (
     <div className="w-full">
-      {/* Date Tabs - Sticky on larger screens */}
-      <div className="lg:sticky lg:top-0 lg:z-10 lg:pt-4 lg:bg-hero flex flex-wrap gap-2 mb-6 border-b-2 border-gray-300 pb-2">
+      {/* Date Tabs - Sticky on all screen sizes */}
+      <div className="sticky top-0 z-10 pt-4 bg-hero flex flex-wrap gap-2 mb-6 border-b-2 border-gray-300 pb-2">
         {dates.map((date) => (
           <button
             key={date}
