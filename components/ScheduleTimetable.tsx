@@ -301,17 +301,17 @@ const ScheduleTimetable: React.FC = () => {
           {selectedDate === dates[0] && (
             <div className="mb-4">
               <div 
-                className="card text-white"
-                style={{ backgroundColor: 'var(--color-tertiary)' }}
+                className="card"
+                style={{ backgroundColor: 'var(--color-tertiary)', color: 'white' }}
               >
                 <div className="card-body p-4">
-                  <div className="flex items-center gap-2 text-sm font-semibold mb-1">
+                  <div className="flex items-center gap-2 text-sm font-semibold mb-1" style={{ color: 'white' }}>
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                     08:30 - 09:00
                   </div>
-                  <h4 className="font-bold text-base">
+                  <h4 className="font-bold text-base" style={{ color: 'white' }}>
                     Registration
                   </h4>
                 </div>
@@ -323,17 +323,17 @@ const ScheduleTimetable: React.FC = () => {
           {selectedDate === dates[1] && (
             <div className="mb-4">
               <div 
-                className="card text-white"
-                style={{ backgroundColor: 'var(--color-tertiary)' }}
+                className="card"
+                style={{ backgroundColor: 'var(--color-tertiary)', color: 'white' }}
               >
                 <div className="card-body p-4">
-                  <div className="flex items-center gap-2 text-sm font-semibold mb-1">
+                  <div className="flex items-center gap-2 text-sm font-semibold mb-1" style={{ color: 'white' }}>
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                     08:30 - 09:00
                   </div>
-                  <h4 className="font-bold text-base">
+                  <h4 className="font-bold text-base" style={{ color: 'white' }}>
                     Registration
                   </h4>
                 </div>
@@ -404,15 +404,15 @@ const ScheduleTimetable: React.FC = () => {
                   const event = firstItem.specialEvent;
                   return (
                     <div key={`group-${groupIdx}`} className="mb-3">
-                      <div className="card text-white" style={{ backgroundColor: 'var(--color-tertiary)' }}>
+                      <div className="card" style={{ backgroundColor: 'var(--color-tertiary)', color: 'white' }}>
                         <div className="card-body p-4">
-                          <div className="flex items-center gap-2 text-sm font-semibold mb-1">
+                          <div className="flex items-center gap-2 text-sm font-semibold mb-1" style={{ color: 'white' }}>
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
                             {event.start} - {event.end}
                           </div>
-                          <h4 className="font-bold text-base">
+                          <h4 className="font-bold text-base" style={{ color: 'white' }}>
                             {event.title}
                           </h4>
                         </div>
@@ -435,15 +435,15 @@ const ScheduleTimetable: React.FC = () => {
                         const event = roomItem.specialEvent;
                         return (
                           <div key={room} className="space-y-3">
-                            <div className="card text-white" style={{ backgroundColor: 'var(--color-tertiary)' }}>
+                            <div className="card" style={{ backgroundColor: 'var(--color-tertiary)', color: 'white' }}>
                               <div className="card-body p-4">
-                                <div className="flex items-center gap-2 text-sm font-semibold mb-1">
+                                <div className="flex items-center gap-2 text-sm font-semibold mb-1" style={{ color: 'white' }}>
                                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                                   </svg>
                                   {event.start} - {event.end}
                                 </div>
-                                <h4 className="font-bold text-base mb-2">
+                                <h4 className="font-bold text-base mb-2" style={{ color: 'white' }}>
                                   {event.title}
                                 </h4>
                                 <div className="badge badge-outline badge-sm border-white text-white">
@@ -474,7 +474,7 @@ const ScheduleTimetable: React.FC = () => {
                         </div>
 
                         {/* Title */}
-                        <h4 className="font-bold text-base mb-2 line-clamp-2">
+                        <h4 className="font-bold text-base mb-2 text-black">
                           {session.title}
                         </h4>
 
