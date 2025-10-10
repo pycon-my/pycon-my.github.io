@@ -1,8 +1,14 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import SponsorCard from './SponsorCard';
+import { getSponsorsByTier } from '@/lib/sponsors';
 
 const SponsorHero: React.FC = () => {
+  const platinumSponsors = getSponsorsByTier('platinum');
+  const silverSponsors = getSponsorsByTier('silver');
+  const communityPartners = getSponsorsByTier('community');
+
   return (
     <section className="relative w-full min-h-screen bg-land py-16 md:py-24">
       <div className="hidden md:block absolute -top-30 z-50">
@@ -38,16 +44,61 @@ const SponsorHero: React.FC = () => {
       <div className="relative z-20 md:ml-[10%] md:mt-[10%] max-w-2xl px-6 md:px-8">
         <div className="text-left mb-16">
           <h1 className="text-2xl md:text-4xl font-instrument-serif text-text-primary leading-tight">
-            Sponsor PyCon MY 2025!
+            Presenting our 2025 Sponsors
           </h1>
           
           <p className="font-space-grotesk text-md md:text-lg text-text-secondary mt-4">
-            Making 2025&apos;s edition the best one yet! Get your info pack <Link href="/sponsor" className="hover:italic underline">here</Link>.
+            This PyCon Malaysia 2025 conference is made possible by the generous support of our sponsors. Interested in becoming a sponsor?{' '}
+            <Link href="/sponsor" className="text-primary font-medium underline hover:text-primary/80">
+              Learn more
+            </Link>
           </p>
         </div>
+
+        {/* Platinum Sponsors */}
+        {platinumSponsors.length > 0 && (
+          <div className="mb-12">
+            <h2 className="text-xl md:text-4xl font-instrument-serif font-bold text-tertiary mb-6 text-center">Platinum Sponsor</h2>
+            <div className="flex justify-center">
+              <div className="grid grid-cols-1 gap-8 w-full max-w-3xl">
+                {platinumSponsors.map((sponsor) => (
+                  <SponsorCard key={sponsor.name} sponsor={sponsor} size="large" />
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Silver Sponsors */}
+        {silverSponsors.length > 0 && (
+          <div className="mb-12">
+            <h2 className="text-xl md:text-3xl font-instrument-serif font-bold text-tertiary mb-6 text-center">Silver Sponsors</h2>
+            <div className="flex justify-center">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-3xl">
+                {silverSponsors.map((sponsor) => (
+                  <SponsorCard key={sponsor.name} sponsor={sponsor} size="medium" />
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Community Partners */}
+        {communityPartners.length > 0 && (
+          <div className="mb-12">
+            <h2 className="text-xl md:text-3xl font-instrument-serif font-bold text-tertiary mb-6 text-center">Community Partners</h2>
+            <div className="flex justify-center">
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-2xl">
+                {communityPartners.map((sponsor) => (
+                  <SponsorCard key={sponsor.name} sponsor={sponsor} size="small" />
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
       </div>
       
-      <div className="absolute top-2/3  xl:right-50 xl:top-1/3 transform -translate-y-1/2 z-10">
+      <div className="hidden md:block absolute top-2/3 xl:right-50 xl:top-1/3 transform -translate-y-1/2 z-10">
         <div className="relative w-48 h-48 md:w-80 md:h-168">
           <Image 
             src="/assets/monkey-cup.png"
