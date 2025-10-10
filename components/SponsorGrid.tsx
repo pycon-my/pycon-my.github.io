@@ -2,7 +2,7 @@
 
 import React from 'react';
 import SponsorCard from './SponsorCard';
-import { sponsors, getSponsorsByTier } from '@/lib/sponsors';
+import { getSponsorsByTier } from '@/lib/sponsors';
 
 const SponsorGrid: React.FC = () => {
   const platinumSponsors = getSponsorsByTier('platinum');
