@@ -66,20 +66,20 @@ const ScheduleTimetable: React.FC = () => {
       try {
         console.log('Fetching schedule from internal API');
         const response = await fetch('/api/schedule');
-        
+
         console.log('Response status:', response.status);
         console.log('Response ok:', response.ok);
-        
+
         if (!response.ok) {
           const errorText = await response.text();
           console.error('API Error:', errorText);
           throw new Error(`HTTP ${response.status}: ${errorText}`);
         }
-        
+
         const data: ScheduleData = await response.json();
         console.log('Fetched schedule:', data);
         setScheduleData(data);
-        
+
         // Set first date as default
         const dates = Object.keys(data.organized).sort();
         if (dates.length > 0) {
@@ -97,16 +97,16 @@ const ScheduleTimetable: React.FC = () => {
 
   const formatTime = (dateString: string) => {
     const date = new Date(dateString);
-    return date.toLocaleTimeString('en-US', { 
-      hour: '2-digit', 
+    return date.toLocaleTimeString('en-US', {
+      hour: '2-digit',
       minute: '2-digit',
-      hour12: false 
+      hour12: false
     });
   };
 
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
-    return date.toLocaleDateString('en-US', { 
+    return date.toLocaleDateString('en-US', {
       weekday: 'long',
       year: 'numeric',
       month: 'long',
@@ -165,6 +165,19 @@ const ScheduleTimetable: React.FC = () => {
         }
       });
 
+      //Magic Pod
+      if (room === 'Hall 2') {
+        allSessions.push({
+          time: date + 'T14:30:00+08:00',
+          type: 'special',
+          specialEvent: {
+            start: '14:30',
+            end: '16:00',
+            title: 'Magic Pod Tutorial'
+          }
+        });
+      }
+
       // Tea Break - add to both halls but mark as full width
       allSessions.push({
         time: date + 'T15:30:00+08:00',
@@ -215,6 +228,18 @@ const ScheduleTimetable: React.FC = () => {
           fullWidth: true
         }
       });
+
+      if (room === 'Hall 2') {
+        allSessions.push({
+          time: date + 'T14:30:00+08:00',
+          type: 'special',
+          specialEvent: {
+            start: '14:30',
+            end: '16:00',
+            title: 'Tutorial Session'
+          }
+        });
+      }
 
       // Open Forum - Hall 1 only
       if (room === 'Hall 1') {
@@ -267,11 +292,10 @@ const ScheduleTimetable: React.FC = () => {
         {dates.map((date) => (
           <button
             key={date}
-            className={`px-4 py-2 font-semibold transition-all ${
-              selectedDate === date 
-                ? 'text-primary border-b-4 border-primary' 
+            className={`px-4 py-2 font-semibold transition-all ${selectedDate === date
+                ? 'text-primary border-b-4 border-primary'
                 : 'text-gray-500 hover:text-gray-700 border-b-4 border-transparent hover:border-gray-300'
-            }`}
+              }`}
             onClick={() => setSelectedDate(date)}
           >
             {formatDate(date + 'T00:00:00')}
@@ -285,10 +309,10 @@ const ScheduleTimetable: React.FC = () => {
           {/* Room Headers - Hidden on mobile */}
           <div className="hidden lg:grid grid-cols-2 gap-6 mb-4">
             {scheduleData.rooms.map((room, index) => (
-              <div 
+              <div
                 key={room}
                 className="p-4 rounded-t-lg text-black"
-                style={{ 
+                style={{
                   backgroundColor: index === 0 ? 'var(--color-sea)' : 'var(--color-land)'
                 }}
               >
@@ -300,7 +324,7 @@ const ScheduleTimetable: React.FC = () => {
           {/* Registration Card - Spanning both halls */}
           {selectedDate === dates[0] && (
             <div className="mb-4">
-              <div 
+              <div
                 className="card"
                 style={{ backgroundColor: 'var(--color-tertiary)', color: 'white' }}
               >
@@ -322,7 +346,7 @@ const ScheduleTimetable: React.FC = () => {
           {/* Registration Card for Day 2 - Spanning both halls */}
           {selectedDate === dates[1] && (
             <div className="mb-4">
-              <div 
+              <div
                 className="card"
                 style={{ backgroundColor: 'var(--color-tertiary)', color: 'white' }}
               >
@@ -398,7 +422,7 @@ const ScheduleTimetable: React.FC = () => {
               // Render grouped sessions
               return groupedSessions.map((group, groupIdx) => {
                 const firstItem = group[0];
-                
+
                 // Full-width special event
                 if (firstItem.type === 'special' && firstItem.specialEvent?.fullWidth) {
                   const event = firstItem.specialEvent;
@@ -426,7 +450,7 @@ const ScheduleTimetable: React.FC = () => {
                   <div key={`group-${groupIdx}`} className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-3">
                     {scheduleData.rooms.map((room, roomIndex) => {
                       const roomItem = group.find(item => item.room === room);
-                      
+
                       if (!roomItem) {
                         return <div key={room} className="hidden lg:block space-y-3"></div>;
                       }
@@ -465,69 +489,69 @@ const ScheduleTimetable: React.FC = () => {
                               onClick={() => setSelectedSession(session)}
                             >
                               <div className="card-body p-4">
-                        {/* Time */}
-                        <div className="flex items-center gap-2 text-sm font-semibold text-primary mb-1">
-                          <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                          {formatTime(session.slot.start)} - {formatTime(session.slot.end)}
-                        </div>
-
-                        {/* Title */}
-                        <h4 className="font-bold text-base mb-2 text-black">
-                          {session.title}
-                        </h4>
-
-                        {/* Speakers */}
-                        <div className="flex items-center gap-2 text-sm text-gray-600 mb-2">
-                          <div className="flex -space-x-2">
-                            {session.speakers.slice(0, 3).map((speaker) => (
-                              speaker.avatar ? (
-                                <div 
-                                  key={speaker.code}
-                                  className="w-6 h-6 rounded-full overflow-hidden border-2 border-white bg-gray-200 relative"
-                                >
-                                  <Image 
-                                    src={speaker.avatar} 
-                                    alt={speaker.name}
-                                    fill
-                                    sizes="24px"
-                                    className="object-cover object-top"
-                                    style={{ margin: 0, padding: 0, display: 'block' }}
-                                  />
-                                </div>
-                              ) : (
-                                <div 
-                                  key={speaker.code}
-                                  className="w-6 h-6 rounded-full border-2 border-white bg-gray-300 flex items-center justify-center"
-                                >
-                                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                {/* Time */}
+                                <div className="flex items-center gap-2 text-sm font-semibold text-primary mb-1">
+                                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                                   </svg>
+                                  {formatTime(session.slot.start)} - {formatTime(session.slot.end)}
                                 </div>
-                              )
-                            ))}
-                            {session.speakers.length > 3 && (
-                              <div className="w-6 h-6 rounded-full border-2 border-white bg-gray-400 flex items-center justify-center text-xs text-white font-bold">
-                                +{session.speakers.length - 3}
-                              </div>
-                            )}
-                          </div>
-                          <span className="ml-1">{session.speakers.map(s => s.name).join(', ')}</span>
-                        </div>
 
-                        {/* Room badge and Type badge */}
-                        <div className="flex gap-2">
-                          <div 
-                            className="badge badge-sm text-black font-semibold"
-                            style={{ backgroundColor: roomColor }}
-                          >
-                            {room}
-                          </div>
-                          <div className="badge badge-outline badge-sm">
-                                  {session.submission_type.en}
+                                {/* Title */}
+                                <h4 className="font-bold text-base mb-2 text-black">
+                                  {session.title}
+                                </h4>
+
+                                {/* Speakers */}
+                                <div className="flex items-center gap-2 text-sm text-gray-600 mb-2">
+                                  <div className="flex -space-x-2">
+                                    {session.speakers.slice(0, 3).map((speaker) => (
+                                      speaker.avatar ? (
+                                        <div
+                                          key={speaker.code}
+                                          className="w-6 h-6 rounded-full overflow-hidden border-2 border-white bg-gray-200 relative"
+                                        >
+                                          <Image
+                                            src={speaker.avatar}
+                                            alt={speaker.name}
+                                            fill
+                                            sizes="24px"
+                                            className="object-cover object-top"
+                                            style={{ margin: 0, padding: 0, display: 'block' }}
+                                          />
+                                        </div>
+                                      ) : (
+                                        <div
+                                          key={speaker.code}
+                                          className="w-6 h-6 rounded-full border-2 border-white bg-gray-300 flex items-center justify-center"
+                                        >
+                                          <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                          </svg>
+                                        </div>
+                                      )
+                                    ))}
+                                    {session.speakers.length > 3 && (
+                                      <div className="w-6 h-6 rounded-full border-2 border-white bg-gray-400 flex items-center justify-center text-xs text-white font-bold">
+                                        +{session.speakers.length - 3}
+                                      </div>
+                                    )}
+                                  </div>
+                                  <span className="ml-1">{session.speakers.map(s => s.name).join(', ')}</span>
                                 </div>
-                        </div>
+
+                                {/* Room badge and Type badge */}
+                                <div className="flex gap-2">
+                                  <div
+                                    className="badge badge-sm text-black font-semibold"
+                                    style={{ backgroundColor: roomColor }}
+                                  >
+                                    {room}
+                                  </div>
+                                  <div className="badge badge-outline badge-sm">
+                                    {session.submission_type.en}
+                                  </div>
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -583,8 +607,8 @@ const ScheduleTimetable: React.FC = () => {
                   <div key={speaker.code} className="flex items-center gap-3">
                     {speaker.avatar && (
                       <div className="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 bg-gray-200 relative">
-                        <Image 
-                          src={speaker.avatar} 
+                        <Image
+                          src={speaker.avatar}
                           alt={speaker.name}
                           fill
                           sizes="48px"
