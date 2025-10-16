@@ -165,19 +165,6 @@ const ScheduleTimetable: React.FC = () => {
         }
       });
 
-      //Magic Pod
-      if (room === 'Hall 2') {
-        allSessions.push({
-          time: date + 'T14:30:00+08:00',
-          type: 'special',
-          specialEvent: {
-            start: '14:30',
-            end: '16:00',
-            title: 'Magic Pod Tutorial'
-          }
-        });
-      }
-
       // Tea Break - add to both halls but mark as full width
       allSessions.push({
         time: date + 'T15:30:00+08:00',
@@ -228,18 +215,6 @@ const ScheduleTimetable: React.FC = () => {
           fullWidth: true
         }
       });
-
-      if (room === 'Hall 2') {
-        allSessions.push({
-          time: date + 'T14:30:00+08:00',
-          type: 'special',
-          specialEvent: {
-            start: '14:30',
-            end: '16:00',
-            title: 'Tutorial Session'
-          }
-        });
-      }
 
       // Open Forum - Hall 1 only
       if (room === 'Hall 1') {
