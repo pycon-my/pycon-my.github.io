@@ -158,7 +158,7 @@ const ScheduleTimetable: React.FC = () => {
         time: date + 'T12:00:00+08:00',
         type: 'special',
         specialEvent: {
-          start: '12:00',
+          start: '12:15',
           end: '13:15',
           title: 'Lunch Break',
           fullWidth: true
@@ -283,17 +283,20 @@ const ScheduleTimetable: React.FC = () => {
         <div className="overflow-x-auto">
           {/* Room Headers - Hidden on mobile */}
           <div className="hidden lg:grid grid-cols-2 gap-6 mb-4">
-            {scheduleData.rooms.map((room, index) => (
-              <div
-                key={room}
-                className="p-4 rounded-t-lg text-black"
-                style={{
-                  backgroundColor: index === 0 ? 'var(--color-sea)' : 'var(--color-land)'
-                }}
-              >
-                <h3 className="text-xl font-bold text-center">{room}</h3>
-              </div>
-            ))}
+            {scheduleData.rooms.map((room, index) => {
+              const roomName = room === 'Hall 1' ? 'Hall 1 (JC2)' : room === 'Hall 2' ? 'Hall 2 (LT7)' : room;
+              return (
+                <div
+                  key={room}
+                  className="p-4 rounded-t-lg text-black"
+                  style={{
+                    backgroundColor: index === 0 ? 'var(--color-sea)' : 'var(--color-land)'
+                  }}
+                >
+                  <h3 className="text-xl font-bold text-center text-black">{roomName}</h3>
+                </div>
+              );
+            })}
           </div>
 
           {/* Registration Card - Spanning both halls */}
@@ -552,7 +555,7 @@ const ScheduleTimetable: React.FC = () => {
               ✕
             </button>
 
-            <h3 className="font-bold text-2xl mb-4">{selectedSession.title}</h3>
+            <h3 className="font-bold text-2xl mb-4 text-black">{selectedSession.title}</h3>
 
             {/* Time and Room */}
             <div className="flex flex-wrap gap-4 mb-4">
@@ -576,7 +579,7 @@ const ScheduleTimetable: React.FC = () => {
 
             {/* Speakers */}
             <div className="mb-4">
-              <h4 className="font-semibold text-lg mb-2">Speakers</h4>
+              <h4 className="font-semibold text-lg mb-2 text-black">Speakers</h4>
               <div className="flex flex-wrap gap-4">
                 {selectedSession.speakers.map((speaker) => (
                   <div key={speaker.code} className="flex items-center gap-3">
@@ -601,7 +604,7 @@ const ScheduleTimetable: React.FC = () => {
             {/* Abstract */}
             {selectedSession.abstract && (
               <div className="mb-4">
-                <h4 className="font-semibold text-lg mb-2">Abstract</h4>
+                <h4 className="font-semibold text-lg mb-2 text-black">Abstract</h4>
                 <p className="text-sm leading-relaxed whitespace-pre-wrap">{selectedSession.abstract}</p>
               </div>
             )}
@@ -609,7 +612,7 @@ const ScheduleTimetable: React.FC = () => {
             {/* Description */}
             {selectedSession.description && (
               <div>
-                <h4 className="font-semibold text-lg mb-2">Description</h4>
+                <h4 className="font-semibold text-lg mb-2 text-black">Description</h4>
                 <p className="text-sm leading-relaxed whitespace-pre-wrap">{selectedSession.description}</p>
               </div>
             )}
