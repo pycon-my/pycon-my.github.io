@@ -41,9 +41,11 @@ const KeynoteSpeakerCard: React.FC<KeynoteSpeakerProps> = ({
             {/* Right side - Biography */}
             <div className="flex-1 md:w-2/3">
               <h4 className="text-lg font-semibold mb-3">Biography</h4>
-              <p className="leading-relaxed text-justify">
-                {biography}
-              </p>
+              <div className="leading-relaxed text-justify space-y-3">
+                {biography.split('\n\n').map((paragraph, index) => (
+                  <p key={index}>{paragraph}</p>
+                ))}
+              </div>
           </div>
         </div>
       </div>
