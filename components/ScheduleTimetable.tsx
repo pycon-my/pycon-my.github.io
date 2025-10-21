@@ -167,11 +167,11 @@ const ScheduleTimetable: React.FC = () => {
 
       // Tea Break - add to both halls but mark as full width
       allSessions.push({
-        time: date + 'T15:30:00+08:00',
+        time: date + 'T16:00:00+08:00',
         type: 'special',
         specialEvent: {
-          start: '15:30',
-          end: '16:00',
+          start: '16:00',
+          end: '16:15',
           title: 'Tea Break',
           fullWidth: true
         }
@@ -206,11 +206,11 @@ const ScheduleTimetable: React.FC = () => {
 
       // Tea Break - add to both halls but mark as full width
       allSessions.push({
-        time: date + 'T15:15:00+08:00',
+        time: date + 'T16:00:00+08:00',
         type: 'special',
         specialEvent: {
-          start: '15:15',
-          end: '15:45',
+          start: '16:00',
+          end: '16:15',
           title: 'Tea Break',
           fullWidth: true
         }
@@ -219,11 +219,11 @@ const ScheduleTimetable: React.FC = () => {
       // Open Forum - Hall 1 only
       if (room === 'Hall 1') {
         allSessions.push({
-          time: date + 'T15:45:00+08:00',
+          time: date + 'T16:15:00+08:00',
           type: 'special',
           specialEvent: {
-            start: '15:45',
-            end: '16:45',
+            start: '16:15',
+            end: '17:15',
             title: 'Open Forum'
           }
         });
@@ -232,11 +232,11 @@ const ScheduleTimetable: React.FC = () => {
       // Closing Ceremony - Hall 1 only
       if (room === 'Hall 1') {
         allSessions.push({
-          time: date + 'T16:45:00+08:00',
+          time: date + 'T17:15:00+08:00',
           type: 'special',
           specialEvent: {
-            start: '16:45',
-            end: '17:15',
+            start: '17:15',
+            end: '17:45',
             title: 'Closing Ceremony'
           }
         });
