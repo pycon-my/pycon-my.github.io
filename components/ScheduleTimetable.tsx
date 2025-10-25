@@ -126,6 +126,10 @@ const ScheduleTimetable: React.FC = () => {
         end: string;
         title: string;
         fullWidth?: boolean;
+        guest?: {
+          name: string;
+          image: string;
+        };
       };
     }> = [];
 
@@ -148,7 +152,11 @@ const ScheduleTimetable: React.FC = () => {
           specialEvent: {
             start: '09:00',
             end: '09:30',
-            title: 'Opening Ceremony'
+            title: 'Opening Ceremony',
+            guest: {
+              name: 'Prof. Chai Lay Ching',
+              image: 'https://sunwayuniversity.edu.my/sites/default/files/styles/three_by_four/public/staff-images/2023/chai_lay_ching_co_0.png.webp'
+            }
           }
         });
       }
@@ -356,6 +364,10 @@ const ScheduleTimetable: React.FC = () => {
                   end: string;
                   title: string;
                   fullWidth?: boolean;
+                  guest?: {
+                    name: string;
+                    image: string;
+                  };
                 };
               }> = [];
 
@@ -448,6 +460,23 @@ const ScheduleTimetable: React.FC = () => {
                                 <h4 className="font-bold text-base mb-2" style={{ color: 'white' }}>
                                   {event.title}
                                 </h4>
+                                {event.guest && (
+                                  <div className="flex items-center gap-3 mb-2">
+                                    <div className="w-10 h-10 rounded-full overflow-hidden flex-shrink-0 bg-gray-200 relative">
+                                      <Image
+                                        src={event.guest.image}
+                                        alt={event.guest.name}
+                                        fill
+                                        sizes="40px"
+                                        className="object-cover object-top"
+                                        style={{ margin: 0, padding: 0, display: 'block' }}
+                                      />
+                                    </div>
+                                    <span className="text-sm font-medium" style={{ color: 'white' }}>
+                                      Opening Guest: {event.guest.name}
+                                    </span>
+                                  </div>
+                                )}
                                 <div className="badge badge-outline badge-sm border-white text-white">
                                   {room}
                                 </div>
