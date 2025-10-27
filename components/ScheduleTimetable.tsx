@@ -154,8 +154,8 @@ const ScheduleTimetable: React.FC = () => {
             end: '09:30',
             title: 'Opening Ceremony',
             guest: {
-              name: 'Prof. Chai Lay Ching',
-              image: 'https://sunwayuniversity.edu.my/sites/default/files/styles/three_by_four/public/staff-images/2023/chai_lay_ching_co_0.png.webp'
+              name: 'Prof. Chai Lay Ching, Pro Vice-Chancellor (Education, Employability and Alumni)',
+              image: '/guests/chai_lay_ching_co_0.png.webp'
             }
           }
         });
