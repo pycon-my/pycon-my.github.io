@@ -28,6 +28,18 @@ export const sponsors: Sponsor[] = [
 With over 25 years of experience and 5 million downloads, more than 50% of the Fortune 500 rely on Navicat every day! `
   },
   {
+    name: 'Silverlake Innovation Partners',
+    logo: '/sponsor/silverlake.png',
+    tier: 'silver',
+    description: `Silverlake Innovation Partners is a leading provider of digital transformation solutions for the financial services industry. Our innovative products and services help organizations enhance customer experiences, improve operational efficiency, and drive business growth.`
+  },
+  {
+    name: 'Grafilab',
+    logo: '/sponsor/Gra_Logo.png',
+    tier: 'bronze',
+    description: `Grafilab offers a CeDePIN GPU marketplace for AI startups, machine learning research, gaming companies, and rendering jobs.`
+  },
+  {
     name: 'Sunway University',
     logo: '/sponsor/FETlogo.png',
     tier: 'community',
