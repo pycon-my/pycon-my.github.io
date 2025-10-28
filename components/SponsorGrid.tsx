@@ -44,7 +44,7 @@ const SponsorGrid: React.FC = () => {
       {/* Silver Sponsors */}
       {silverSponsors.length > 0 && (
         <div>
-          <h2 className="text-2xl md:text-3xl font-instrument-serif font-bold text-tertiary mb-6 text-center">Silver Sponsors</h2>
+          <h2 className="text-xl md:text-3xl font-instrument-serif font-bold text-tertiary mb-6 text-center">Silver Sponsors</h2>
           <div className="flex justify-center">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-3xl">
               {silverSponsors.map((sponsor) => (
@@ -58,13 +58,13 @@ const SponsorGrid: React.FC = () => {
       {/* Bronze Sponsors */}
       {bronzeSponsors.length > 0 && (
         <div>
-          <h2 className="text-2xl md:text-3xl font-instrument-serif font-bold text-tertiary mb-6 text-center">Bronze Sponsors</h2>
-          <div className="flex justify-center">
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-2xl">
-              {bronzeSponsors.map((sponsor) => (
-                <SponsorCard key={sponsor.name} sponsor={sponsor} />
-              ))}
-            </div>
+          <h2 className="text-xl md:text-3xl font-instrument-serif font-bold text-tertiary mb-6 text-center">Bronze Sponsors</h2>
+          <div className="flex flex-wrap justify-center items-center gap-6">
+            {bronzeSponsors.map((sponsor) => (
+              <div key={sponsor.name} className="w-full md:w-48">
+                <SponsorCard sponsor={sponsor} size="small" />
+              </div>
+            ))}
           </div>
         </div>
       )}
@@ -72,7 +72,7 @@ const SponsorGrid: React.FC = () => {
       {/* Community Partners */}
       {communityPartners.length > 0 && (
         <div>
-          <h2 className="text-2xl md:text-3xl font-instrument-serif font-bold text-tertiary mb-6 text-center">Community Partners</h2>
+          <h2 className="text-xl md:text-3xl font-instrument-serif font-bold text-tertiary mb-6 text-center">Community Partners</h2>
           <div className="flex justify-center">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-2xl">
               {communityPartners.map((sponsor) => (
