@@ -31,8 +31,12 @@ With over 25 years of experience and 5 million downloads, more than 50% of the F
     name: 'Silverlake Innovation Partners',
     logo: '/sponsor/silverlake.png',
     tier: 'silver',
-    description: `Silverlake Innovation Partners is a leading provider of digital transformation solutions for the financial services industry. Our innovative products and services help organizations enhance customer experiences, improve operational efficiency, and drive business growth.`
-  },
+    description: `Silverlake Innovation Partners (SIP) is where technology meets possibility. As part of the Silverlake Group, we bring innovation to life and  helping organizations accelerate their digital transformation with smart, scalable, and future-ready IT solutions.
+
+From software engineering to cloud infrastructure, we empower businesses to work faster, smarter, and stronger in today’s ever-evolving digital landscape. Our dynamic team of tech enthusiasts blends creativity with technical mastery, turning complex challenges into seamless, impactful solutions.
+
+At SIP, we believe innovation starts with people. That's why we work hand-in-hand with universities, tech communities, and industry partners to inspire, develop, and nurture the next generation of digital talent.`
+,  },
   {
     name: 'Grafilab',
     logo: '/sponsor/Gra_Logo.png',
