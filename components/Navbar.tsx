@@ -53,12 +53,13 @@ const Navbar: React.FC = () => {
               <div
                 tabIndex={0}
                 role="button"
-                className={`cursor-pointer ${isActive('/travel-info') || isActive('/speakers') ? "text-focused italic" : "text-black"} hover:text-focused hover:italic`}
+                className={`cursor-pointer ${isActive('/travel-info') || isActive('/speakers') || isActive('/keynote-speakers') ? "text-focused italic" : "text-black"} hover:text-focused hover:italic`}
               >
                 PyCon MY 2025
               </div>
               <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow mt-2">
                 <li><Link href="/travel-info" className="text-black hover:text-focused hover:italic">Travel Info</Link></li>
+                <li><Link href="/keynote-speakers" className="text-black hover:text-focused hover:italic">Keynote Speakers</Link></li>
                 <li><Link href="/speakers" className="text-black hover:text-focused hover:italic">Speakers</Link></li>
               </ul>
             </div>
@@ -86,9 +87,10 @@ const Navbar: React.FC = () => {
               <li><Link href="/sponsor" className={`${isActive('/sponsor') ? "text-focused" : "text-black"} hover:text-focused hover:italic`}>Sponsor</Link></li>
               <li>
                 <details>
-                  <summary className={`${isActive('/travel-info') || isActive('/speakers') ? "text-focused" : "text-black"} hover:text-focused hover:italic`}>PyCon MY 2025</summary>
+                  <summary className={`${isActive('/travel-info') || isActive('/speakers') || isActive('/keynote-speakers') ? "text-focused" : "text-black"} hover:text-focused hover:italic`}>PyCon MY 2025</summary>
                   <ul>
                     <li><Link href="/travel-info" className="text-black hover:text-focused hover:italic">Travel Info</Link></li>
+                    <li><Link href="/keynote-speakers" className="text-black hover:text-focused hover:italic">Keynote Speakers</Link></li>
                     <li><Link href="/speakers" className="text-black hover:text-focused hover:italic">Speakers</Link></li>
                   </ul>
                 </details>
