@@ -20,7 +20,7 @@ const SponsorGrid: React.FC = () => {
           <div className="flex justify-center">
             <div className="grid grid-cols-1 gap-8 w-full max-w-3xl">
               {platinumSponsors.map((sponsor) => (
-                <SponsorCard key={sponsor.name} sponsor={sponsor} size="large" />
+                <SponsorCard key={sponsor.name} sponsor={sponsor} size="xlarge" />
               ))}
             </div>
           </div>
@@ -30,13 +30,13 @@ const SponsorGrid: React.FC = () => {
       {/* Gold Sponsors */}
       {goldSponsors.length > 0 && (
         <div>
-          <h2 className="text-2xl md:text-3xl font-instrument-serif font-bold text-tertiary mb-6 text-center">Gold Sponsors</h2>
-          <div className="flex justify-center">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-3xl">
-              {goldSponsors.map((sponsor) => (
-                <SponsorCard key={sponsor.name} sponsor={sponsor} size="medium" />
-              ))}
-            </div>
+          <h2 className="text-xl md:text-3xl font-instrument-serif font-bold text-tertiary mb-6 text-center">Gold Sponsors</h2>
+          <div className="flex flex-wrap justify-center items-center gap-6 max-w-3xl mx-auto">
+            {goldSponsors.map((sponsor) => (
+              <div key={sponsor.name} className="w-full md:w-[calc(50%-12px)]">
+                <SponsorCard sponsor={sponsor} size="large" />
+              </div>
+            ))}
           </div>
         </div>
       )}
@@ -45,12 +45,12 @@ const SponsorGrid: React.FC = () => {
       {silverSponsors.length > 0 && (
         <div>
           <h2 className="text-xl md:text-3xl font-instrument-serif font-bold text-tertiary mb-6 text-center">Silver Sponsors</h2>
-          <div className="flex justify-center">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-3xl">
-              {silverSponsors.map((sponsor) => (
-                <SponsorCard key={sponsor.name} sponsor={sponsor} size="medium" />
-              ))}
-            </div>
+          <div className="flex flex-wrap justify-center items-center gap-6 max-w-3xl mx-auto">
+            {silverSponsors.map((sponsor) => (
+              <div key={sponsor.name} className="w-full md:w-[calc(50%-12px)]">
+                <SponsorCard sponsor={sponsor} size="medium" />
+              </div>
+            ))}
           </div>
         </div>
       )}

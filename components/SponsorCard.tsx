@@ -18,9 +18,9 @@ type SponsorCardProps = {
 const SponsorCard: React.FC<SponsorCardProps> = ({ sponsor, size = 'normal' }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const cardHeight = size === 'xlarge' ? 'h-48' : size === 'large' ? 'h-40' : size === 'medium' ? 'h-36' : 'h-32';
+  const cardHeight = size === 'xlarge' ? 'h-48' : size === 'large' ? 'h-40' : size === 'medium' ? 'h-36' : 'h-18';
   const cardPadding = size === 'xlarge' ? 'p-12' : size === 'large' ? 'p-10' : size === 'medium' ? 'p-8' : 'p-6';
-  const textSize = size === 'xlarge' ? 'text-2xl' : size === 'large' ? 'text-xl' : size === 'medium' ? 'text-lg' : size === 'small' ? 'text-xs' : 'text-base';
+  const fontSize = size === 'xlarge' ? '1.5rem' : size === 'large' ? '1.25rem' : size === 'medium' ? '0.875rem' : size === 'small' ? '0.75rem' : '1rem';
 
   return (
     <>
@@ -38,7 +38,7 @@ const SponsorCard: React.FC<SponsorCardProps> = ({ sponsor, size = 'normal' }) =
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
-          <h3 className={`font-bold ${textSize} text-center text-black`}>{sponsor.name}</h3>
+          <h3 className="font-bold text-center text-black" style={{ fontSize }}>{sponsor.name}</h3>
         </div>
       </div>
 
