@@ -30,7 +30,7 @@ With over 25 years of experience and 5 million downloads, more than 50% of the F
   {
     name: 'Apify',
     logo: '/sponsor/apify.svg',
-    tier: 'silver',
+    tier: 'gold',
     description: `Apify is a leading web scraping and automation platform that enables businesses to extract, process, and manage web data at scale. With its robust infrastructure and user-friendly interface, Apify empowers users to build custom web scrapers, automate workflows, and integrate web data into their applications seamlessly.`
   },
   {

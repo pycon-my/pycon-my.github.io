@@ -12,15 +12,15 @@ type Sponsor = {
 
 type SponsorCardProps = {
   sponsor: Sponsor;
-  size?: 'small' | 'normal' | 'medium' | 'large';
+  size?: 'small' | 'normal' | 'medium' | 'large' | 'xlarge';
 };
 
 const SponsorCard: React.FC<SponsorCardProps> = ({ sponsor, size = 'normal' }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const cardHeight = size === 'large' ? 'h-40' : size === 'medium' ? 'h-36' : 'h-32';
-  const cardPadding = size === 'large' ? 'p-10' : size === 'medium' ? 'p-8' : 'p-6';
-  const textSize = size === 'large' ? 'text-xl' : size === 'medium' ? 'text-lg' : size === 'small' ? 'text-xs' : 'text-base';
+  const cardHeight = size === 'xlarge' ? 'h-48' : size === 'large' ? 'h-40' : size === 'medium' ? 'h-36' : 'h-32';
+  const cardPadding = size === 'xlarge' ? 'p-12' : size === 'large' ? 'p-10' : size === 'medium' ? 'p-8' : 'p-6';
+  const textSize = size === 'xlarge' ? 'text-2xl' : size === 'large' ? 'text-xl' : size === 'medium' ? 'text-lg' : size === 'small' ? 'text-xs' : 'text-base';
 
   return (
     <>

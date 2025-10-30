@@ -6,6 +6,7 @@ import { getSponsorsByTier } from '@/lib/sponsors';
 
 const SponsorHero: React.FC = () => {
   const platinumSponsors = getSponsorsByTier('platinum');
+  const goldSponsors = getSponsorsByTier('gold');
   const silverSponsors = getSponsorsByTier('silver');
   const bronzeSponsors = getSponsorsByTier('bronze');
   const communityPartners = getSponsorsByTier('community');
@@ -63,9 +64,23 @@ const SponsorHero: React.FC = () => {
             <div className="flex justify-center items-center">
               <div className="grid grid-cols-1 gap-8 w-full max-w-3xl">
                 {platinumSponsors.map((sponsor) => (
-                  <SponsorCard key={sponsor.name} sponsor={sponsor} size="large" />
+                  <SponsorCard key={sponsor.name} sponsor={sponsor} size="xlarge" />
                 ))}
               </div>
+            </div>
+          </div>
+        )}
+
+        {/* Gold Sponsors */}
+        {goldSponsors.length > 0 && (
+          <div className="mb-12">
+            <h2 className="text-xl md:text-3xl font-instrument-serif font-bold text-tertiary mb-6 text-center">Gold Sponsors</h2>
+            <div className="flex flex-wrap justify-center items-center gap-6 max-w-3xl mx-auto">
+              {goldSponsors.map((sponsor) => (
+                <div key={sponsor.name} className="w-full md:w-[calc(50%-12px)]">
+                  <SponsorCard sponsor={sponsor} size="large" />
+                </div>
+              ))}
             </div>
           </div>
         )}
