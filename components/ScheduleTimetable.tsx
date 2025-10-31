@@ -144,8 +144,8 @@ const ScheduleTimetable: React.FC = () => {
 
     // Add special events for Day 1
     if (date === dates[0]) {
-      // Opening Ceremony - Hall 1 only
-      if (room === 'Hall 1') {
+      // Opening Ceremony - JC1 only
+      if (room === 'JC1') {
         allSessions.push({
           time: date + 'T09:00:00+08:00',
           type: 'special',
@@ -161,13 +161,24 @@ const ScheduleTimetable: React.FC = () => {
         });
       }
 
+      allSessions.push({
+        time: date + 'T11:15:00+08:00',
+        type: 'special',
+        specialEvent: {
+          start: '11:15',
+          end: '11:30',
+          title: 'Morning Break',
+          fullWidth: true
+        }
+      });
+
       // Lunch Break - add to both halls but mark as full width
       allSessions.push({
-        time: date + 'T12:00:00+08:00',
+        time: date + 'T12:15:00+08:00',
         type: 'special',
         specialEvent: {
           start: '12:15',
-          end: '13:15',
+          end: '13:30',
           title: 'Lunch Break',
           fullWidth: true
         }
@@ -175,11 +186,11 @@ const ScheduleTimetable: React.FC = () => {
 
       // Tea Break - add to both halls but mark as full width
       allSessions.push({
-        time: date + 'T16:00:00+08:00',
+        time: date + 'T15:15:00+08:00',
         type: 'special',
         specialEvent: {
-          start: '16:00',
-          end: '16:15',
+          start: '15:15',
+          end: '15:30',
           title: 'Tea Break',
           fullWidth: true
         }
@@ -195,7 +206,7 @@ const ScheduleTimetable: React.FC = () => {
         specialEvent: {
           start: '10:30',
           end: '10:45',
-          title: 'Break',
+          title: 'Morning Break',
           fullWidth: true
         }
       });
@@ -206,7 +217,7 @@ const ScheduleTimetable: React.FC = () => {
         type: 'special',
         specialEvent: {
           start: '12:15',
-          end: '13:45',
+          end: '13:30',
           title: 'Lunch',
           fullWidth: true
         }
@@ -214,18 +225,18 @@ const ScheduleTimetable: React.FC = () => {
 
       // Tea Break - add to both halls but mark as full width
       allSessions.push({
-        time: date + 'T16:00:00+08:00',
+        time: date + 'T15:15:00+08:00',
         type: 'special',
         specialEvent: {
-          start: '16:00',
-          end: '16:15',
+          start: '15:15',
+          end: '15:30',
           title: 'Tea Break',
           fullWidth: true
         }
       });
 
-      // Open Forum - Hall 1 only
-      if (room === 'Hall 1') {
+      // Open Forum - JC1 only
+      if (room === 'JC1') {
         allSessions.push({
           time: date + 'T16:15:00+08:00',
           type: 'special',
@@ -237,8 +248,8 @@ const ScheduleTimetable: React.FC = () => {
         });
       }
 
-      // Closing Ceremony - Hall 1 only
-      if (room === 'Hall 1') {
+      // Closing Ceremony - JC1 only
+      if (room === 'JC1') {
         allSessions.push({
           time: date + 'T17:15:00+08:00',
           type: 'special',
@@ -286,13 +297,28 @@ const ScheduleTimetable: React.FC = () => {
         ))}
       </div>
 
+      {/* Fallback link for users who have trouble loading the schedule */}
+      <div className="mb-4 text-center">
+        <p className="text-sm text-gray-600">
+          If you have trouble loading the schedule, please visit{' '}
+          <a
+            href="https://cfp.pycon.my/pyconmy-2025/schedule/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary underline hover:text-primary-focus"
+          >
+            here
+          </a>
+        </p>
+      </div>
+
       {/* Timetable */}
       {currentSchedule && (
         <div className="overflow-x-auto">
           {/* Room Headers - Hidden on mobile */}
           <div className="hidden lg:grid grid-cols-2 gap-6 mb-4">
             {scheduleData.rooms.map((room, index) => {
-              const roomName = room === 'Hall 1' ? 'Hall 1 (JC2)' : room === 'Hall 2' ? 'Hall 2 (LT7)' : room;
+              const roomName = room === 'JC1' ? 'Hall 1 (JC1)' : room === 'LT7' ? 'Hall 2 (LT7)' : room;
               return (
                 <div
                   key={room}
