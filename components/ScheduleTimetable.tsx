@@ -318,7 +318,7 @@ const ScheduleTimetable: React.FC = () => {
           {/* Room Headers - Hidden on mobile */}
           <div className="hidden lg:grid grid-cols-2 gap-6 mb-4">
             {scheduleData.rooms.map((room, index) => {
-              const roomName = room === 'JC1' ? 'Hall 1 (JC1)' : room === 'LT7' ? 'Hall 2 (LT7)' : room;
+              const roomName = room === 'JC1' ? 'Hall 1 (JC2)' : room === 'LT7' ? 'Hall 2 (LT7)' : room;
               return (
                 <div
                   key={room}

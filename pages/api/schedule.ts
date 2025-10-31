@@ -161,7 +161,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     res.status(200).json({
       slots: confirmedSlots,
       organized: organizedSchedule,
-      rooms: ['Hall 1', 'Hall 2'],
+      rooms: ['Hall 1 (JC1)', 'Hall 2 (LT7)'],
     });
   } catch (error) {
     console.error('Error fetching schedule:', error);
