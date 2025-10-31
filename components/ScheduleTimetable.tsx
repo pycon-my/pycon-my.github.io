@@ -1,6 +1,59 @@
 "use client";
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import Image from 'next/image';
+
+type Speaker = {
+  code: string;
+  name: string;
+  biography: string;
+  avatar: string;
+};
+
+type Room = {
+  en: string;
+};
+
+type Slot = {
+  room_id: number;
+  room: Room;
+  start: string;
+  end: string;
+};
+
+type SubmissionType = {
+  en: string;
+};
+
+type ScheduleSlot = {
+  code: string;
+  speakers: Speaker[];
+  title: string;
+  submission_type: SubmissionType;
+  submission_type_id: number;
+  track: string | null;
+  track_id: number | null;
+  state: string;
+  abstract: string;
+  description: string;
+  duration: number;
+  slot_count: number;
+  do_not_record: boolean;
+  is_featured: boolean;
+  content_locale: string;
+  slot: Slot;
+  image: string | null;
+  resources: unknown[];
+  answers: unknown[];
+};
+
+type OrganizedSchedule = Record<string, Record<string, ScheduleSlot[]>>;
+
+type ScheduleData = {
+  slots: ScheduleSlot[];
+  organized: OrganizedSchedule;
+  rooms: string[];
+};
 
 const ScheduleTimetable: React.FC = () => {
   const [scheduleData, setScheduleData] = useState<ScheduleData | null>(null);
