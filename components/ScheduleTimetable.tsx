@@ -161,13 +161,24 @@ const ScheduleTimetable: React.FC = () => {
         });
       }
 
+      allSessions.push({
+        time: date + 'T11:15:00+08:00',
+        type: 'special',
+        specialEvent: {
+          start: '11:15',
+          end: '11:30',
+          title: 'Morning Break',
+          fullWidth: true
+        }
+      });
+
       // Lunch Break - add to both halls but mark as full width
       allSessions.push({
-        time: date + 'T12:00:00+08:00',
+        time: date + 'T12:15:00+08:00',
         type: 'special',
         specialEvent: {
           start: '12:15',
-          end: '13:15',
+          end: '13:30',
           title: 'Lunch Break',
           fullWidth: true
         }
@@ -175,11 +186,11 @@ const ScheduleTimetable: React.FC = () => {
 
       // Tea Break - add to both halls but mark as full width
       allSessions.push({
-        time: date + 'T16:00:00+08:00',
+        time: date + 'T15:15:00+08:00',
         type: 'special',
         specialEvent: {
-          start: '16:00',
-          end: '16:15',
+          start: '15:15',
+          end: '15:30',
           title: 'Tea Break',
           fullWidth: true
         }
@@ -206,7 +217,7 @@ const ScheduleTimetable: React.FC = () => {
         type: 'special',
         specialEvent: {
           start: '12:15',
-          end: '13:45',
+          end: '13:30',
           title: 'Lunch',
           fullWidth: true
         }
@@ -214,11 +225,11 @@ const ScheduleTimetable: React.FC = () => {
 
       // Tea Break - add to both halls but mark as full width
       allSessions.push({
-        time: date + 'T16:00:00+08:00',
+        time: date + 'T15:15:00+08:00',
         type: 'special',
         specialEvent: {
-          start: '16:00',
-          end: '16:15',
+          start: '15:15',
+          end: '15:30',
           title: 'Tea Break',
           fullWidth: true
         }
@@ -270,6 +281,22 @@ const ScheduleTimetable: React.FC = () => {
 
   return (
     <div className="w-full">
+      {/* Notice about external schedule */}
+      <div className="mb-4 p-4 bg-blue-50 border-l-4 border-blue-500 rounded">
+        <p className="text-sm text-gray-700">
+          If the schedule is not displaying correctly, you can{' '}
+          <a
+            href="https://cfp.pycon.my/pyconmy-2025/schedule/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:text-blue-800 underline font-semibold"
+          >
+            view it here
+          </a>
+          .
+        </p>
+      </div>
+      
       {/* Date Tabs - Sticky on all screen sizes */}
       <div className="sticky top-0 z-10 pt-4 bg-hero flex flex-wrap gap-2 mb-6 border-b-2 border-gray-300 pb-2">
         {dates.map((date) => (
